@@ -10,5 +10,5 @@ export default defineConfig({
         // Enable React for the Algolia search component.
         react(),
     ],
-    site: "http://gethomepage.dev",
+    site: "https://gethomepage.dev",
 });
