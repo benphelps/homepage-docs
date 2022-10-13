@@ -1,6 +1,6 @@
 ---
-title: Widgets
-description: Widget Configuration
+title: Information Widgets
+description: Information Widget Configuration
 layout: ../../../layouts/MainLayout.astro
 ---
 

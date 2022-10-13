@@ -4,7 +4,7 @@ description: Bookmark Configuration
 layout: ../../../layouts/MainLayout.astro
 ---
 
-Bookmarks function much the same as [[Services|Services]], in how groups and lists work. They're just much simpler, smaller, and contain no extra features other than being a link out.
+Bookmarks function much the same as [Services](services), in how groups and lists work. They're just much simpler, smaller, and contain no extra features other than being a link out.
 
 The design of hompage expects `abbr` to be 2 letters, but is not otherwise forced.
 

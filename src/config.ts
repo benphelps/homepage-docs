@@ -55,7 +55,7 @@ export const SIDEBAR: Sidebar = {
 		'Configuration': [
             { text: 'Services', link: 'en/configs/services' },
             { text: 'Service Widgets', link: 'en/configs/service-widgets' },
-            { text: 'Widgets', link: 'en/configs/widgets' },
+            { text: 'Information Widgets', link: 'en/configs/widgets' },
             { text: 'Bookmarks', link: 'en/configs/bookmarks' },
             { text: 'Docker', link: 'en/configs/docker' },
             { text: 'Settings', link: 'en/configs/settings' }
