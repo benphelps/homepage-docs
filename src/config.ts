@@ -59,5 +59,8 @@ export const SIDEBAR: Sidebar = {
             { text: 'Docker', link: 'en/configs/docker' },
             { text: 'Settings', link: 'en/configs/settings' }
         ],
+		'Contributing': [
+            { text: 'Translations', link: 'en/contributing/translations' },
+        ],
 	},
 };
