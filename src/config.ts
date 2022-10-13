@@ -48,9 +48,16 @@ export const SIDEBAR: Sidebar = {
 	en: {
 		'Getting Started': [
 			{ text: 'Installation', link: 'en/installation' },
-			{ text: 'Page 2', link: 'en/page-2' },
-			{ text: 'Page 3', link: 'en/page-3' },
+            { text: 'Docker', link: 'en/installation/docker' },
+            { text: 'Unraid', link: 'en/installation/unraid' },
+            { text: 'Source', link: 'en/installation/source' },
 		],
-		'Another Section': [{ text: 'Page 4', link: 'en/page-4' }],
+		'Configuration': [
+            { text: 'Services', link: 'en/configs/services' },
+            { text: 'Widgets', link: 'en/configs/widgets' },
+            { text: 'Bookmarks', link: 'en/configs/bookmarks' },
+            { text: 'Docker', link: 'en/configs/docker' },
+            { text: 'Settings', link: 'en/configs/settings' }
+        ],
 	},
 };
