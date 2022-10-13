@@ -117,23 +117,13 @@ You can optionally not pass a `latitude` and `longitude` and the widget will use
 
 ## Unifi Controller
 
-You can display general connectivity status from your Unifi (Network) Controller. When authenticating you will want to use an account that has at least read privileges.
-
-You will need to update two files in order to display this information. First, `settings.yaml` which will contain the connection information.
-
-```yaml
-unifi_console:
-  url: https://unifi.host.or.ip:port
-  username: user
-  password: pass
-```
-
-Next, `widgets.yaml` to configure where you want to display the Unifi information widget in the information widget area.
-
-**Note: The lack of any sub properties is not a typo.**
+You can display general connectivity status from your Unifi (Network) Controller. When authenticating you will want to use a local account that has at least read privileges.
 
 ```yaml
 - unifi_console:
+    url: https://unifi.host.or.ip:port
+    username: user
+    password: pass
 ```
 
 ## Search
