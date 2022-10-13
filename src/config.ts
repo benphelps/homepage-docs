@@ -32,6 +32,8 @@ export const GITHUB_EDIT_URL = `https://github.com/benphelps/homepage-docs/tree/
 
 export const COMMUNITY_INVITE_URL = `https://discord.gg/k4ruYNrudu`;
 
+export const GITHUB_URL = `https://github.com/benphelps/homepage`;
+
 // See "Algolia" section of the README for more information.
 export const ALGOLIA = {
 	indexName: 'XXXXXXXXXX',
