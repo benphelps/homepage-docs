@@ -202,6 +202,16 @@ export const SIDEBAR: Sidebar = {
                 { text: 'Mastodon', link: 'en/services/mastodon' },
             ]},
         ],
+        'Information Widgets': [
+            { text: 'Resources', link: 'en/widgets/resources' },
+            { text: 'Weather API', link: 'en/widgets/weather' },
+            { text: 'OpenWeatherMap', link: 'en/widgets/openweathermap' },
+            { text: 'Search', link: 'en/widgets/search' },
+            { text: 'Date & Time', link: 'en/widgets/datetime' },
+            { text: 'Greeting', link: 'en/widgets/greeting' },
+            { text: 'Unifi Controller', link: 'en/widgets/unifi_controller' },
+            { text: 'Glances', link: 'en/widgets/glances' }
+        ],
 		'Contributing': [
             { text: 'Translations', link: 'en/contributing/translations' },
         ],
