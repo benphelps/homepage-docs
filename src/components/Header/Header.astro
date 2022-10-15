@@ -1,6 +1,7 @@
 ---
 import { getLanguageFromURL, KNOWN_LANGUAGE_CODES } from "../../languages";
 import * as CONFIG from "../../config";
+import ThemeToggleButton from "./ThemeToggleButton";
 import AstroLogo from "./AstroLogo.astro";
 import SkipToContent from "./SkipToContent.astro";
 import SidebarToggle from "./SidebarToggle";
@@ -28,13 +29,13 @@ const lang = getLanguageFromURL(currentPage);
             </a>
         </div>
         <div style="flex-grow: 1;"></div>
-        {
-            KNOWN_LANGUAGE_CODES.length > 1 && (
-                <LanguageSelect lang={lang} client:idle />
-            )
-        }
+        {KNOWN_LANGUAGE_CODES.length > 1 && <LanguageSelect lang={lang} client:idle />}
         <div class="search-item">
             <!-- <Search client:idle /> -->
+        </div>
+
+        <div style="text-align: right;">
+            <ThemeToggleButton client:visible />
         </div>
     </nav>
 </header>
@@ -99,10 +100,10 @@ const lang = getLanguageFromURL(currentPage);
         display: flex;
         align-items: center;
         justify-content: flex-end;
-        gap: 1em;
+        gap: 1rem;
         width: 100%;
-        max-width: 82em;
-        padding: 0 1rem;
+        max-width: 86em;
+        padding: 1rem;
     }
 
     @media (min-width: 50em) {

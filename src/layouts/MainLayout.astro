@@ -21,27 +21,19 @@ const currentFile = `src/pages${currentPage.replace(/\/$/, "")}.md`;
 const githubEditUrl = `${CONFIG.GITHUB_EDIT_URL}/${currentFile}`;
 ---
 
-<html
-    dir={frontmatter.dir ?? "ltr"}
-    lang={frontmatter.lang ?? "en-us"}
-    class="initial"
->
+<html dir={frontmatter.dir ?? "ltr"} lang={frontmatter.lang ?? "en-us"} class="initial">
     <head>
         <HeadCommon />
         <HeadSEO frontmatter={frontmatter} canonicalUrl={canonicalURL} />
         <title>
-            {
-                frontmatter.title
-                    ? `${frontmatter.title} - ${CONFIG.SITE.title}`
-                    : CONFIG.SITE.title
-            }
+            {frontmatter.title ? `${frontmatter.title} - ${CONFIG.SITE.title}` : CONFIG.SITE.title}
         </title>
         <style>
             body {
                 width: 100%;
                 display: grid;
                 grid-template-rows: var(--theme-navbar-height) 1fr;
-                --gutter: 0.5rem;
+                --gutter: 1rem;
                 --doc-padding: 2rem;
             }
 
@@ -89,7 +81,6 @@ const githubEditUrl = `${CONFIG.GITHUB_EDIT_URL}/${currentFile}`;
 
                 #grid-left {
                     display: flex;
-                    padding-left: 2rem;
                     position: sticky;
                     grid-column: 1;
                 }
@@ -123,6 +114,33 @@ const githubEditUrl = `${CONFIG.GITHUB_EDIT_URL}/${currentFile}`;
                 display: block;
                 top: 2rem;
             }
+
+            ::-webkit-scrollbar {
+                width: 0.5em;
+            }
+
+            ::-webkit-scrollbar-track {
+                background: var(--theme-bg-accent);
+            }
+
+            ::-webkit-scrollbar-thumb {
+                background-color: var(--theme-accent);
+                border-radius: 0.5em;
+            }
+
+            pre::-webkit-scrollbar {
+                width: 0.5em;
+                height: 0.5em;
+            }
+
+            pre::-webkit-scrollbar-track {
+                background: var(--theme-bg-accent);
+            }
+
+            pre::-webkit-scrollbar-thumb {
+                background-color: var(--theme-accent);
+                border-radius: 0.5em;
+            }
         </style>
     </head>
 
@@ -133,23 +151,12 @@ const githubEditUrl = `${CONFIG.GITHUB_EDIT_URL}/${currentFile}`;
                 <LeftSidebar currentPage={currentPage} />
             </aside>
             <div id="grid-main">
-                <PageContent
-                    frontmatter={frontmatter}
-                    headings={headings}
-                    githubEditUrl={githubEditUrl}
-                >
+                <PageContent frontmatter={frontmatter} headings={headings} githubEditUrl={githubEditUrl}>
                     <slot />
                 </PageContent>
             </div>
-            <aside
-                id="grid-right"
-                class="grid-sidebar"
-                title="Table of Contents"
-            >
-                <RightSidebar
-                    headings={headings}
-                    githubEditUrl={githubEditUrl}
-                />
+            <aside id="grid-right" class="grid-sidebar" title="Table of Contents">
+                <RightSidebar headings={headings} githubEditUrl={githubEditUrl} />
             </aside>
         </main>
         <!-- <Footer path={currentFile} /> -->

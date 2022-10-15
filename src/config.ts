@@ -41,9 +41,11 @@ export const ALGOLIA = {
 	apiKey: 'XXXXXXXXXX',
 };
 
+export type SidebarLink = { text: string; link?: string, links?: SidebarLink[] };
+
 export type Sidebar = Record<
 	typeof KNOWN_LANGUAGE_CODES[number],
-	Record<string, { text: string; link: string }[]>
+	Record<string, SidebarLink[]>
 >;
 
 export const SIDEBAR: Sidebar = {
@@ -56,7 +58,9 @@ export const SIDEBAR: Sidebar = {
 		],
 		'Configuration': [
             { text: 'Services', link: 'en/configs/services' },
-            { text: 'Service Widgets', link: 'en/configs/service-widgets' },
+            { text: 'Service Widgets', link: 'en/configs/service-widgets', links: [
+                { text: 'Emby', link: 'en/services/emby' },
+            ]},
             { text: 'Information Widgets', link: 'en/configs/widgets' },
             { text: 'Bookmarks', link: 'en/configs/bookmarks' },
             { text: 'Docker', link: 'en/configs/docker' },
