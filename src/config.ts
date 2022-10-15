@@ -48,6 +48,98 @@ export type Sidebar = Record<
 	Record<string, SidebarLink[]>
 >;
 
+/*
+
+# Streaming Media Providers
+
+Outgoing media streaming services, these widgets display current media information and controls.
+
+## Emby
+
+## Jellyfin
+
+## Plex
+
+## Plex (Tautulli)
+
+# Media Management Tools
+
+This includes the `arr` range of utilities, as well as media request management tools.
+
+## Sonarr
+
+## Radarr
+
+## Readarr
+
+## Lidarr
+
+## Bazarr
+
+## Ombi
+
+## Overseerr
+
+## Jellyseerr
+
+# Download Clients
+
+Download clients, like Usenet and BitTorrent, as well as their utility services for tracker and list management.
+
+## Nzbget
+
+## SABnzbd
+
+## ruTorrent
+
+## qBittorrent
+
+## Transmission
+
+## Prowlarr
+
+## Jackett
+
+# Networking Utilities
+
+Includes things like proxy managers, DNS providers and network statistics.
+
+## PiHole
+
+## AdGuard Home
+
+## Portainer
+
+## Traefik
+
+## NGINX Proxy Manager
+
+## Speedtest Tracker
+
+## Syncthing Relay Server
+
+## Authentik
+
+## Proxmox
+
+## Unifi Controller
+
+# System Utilities & Services
+
+System specific utilities and tools like message queues, databases, etc.
+
+## Gotify
+
+# Information Providers
+
+Non service related items that display information from other sources, like stock monitoring or news.
+
+## Mastodon
+
+## Coin Market Cap
+
+*/
+
 export const SIDEBAR: Sidebar = {
 	en: {
 		'Getting Started': [
@@ -58,13 +150,57 @@ export const SIDEBAR: Sidebar = {
 		],
 		'Configuration': [
             { text: 'Services', link: 'en/configs/services' },
-            { text: 'Service Widgets', link: 'en/configs/service-widgets', links: [
-                { text: 'Emby', link: 'en/services/emby' },
-            ]},
+            { text: 'Service Widgets', link: 'en/configs/service-widgets'},
             { text: 'Information Widgets', link: 'en/configs/widgets' },
             { text: 'Bookmarks', link: 'en/configs/bookmarks' },
             { text: 'Docker', link: 'en/configs/docker' },
             { text: 'Settings', link: 'en/configs/settings' }
+        ],
+        'Service Widgets': [
+            { text: 'Streaming Media Providers', links: [
+                { text: 'Emby', link: 'en/services/emby' },
+                { text: 'Jellyfin', link: 'en/services/jellyfin' },
+                { text: 'Plex (Tautulli)', link: 'en/services/plex-tautulli' },
+                { text: 'Plex', link: 'en/services/plex' },
+            ]},
+            { text: 'Media Management Tools', links: [
+                { text: 'Bazarr', link: 'en/services/bazarr' },
+                { text: 'Jellyseerr', link: 'en/services/jellyseerr' },
+                { text: 'Lidarr', link: 'en/services/lidarr' },
+                { text: 'Ombi', link: 'en/services/ombi' },
+                { text: 'Overseerr', link: 'en/services/overseerr' },
+                { text: 'Radarr', link: 'en/services/radarr' },
+                { text: 'Readarr', link: 'en/services/readarr' },
+                { text: 'Sonarr', link: 'en/services/sonarr' },
+            ]},
+            { text: 'Download Clients', links: [
+                { text: 'Jackett', link: 'en/services/jackett' },
+                { text: 'NZBGet', link: 'en/services/nzbget' },
+                { text: 'Prowlarr', link: 'en/services/prowlarr' },
+                { text: 'qBittorrent', link: 'en/services/qbittorrent' },
+                { text: 'ruTorrent', link: 'en/services/rutorrent' },
+                { text: 'SABnzbd', link: 'en/services/sabnzbd' },
+                { text: 'Transmission', link: 'en/services/transmission' },
+            ]},
+            { text: 'Networking Utilities', links: [
+                { text: 'AdGuard Home', link: 'en/services/adguard-home' },
+                { text: 'Authentik', link: 'en/services/authentik' },
+                { text: 'NGINX Proxy Manager', link: 'en/services/nginx-proxy-manager' },
+                { text: 'PiHole', link: 'en/services/pihole' },
+                { text: 'Portainer', link: 'en/services/portainer' },
+                { text: 'Proxmox', link: 'en/services/proxmox' },
+                { text: 'Speedtest Tracker', link: 'en/services/speedtest-tracker' },
+                { text: 'Syncthing Relay Server', link: 'en/services/syncthing-relay-server' },
+                { text: 'Traefik', link: 'en/services/traefik' },
+                { text: 'Unifi Controller', link: 'en/services/unifi-controller' },
+            ]},
+            { text: 'System Utilities & Services', links: [
+                { text: 'Gotify', link: 'en/services/gotify' },
+            ]},
+            { text: 'Information Providers', links: [
+                { text: 'Coin Market Cap', link: 'en/services/coin-market-cap' },
+                { text: 'Mastodon', link: 'en/services/mastodon' },
+            ]},
         ],
 		'Contributing': [
             { text: 'Translations', link: 'en/contributing/translations' },

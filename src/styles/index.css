@@ -124,9 +124,13 @@ article > section nav :is(ul, ol) > * + * {
     margin-top: inherit;
 }
 
+article > section ol {
+    margin-left: 1rem;
+}
+
 article > section li {
     margin-top: 1rem;
-    list-style: initial;
+    font-weight: 400;
 }
 
 article > section :is(ul, ol) {
@@ -143,7 +147,6 @@ article > section nav {
 }
 
 article > section ::marker {
-    font-weight: bold;
     color: var(--theme-text-light);
 }
 
