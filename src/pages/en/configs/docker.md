@@ -6,36 +6,67 @@ layout: ../../../layouts/MainLayout.astro
 
 Docker instances are configured inside the `docker.yaml` file. Both IP:PORT and Socket connections are supported.
 
-For IP:PORT, simply make sure your Docker instance [has been configured](https://gist.github.com/styblope/dc55e0ad2a9848f2cc3307d4819d819f) to accept API traffic over the HTTP API.
+## Using Docker Socket Proxy
+
+Due to security concerns with exposing the docker socket directly, you can use a [docker-socket-proxy](https://github.com/Tecnativa/docker-socket-proxy) container to expose the docker socket on a more restricted and secure API.
+
+Here is an example docker-compose file that will expose the docker socket, and then connect to it from the homepage container:
 
 ```yaml
-my-remote-docker:
-  host: 192.168.0.101
-  port: 2375
+dockerproxy:
+    image: ghcr.io/tecnativa/docker-socket-proxy:latest
+    container_name: dockerproxy
+    environment:
+        - CONTAINERS=1 # Allow access to viewing containers
+        - POST=0 # Disallow any POST operations (effectively read-only)
+    ports:
+        - 2375:2375
+    volumes:
+        - /var/run/docker.sock:/var/run/docker.sock:ro # Mounted as read-only
+    restart: unless-stopped
+
+homepage:
+    image: ghcr.io/benphelps/homepage:latest
+    container_name: homepage
+    volumes:
+        - /path/to/config:/app/config
+    ports:
+        - 3000:3000
+    restart: unless-stopped
 ```
 
-For Sockets, make sure that you're passing the local socket into the Docker container (if you're running inside of Docker).
+Then, inside of your `docker.yaml` settings file, you'd configure the docker instance like so:
 
 ```yaml
-my-local-docker:
-  socket: /var/run/docker.sock
+my-docker:
+    host: dockerproxy
+    port: 2375
 ```
 
-and inside of your Docker Compose:
+## Using Socket Directly
+
+If you'd rather use the socket directly, first make sure that you're passing the local socket into the Docker container.
 
 ```yaml
 homepage:
-  image: ghcr.io/benphelps/homepage:main
-  container_name: homepage
-  volumes:
-    - /path/to/config:/app/config
-    - /var/run/docker.sock:/var/run/docker.sock # This passes your local docker socket to the container
-  ports:
-    - 3000:3000
-  restart: unless-stopped
+    image: ghcr.io/benphelps/homepage:latest
+    container_name: homepage
+    volumes:
+        - /path/to/config:/app/config
+        - /var/run/docker.sock:/var/run/docker.sock # pass local proxy
+    ports:
+        - 3000:3000
+    restart: unless-stopped
 ```
 
-of if you're using `docker run`, add `-v /var/run/docker.sock:/var/run/docker.sock`
+If you're using `docker run`, this would be `-v /var/run/docker.sock:/var/run/docker.sock`.
+
+Then, inside of your `docker.yaml` settings file, you'd configure the docker instance like so:
+
+```yaml
+my-docker:
+    socket: /var/run/docker.sock
+```
 
 ## Services
 
