@@ -28,37 +28,35 @@ const sidebar = SIDEBAR[langCode];
                                     return (
                                         <>
                                             <li class="nav-sub-group">
-                                                {child.link ? (
-                                                    <div class="nav-link">
-                                                        <a
-                                                            href={url}
-                                                            aria-current={
-                                                                currentPageMatch === child.link ? "page" : false
-                                                            }
-                                                        >
-                                                            {child.text}
-                                                        </a>
-                                                    </div>
-                                                ) : (
-                                                    <div class="nav-link title">{child.text}</div>
-                                                )}
-                                                <ul>
-                                                    {child.links.map((child) => {
-                                                        const url = Astro.site?.pathname + child.link;
-                                                        return (
-                                                            <li class="nav-sub-link">
-                                                                <a
-                                                                    href={url}
-                                                                    aria-current={
-                                                                        currentPageMatch === child.link ? "page" : false
-                                                                    }
-                                                                >
-                                                                    {child.text}
-                                                                </a>
-                                                            </li>
-                                                        );
-                                                    })}
-                                                </ul>
+                                                <details
+                                                    open={
+                                                        child.links.find((link) => link.link === currentPageMatch)
+                                                            ? true
+                                                            : false
+                                                    }
+                                                >
+                                                    <summary class="nav-link title">{child.text}</summary>
+
+                                                    <ul>
+                                                        {child.links.map((child) => {
+                                                            const url = Astro.site?.pathname + child.link;
+                                                            return (
+                                                                <li class="nav-sub-link">
+                                                                    <a
+                                                                        href={url}
+                                                                        aria-current={
+                                                                            currentPageMatch === child.link
+                                                                                ? "page"
+                                                                                : false
+                                                                        }
+                                                                    >
+                                                                        {child.text}
+                                                                    </a>
+                                                                </li>
+                                                            );
+                                                        })}
+                                                    </ul>
+                                                </details>
                                             </li>
                                         </>
                                     );
@@ -94,6 +92,29 @@ const sidebar = SIDEBAR[langCode];
 </script>
 
 <style>
+    details {
+        position: relative;
+    }
+
+    details summary {
+        list-style: none;
+        cursor: pointer;
+    }
+
+    summary::-webkit-details-marker {
+        display: none;
+    }
+
+    summary::after {
+        position: absolute;
+        right: 1em;
+        content: " +";
+    }
+
+    details[open] summary:after {
+        content: " -";
+    }
+
     nav {
         width: 100%;
         margin-right: 0rem;
@@ -105,6 +126,8 @@ const sidebar = SIDEBAR[langCode];
         overflow-x: visible;
         overflow-y: auto;
         max-height: 100vh;
+        scrollbar-color: var(--theme-accent) var(--theme-bg-accent);
+        scrollbar-width: thin;
     }
 
     .nav-groups > li + li {

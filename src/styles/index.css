@@ -19,6 +19,11 @@
     }
 }
 
+html {
+    scrollbar-color: var(--theme-accent) var(--theme-bg-accent);
+    scrollbar-width: thin;
+}
+
 body {
     display: flex;
     flex-direction: column;
@@ -267,7 +272,7 @@ blockquote code {
 @media (min-width: 37.75em) {
     pre {
         --padding-inline: 1.25rem;
-        border-radius: 0px;
+        border-radius: 0;
         margin-left: 0;
         margin-right: 0;
     }

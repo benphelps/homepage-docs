@@ -1,0 +1,47 @@
+---
+title: Service Widgets
+description: Service Widget Configuration
+layout: ../../../layouts/MainLayout.astro
+---
+
+import InlineNav from "../../../components/Content/InlineNav.astro";
+
+Unless otherwise noted, URLs should not end with a `/` or other API path. Each widget will handle the path on its own.
+
+Each service can have one widget attached to it (often matching the service type, but thats not forced).
+
+Using Emby as an example, this is how you would attach the Emby service widget.
+
+```yaml
+- Emby:
+      icon: emby.png
+      href: http://emby.home/
+      description: Movies & TV Shows
+      widget:
+          type: emby
+          url: http://emby.home/
+          key: apikeyapikeyapikeyapikeyapikey
+```
+
+## Field Visibility
+
+Each widget can optionally provide a list of which fields should be visible via the `fields` widget property. If no fields are specified, then all fields will be displayed. The `fields` property must be a valid YAML array of strings. As an example, here is the entry for Sonarr showing only a couple of fields.
+
+**In all cases a widget will work and display all fields without specifying the `fields` property.**
+
+```yaml
+- Sonarr:
+  icon: sonarr.png
+  href: http://sonarr.host.or.ip
+  widget:
+      type: sonarr
+      fields: ["wanted", "queued"]
+      url: http://sonarr.host.or.ip
+      key: apikeyapikeyapikeyapikeyapikey
+```
+
+## Available Widgets
+
+Here are all the currently available widgets.
+
+<InlineNav section="Service Widgets" />
