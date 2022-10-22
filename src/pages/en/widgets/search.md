@@ -21,3 +21,5 @@ or for a custom search:
     url: https://lougle.com/?q=
     target: _blank
 ```
+
+*Added in v0.1.6*

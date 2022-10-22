@@ -14,3 +14,5 @@ widget:
     url: http://emby.host.or.ip
     key: apikeyapikeyapikeyapikeyapikey
 ```
+
+*Added in v0.3.39*

@@ -23,3 +23,5 @@ widget:
     url: http://authentik.host.or.ip:22070
     key: api_token
 ```
+
+*Added in v0.4.0*

@@ -13,3 +13,5 @@ The Glances widget allows you to monitor the resources (CPU + Memory) of another
     password: pass # optional if auth enabled in Glances
     label: MyMachine # optional
 ```
+
+*Added in v0.4.18*

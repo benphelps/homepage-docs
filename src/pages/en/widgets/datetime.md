@@ -43,3 +43,5 @@ format:
   timeStyle: short
   hour12: true
 ```
+
+*Added in v0.3.48*

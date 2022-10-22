@@ -14,3 +14,5 @@ widget:
     url: http://sabnzbd.host.or.ip
     key: apikeyapikeyapikeyapikeyapikey
 ```
+
+*Added in v0.3.24*

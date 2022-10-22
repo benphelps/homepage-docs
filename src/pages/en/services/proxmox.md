@@ -40,3 +40,5 @@ widget:
     username: api_token_id
     password: api_token_secret
 ```
+
+*Added in v0.4.9*

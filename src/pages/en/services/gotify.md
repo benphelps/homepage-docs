@@ -14,3 +14,5 @@ widget:
     url: http://gotify.host.or.ip
     key: clientoken
 ```
+
+*Added in v0.3.24*

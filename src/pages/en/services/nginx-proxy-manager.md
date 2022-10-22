@@ -15,3 +15,5 @@ widget:
     username: admin_username
     password: admin_password
 ```
+
+*Added in v0.1.6*

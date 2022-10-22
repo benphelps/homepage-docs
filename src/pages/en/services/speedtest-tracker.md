@@ -13,3 +13,5 @@ widget:
     type: speedtest
     url: http://speedtest.host.or.ip
 ```
+
+*Added in v0.1.0*

@@ -15,3 +15,5 @@ widget:
     username: username # optional, false if not used
     password: password # optional, false if not used
 ```
+
+*Added in v0.1.0*

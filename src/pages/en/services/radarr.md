@@ -14,3 +14,5 @@ widget:
     url: http://radarr.host.or.ip
     key: apikeyapikeyapikeyapikeyapikey
 ```
+
+*Added in v0.1.0*

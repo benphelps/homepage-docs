@@ -13,3 +13,5 @@ widget:
     type: strelaysrv
     url: http://syncthing.host.or.ip:22070
 ```
+
+*Added in v0.3.70*

@@ -13,3 +13,5 @@ widget:
     type: mastodon
     url: https://mastodon.host.name
 ```
+
+*Added in v0.3.70*

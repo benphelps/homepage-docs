@@ -12,3 +12,5 @@ You can display general connectivity status from your Unifi (Network) Controller
     username: user
     password: pass
 ```
+
+*Added in v0.4.18*

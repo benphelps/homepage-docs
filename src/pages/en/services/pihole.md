@@ -13,3 +13,5 @@ widget:
     type: pihole
     url: http://pi.hole.or.ip
 ```
+
+*Added in v0.1.0*

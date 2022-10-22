@@ -15,3 +15,5 @@ widget:
     symbols: [BTC, LTC, ETH]
     key: apikeyapikeyapikeyapikeyapikey
 ```
+
+*Added in v0.3.24*

@@ -13,3 +13,5 @@ widget:
     type: traefik
     url: http://traefik.host.or.ip
 ```
+
+*Added in v0.1.0*

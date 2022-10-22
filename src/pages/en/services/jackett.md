@@ -13,3 +13,5 @@ widget:
     type: jackett
     url: http://jackett.host.or.ip
 ```
+
+*Added in v0.3.39*

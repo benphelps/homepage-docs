@@ -15,3 +15,5 @@ widget:
     username: username
     password: password
 ```
+
+*Added in v0.3.55*

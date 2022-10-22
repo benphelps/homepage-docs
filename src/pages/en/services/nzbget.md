@@ -15,3 +15,5 @@ widget:
     username: controlusername
     password: controlpassword
 ```
+
+*Added in v0.1.0*

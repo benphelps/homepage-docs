@@ -14,3 +14,5 @@ widget:
     url: http://plex.host.or.ip:32400
     key: mytokenhere # see https://www.plexopedia.com/plex-media-server/general/plex-token/
 ```
+
+*Added in v0.4.18*
