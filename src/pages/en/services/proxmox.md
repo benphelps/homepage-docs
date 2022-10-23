@@ -23,7 +23,7 @@ You will need to generate an API Token for an existing user. Here is an example 
     - User name: something informative like `api`
     - Realm: Linux PAM standard authentication
     - Group: group from bullet 4 above
-9. Click on the Permissions "folder"
+9. Expand Permissions, click on API Tokens
 10. Click the Add button
     - User: user from bullet 8 above
     - Token ID: something informative like the application or purpose like `homepage`

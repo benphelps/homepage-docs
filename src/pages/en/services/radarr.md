@@ -6,7 +6,7 @@ layout: ../../../layouts/MainLayout.astro
 
 Find your API key under `Settings > General`.
 
-Allowed fields: `["wanted", "queued", "movies"]`.
+Allowed fields: `["wanted", "missing", "queued", "movies"]`.
 
 ```yaml
 widget:
