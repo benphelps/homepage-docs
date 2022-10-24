@@ -120,8 +120,9 @@ export const SIDEBAR: Sidebar = {
             { text: 'Unifi Controller', link: 'en/widgets/unifi_controller' },
             { text: 'Glances', link: 'en/widgets/glances' }
         ],
-		'Contributing': [
-            { text: 'Translations', link: 'en/contributing/translations' },
+		'More': [
+            { text: 'Troubleshooting', link: 'en/more/troubleshooting' },
+            { text: 'Translations', link: 'en/more/translations' },
         ],
 	},
 };
