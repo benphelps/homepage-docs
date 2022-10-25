@@ -146,6 +146,15 @@ target: _blank # Possible options include _blank, _self, and _top
 
 Use `_blank` to open links in a new tab, `_self` to open links in the same tab, and `_top` to open links in a new window.
 
+This can also be set for individual services. Note setting this at the service level overrides any setting in settings.json, e.g.:
+
+```yaml
+- Example Service:
+    href: https://example.com/
+    ...
+    target: _self
+```
+
 ## Providers
 
 The `providers` section allows you to define shared API provider options and secrets. Currently this allows you to define your weather API keys in secret.
