@@ -173,3 +173,12 @@ You can then pass `provider` instead of `apiKey` in your widget configuration.
     longitude: 30.525026
     provider: weatherapi
 ```
+
+## Quick Launch
+
+There is currently one setting for the 'Quick Launch' feature which lets you control whether item descriptions are included in searches. This is off by default. When enabled, results that match the item name will be placed above those that only match the description.
+
+```yaml
+quicklaunch:
+    searchDescriptions: true
+```
