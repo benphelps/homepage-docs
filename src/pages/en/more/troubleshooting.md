@@ -23,11 +23,11 @@ All service widgets work essentially the same, that is, homepage makes a proxied
 
 2. If you have verified that homepage can in fact reach the service then you can also check the API output, which is often helpful if you do need to file a bug report. The exact API endpoints and authentication vary of course, but in many cases instructions can be found by searching the web or if you feel comfortable looking at the homepage source code. It is out of the scope of this to go into full detail, but an example for PiHole would be:
     ```
-    curl -L http://PIHOLEIPORDOMAIN/admin/api.php
+    curl -L -k http://PIHOLEIPORDOMAIN/admin/api.php
     ```
     Or for AdGuard:
     ```
-    curl -L -u 'username:password' http://ADGUARDIPORDOMAIN/control/stats
+    curl -L -k -u 'username:password' http://ADGUARDIPORDOMAIN/control/stats
     ```
     Or for Portainer:
     ```
