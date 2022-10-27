@@ -79,7 +79,7 @@ Inside of the service you'd like to connect to docker:
   icon: emby.png
   href: "http://emby.home/"
   description: Media server
-  server: my-local-docker # The docker server that was configured
+  server: my-docker # The docker server that was configured
   container: emby # The name of the container you'd like to connect
 ```
 
