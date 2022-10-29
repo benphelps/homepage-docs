@@ -6,6 +6,13 @@ layout: ../../../layouts/MainLayout.astro
 
 Docker instances are configured inside the `docker.yaml` file. Both IP:PORT and Socket connections are supported.
 
+For IP:PORT, simply make sure your Docker instance [has been configured](https://gist.github.com/styblope/dc55e0ad2a9848f2cc3307d4819d819f) to accept API traffic over the HTTP API.
+```yaml
+my-remote-docker:
+  host: 192.168.0.101
+  port: 2375
+```
+
 ## Using Docker Socket Proxy
 
 Due to security concerns with exposing the docker socket directly, you can use a [docker-socket-proxy](https://github.com/Tecnativa/docker-socket-proxy) container to expose the docker socket on a more restricted and secure API.
