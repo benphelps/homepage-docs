@@ -22,7 +22,7 @@ const { section, language } = Astro.props as Props;
                         ))}
                     </ul>
                 ) : (
-                    <a href={Astro.site?.pathname + item.url}>{item.title}</a>
+                    <a href={Astro.site?.pathname + (item.link ?? item.url)}>{item.text ?? item.title}</a>
                 )}
             </li>
         ))
