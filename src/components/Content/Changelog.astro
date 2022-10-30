@@ -1,0 +1,31 @@
+---
+import { marked } from 'marked';
+
+const releasesResponse = await fetch('https://api.github.com/repos/benphelps/homepage/releases');
+const releases = await releasesResponse.json();
+---
+
+<ul>
+    {releases.map((release) => (
+        <li>
+            <h2 id={release.id}><a href={release.html_url}>{release.name}</a> <small>({new Date(release.created_at).toLocaleDateString()})</small></h2>
+            <div set:html={marked(release.body)}></div>
+        </li>
+    ))}
+</ul>
+
+<style>
+    ul {
+        list-style: none;
+        padding: 0;
+    }
+    li {
+        margin: 0 0 3em;
+    }
+    li div {
+        margin-left: 1rem;
+    }
+    li div :global(h2) {
+        font-size: 1.3rem;
+    }
+</style>
