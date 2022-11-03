@@ -36,9 +36,9 @@ export const GITHUB_URL = `https://github.com/benphelps/homepage`;
 
 // See "Algolia" section of the README for more information.
 export const ALGOLIA = {
-	indexName: import.meta.env.ALGOLIA_INDEX_NAME,
-	appId: import.meta.env.ALGOLIA_APP_ID,
-	apiKey: import.meta.env.ALGOLIA_API_KEY,
+	indexName: 'gethomepage',
+	appId: 'Y6AL4ARVMN',
+	apiKey: 'a8ec8891c69515772ba7fee64b320f5d',
 };
 
 export type SidebarLink = { text: string; link?: string, links?: SidebarLink[] };
