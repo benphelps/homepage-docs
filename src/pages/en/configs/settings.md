@@ -90,6 +90,18 @@ As an example, this would produce the following layout:
 
 <img width="1260" alt="Screenshot 2022-09-15 at 8 03 57 PM" src="https://user-images.githubusercontent.com/82196/190466646-8ca94505-0fcf-4964-9687-3a6c7cd3144f.png">
 
+### Category Icons
+
+You can also add an icon to a category under the `layout` setting similar to the [options for service icons](services/#icons), e.g.
+
+```yaml
+  Home Management & Info:
+    icon: home-assistant.png
+  Server Tools:
+    icon: https://cdn-icons-png.flaticon.com/512/252/252035.png
+  ...
+```
+
 ## Header Style
 
 There are currently 3 options for header styles, you can see each one below.
