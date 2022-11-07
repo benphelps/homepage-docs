@@ -70,6 +70,7 @@ export const SIDEBAR: Sidebar = {
                 { text: 'Jellyfin', link: 'en/services/jellyfin' },
                 { text: 'Plex (Tautulli)', link: 'en/services/plex-tautulli' },
                 { text: 'Plex', link: 'en/services/plex' },
+                { text: 'Navidrome', link: 'en/services/navidrome' },
             ]},
             { text: 'Media Management Tools', links: [
                 { text: 'Bazarr', link: 'en/services/bazarr' },
@@ -89,6 +90,7 @@ export const SIDEBAR: Sidebar = {
                 { text: 'ruTorrent', link: 'en/services/rutorrent' },
                 { text: 'SABnzbd', link: 'en/services/sabnzbd' },
                 { text: 'Transmission', link: 'en/services/transmission' },
+                { text: 'Autobrr', link: 'en/services/autobrr' },
             ]},
             { text: 'Network Utilities', links: [
                 { text: 'AdGuard Home', link: 'en/services/adguard-home' },
@@ -104,16 +106,23 @@ export const SIDEBAR: Sidebar = {
                 { text: 'Portainer', link: 'en/services/portainer' },
                 { text: 'Proxmox', link: 'en/services/proxmox' },
                 { text: 'Traefik', link: 'en/services/traefik' },
+                { text: 'Truenas', link: 'en/services/truenas' },
             ]},
             { text: 'Information Providers', links: [
                 { text: 'Coin Market Cap', link: 'en/services/coin-market-cap' },
                 { text: 'Mastodon', link: 'en/services/mastodon' },
             ]},
+            { text: 'Other', links: [
+                { text: 'Homebridge', link: 'en/services/homebridge' },
+                { text: 'Tube Archivist', link: 'en/services/tubearchivist' },
+                { text: 'Watchtower', link: 'en/services/watchtower' },
+            ]},
         ],
         'Information Widgets': [
             { text: 'Resources', link: 'en/widgets/resources' },
-            { text: 'Weather API', link: 'en/widgets/weather' },
+            { text: 'OpenMeteo', link: 'en/widgets/openmeteo' },
             { text: 'OpenWeatherMap', link: 'en/widgets/openweathermap' },
+            { text: 'Weather API', link: 'en/widgets/weather' },
             { text: 'Search', link: 'en/widgets/search' },
             { text: 'Date & Time', link: 'en/widgets/datetime' },
             { text: 'Greeting', link: 'en/widgets/greeting' },
