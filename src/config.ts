@@ -91,6 +91,7 @@ export const SIDEBAR: Sidebar = {
                 { text: 'SABnzbd', link: 'en/services/sabnzbd' },
                 { text: 'Transmission', link: 'en/services/transmission' },
                 { text: 'Autobrr', link: 'en/services/autobrr' },
+                { text: 'Pyload', link: 'en/services/pyload' },
             ]},
             { text: 'Network Utilities', links: [
                 { text: 'AdGuard Home', link: 'en/services/adguard-home' },
