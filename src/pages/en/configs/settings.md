@@ -136,6 +136,8 @@ language: fr
 
 Currently supported languages: ca, de, en, es, fr, he, hr, hu, it, nb-NO, nl, pt, ru, sv, vi, zh-CN, zh-Hant
 
+You can also specify locales e.g. for the DateTime widget, e.g. en-AU, en-GB, etc.
+
 ## Link Target
 
 Changes the behaviour of links on the homepage,
