@@ -100,6 +100,7 @@ export const SIDEBAR: Sidebar = {
                 { text: 'Speedtest Tracker', link: 'en/services/speedtest-tracker' },
                 { text: 'Syncthing Relay Server', link: 'en/services/syncthing-relay-server' },
                 { text: 'Unifi Controller', link: 'en/services/unifi-controller' },
+                { text: 'Gluetun', link: 'en/services/gluetun' },
             ]},
             { text: 'Network Infrastructure', links: [
                 { text: 'Authentik', link: 'en/services/authentik' },
