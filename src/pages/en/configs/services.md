@@ -100,7 +100,7 @@ Services may have an optional `ping` property that allows you to monitor the ava
         ping: http://some.other.host/
 ```
 
-
+![image](https://user-images.githubusercontent.com/3441425/202920225-792d01f7-f885-4c06-88c3-49dbbf44e03e.png)
 
 ## Docker Integration
 
