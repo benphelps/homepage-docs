@@ -117,6 +117,7 @@ export const SIDEBAR: Sidebar = {
             { text: 'Search', link: 'en/widgets/search' },
             { text: 'Date & Time', link: 'en/widgets/datetime' },
             { text: 'Greeting', link: 'en/widgets/greeting' },
+            { text: 'Logo', link: 'en/widgets/logo' },
             { text: 'Unifi Controller', link: 'en/widgets/unifi_controller' },
             { text: 'Glances', link: 'en/widgets/glances' }
         ],
