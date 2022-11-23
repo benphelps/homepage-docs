@@ -109,6 +109,7 @@ export const SIDEBAR: Sidebar = {
                 { text: 'Proxmox', link: 'en/services/proxmox' },
                 { text: 'Traefik', link: 'en/services/traefik' },
                 { text: 'Truenas', link: 'en/services/truenas' },
+                { text: 'Scrutiny', link: 'en/services/scrutiny' },
             ]},
             { text: 'Information Providers', links: [
                 { text: 'Coin Market Cap', link: 'en/services/coin-market-cap' },
