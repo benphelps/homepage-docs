@@ -118,6 +118,7 @@ export const SIDEBAR: Sidebar = {
             ]},
             { text: 'Other', links: [
                 { text: 'Homebridge', link: 'en/services/homebridge' },
+                { text: 'Paperless-ngx', link: 'en/services/paperlessngx' },
                 { text: 'Tube Archivist', link: 'en/services/tubearchivist' },
                 { text: 'Watchtower', link: 'en/services/watchtower' },
             ]},
