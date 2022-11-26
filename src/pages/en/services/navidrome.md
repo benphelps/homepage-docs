@@ -17,4 +17,4 @@ widget:
     salt: randomsalt
 ```
 
-*Added in v0.X.X*
+*Added in v0.5.0*

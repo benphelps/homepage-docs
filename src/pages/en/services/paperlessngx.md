@@ -14,4 +14,4 @@ widget:
     password: password
 ```
 
-*Added in vX.X.X*
+*Added in v0.5.0*

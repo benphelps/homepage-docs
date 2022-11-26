@@ -17,4 +17,4 @@ No registration is required at all!
 
 You can optionally not pass a `latitude` and `longitude` and the widget will use your current location (requires a secure context, eg. HTTPS).
 
-*Added in v0.X.X*
+*Added in v0.5.0*
