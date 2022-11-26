@@ -4,7 +4,7 @@ description: Bazarr Widget Configuration
 layout: ../../../layouts/MainLayout.astro
 ---
 
-Find your API key under `Settings > Generaly`.
+Find your API key under `Settings > General`.
 
 Allowed fields: `["missingEpisodes", "missingMovies"]`.
 

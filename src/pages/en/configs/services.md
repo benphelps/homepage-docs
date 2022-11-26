@@ -82,6 +82,26 @@ Services may have an icon attached to them, you can use icons from [Dashboard Ic
 
 <img width="1038" alt="Service Icons" src="https://user-images.githubusercontent.com/82196/187040777-da1361d7-f0c4-4531-95db-136cd00a1611.png">
 
+## Ping
+
+Services may have an optional `ping` property that allows you to monitor the availability of an endpoint you chose and have the response time displayed.  You do not need to set your ping URL equal to your href URL.
+
+```yaml
+- Group A:
+    - Sonarr:
+        icon: sonarr.png
+        href: http://sonarr.host/
+        ping: http://sonarr.host/
+
+- Group B:
+    - Radarr:
+        icon: radarr.png
+        href: http://radarr.host/
+        ping: http://some.other.host/
+```
+
+![image](https://user-images.githubusercontent.com/3441425/202920225-792d01f7-f885-4c06-88c3-49dbbf44e03e.png)
+
 ## Docker Integration
 
 Services may be connected to a Docker container, either running on the local machine, or a remote machine.

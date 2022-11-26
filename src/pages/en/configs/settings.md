@@ -90,6 +90,33 @@ As an example, this would produce the following layout:
 
 <img width="1260" alt="Screenshot 2022-09-15 at 8 03 57 PM" src="https://user-images.githubusercontent.com/82196/190466646-8ca94505-0fcf-4964-9687-3a6c7cd3144f.png">
 
+## Sorting
+
+Groups will sort based on the order in the layout block. You can also mix in groups defined by docker labels, e.g.
+
+```yaml
+layout:
+  Auto-Discovered1:
+  Configured1:
+  Configured2:
+  Auto-Discovered2:
+  Configured3:
+    style: row
+    columns: 3
+```
+
+### Category Icons
+
+You can also add an icon to a category under the `layout` setting similar to the [options for service icons](services/#icons), e.g.
+
+```yaml
+  Home Management & Info:
+    icon: home-assistant.png
+  Server Tools:
+    icon: https://cdn-icons-png.flaticon.com/512/252/252035.png
+  ...
+```
+
 ## Header Style
 
 There are currently 3 options for header styles, you can see each one below.
@@ -148,6 +175,15 @@ target: _blank # Possible options include _blank, _self, and _top
 
 Use `_blank` to open links in a new tab, `_self` to open links in the same tab, and `_top` to open links in a new window.
 
+This can also be set for individual services. Note setting this at the service level overrides any setting in settings.json, e.g.:
+
+```yaml
+- Example Service:
+    href: https://example.com/
+    ...
+    target: _self
+```
+
 ## Providers
 
 The `providers` section allows you to define shared API provider options and secrets. Currently this allows you to define your weather API keys in secret.
@@ -165,4 +201,21 @@ You can then pass `provider` instead of `apiKey` in your widget configuration.
     latitude: 50.449684
     longitude: 30.525026
     provider: weatherapi
+```
+
+## Quick Launch
+
+There is currently one setting for the 'Quick Launch' feature which lets you control whether item descriptions are included in searches. This is off by default. When enabled, results that match the item name will be placed above those that only match the description.
+
+```yaml
+quicklaunch:
+    searchDescriptions: true
+```
+
+## Log Path
+
+By default the homepage logfile is written to the a `logs` subdirectory of the `config` folder.  In order to customize this path, you can set the `logpath` setting.  A `logs` folder will be created in that location where the logfile will be written.
+
+```yaml
+logfile: /logfile/path
 ```

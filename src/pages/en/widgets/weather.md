@@ -4,6 +4,8 @@ description: Weather API Information Widget Configuration
 layout: ../../../layouts/MainLayout.astro
 ---
 
+**Note: this widget is considered 'deprecated' since there is no longer a free Weather API tier for new members. See the openmeteo or openweathermap widgets for an alternatives.**
+
 The free tier is all thats required, you will need to [register](https://www.weatherapi.com/signup.aspx) and grab your API key.
 
 ```yaml

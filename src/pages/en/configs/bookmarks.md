@@ -8,6 +8,8 @@ Bookmarks function much the same as [Services](services), in how groups and list
 
 The design of hompage expects `abbr` to be 2 letters, but is not otherwise forced.
 
+You can also use an icon for bookmarks similar to the [options for service icons](services/#icons). If both icon and abbreviation are supplied, the icon takes precedence.
+
 ```yaml
 - Developer:
     - Github:
@@ -16,7 +18,7 @@ The design of hompage expects `abbr` to be 2 letters, but is not otherwise force
 
 - Social:
     - Reddit:
-        - abbr: RE
+        - icon: reddit.png
           href: https://reddit.com/
 
 - Entertainment:
@@ -25,4 +27,4 @@ The design of hompage expects `abbr` to be 2 letters, but is not otherwise force
           href: https://youtube.com/
 ```
 
-<img width="1038" alt="Bookmarks" src="https://user-images.githubusercontent.com/82196/187041636-872fd1db-4ef9-4639-aafb-5a7b36f62e63.png">
+<img width="1000" alt="Bookmarks" src="https://user-images.githubusercontent.com/4887959/200081485-f641e312-106b-415e-a12d-bf4e05f6a511.png">
