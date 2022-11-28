@@ -41,4 +41,4 @@ You may need to set the permissions of the folders to be able to edit the files.
       container: plex
     ```
 
-- When you upload a new image in to the **/images** folder, you will need to restart the container for it to show up in the WebUI. Please see the [Wiki](/en/configs/services#icons) for more information.
+- When you upload a new image in to the **/images** folder, you will need to restart the container for it to show up in the WebUI. Please see the [service icons](/en/configs/services#icons) for more information.
