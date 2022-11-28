@@ -107,7 +107,7 @@ layout:
 
 ### Category Icons
 
-You can also add an icon to a category under the `layout` setting similar to the [options for service icons](services/#icons), e.g.
+You can also add an icon to a category under the `layout` setting similar to the [options for service icons](/en/configs/services/#icons), e.g.
 
 ```yaml
   Home Management & Info:
