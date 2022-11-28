@@ -4,7 +4,7 @@ description: Deluge Widget Configuration
 layout: ../../../layouts/MainLayout.astro
 ---
 
-Uses the same username and password used to login from the web.  The default username is admin.
+Uses the same password used to login to the webui, see [the deluge FAQ](https://dev.deluge-torrent.org/wiki/Faq#Whatisthedefaultpassword).
 
 Allowed fields: `["leech", "download", "seed", "upload"]`.
 
@@ -12,8 +12,7 @@ Allowed fields: `["leech", "download", "seed", "upload"]`.
 widget:
     type: deluge
     url: http://deluge.host.or.ip
-    username: username
-    password: password
+    password: password # webui password
 ```
 
 *Added in v0.5.0*
