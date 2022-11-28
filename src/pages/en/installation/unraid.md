@@ -30,7 +30,7 @@ You may need to set the permissions of the folders to be able to edit the files.
 
 ## Some Other Notes
 
-- To use the [Docker integration](https://github.com/benphelps/homepage/wiki/Docker-Integration), you only need to use the `container:` parameter. There is no need to set the server.
+- To use the [Docker integration](https://github.com/benphelps/homepage-docs/blob/main/src/pages/en/configs/docker.md), you only need to use the `container:` parameter. There is no need to set the server.
 
   - Example:
 
@@ -41,4 +41,4 @@ You may need to set the permissions of the folders to be able to edit the files.
       container: plex
     ```
 
-- When you upload a new image in to the **/images** folder, you will need to restart the container for it to show up in the WebUI. Please see the [Wiki](https://github.com/benphelps/homepage/wiki/Services#icons) for more information.
+- When you upload a new image in to the **/images** folder, you will need to restart the container for it to show up in the WebUI. Please see the [Wiki](https://github.com/benphelps/homepage-docs/blob/main/src/pages/en/configs/services.md#icons) for more information.
