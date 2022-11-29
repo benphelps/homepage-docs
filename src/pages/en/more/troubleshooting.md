@@ -24,7 +24,7 @@ All service widgets work essentially the same, that is, homepage makes a proxied
 
 2. If you have verified that homepage can in fact reach the service then you can also check the API output using e.g. `curl`, which is often helpful if you do need to file a bug report. 
 
-    Note that `curl` is not installed in the base image by default but can be added inside the container with `apk add curl`. 
+    *Note that `curl` is not installed in the base image by default but can be added inside the container with `apk add curl`.*
     
     The exact API endpoints and authentication vary of course, but in many cases instructions can be found by searching the web or if you feel comfortable looking at the homepage source code (e.g. `src/widgets/{widget}/widget.js`).
 

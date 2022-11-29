@@ -138,6 +138,14 @@ article > section li {
     font-weight: 400;
 }
 
+article > section li p {
+    margin-top: 1rem;
+}
+
+article > section li pre {
+    margin-top: 0.25rem;
+}
+
 article > section :is(ul, ol) {
     padding-left: 1em;
 }
