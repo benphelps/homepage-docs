@@ -6,9 +6,10 @@ layout: ../../../layouts/MainLayout.astro
 
 ## General Troubleshooting Tips
 
-- Consider setting the `ENV` variable `LOG_LEVEL` to `debug`.
+- For API errors, clicking the "API Error Information" button in the widget will usually show some helpful information as to whether the issue is reaching the service host, an authentication issue, etc.
 - Check config/logs/homepage.log, on docker simply e.g. `docker logs homepage`. This may provide some insight into the reason for an error.
 - Check the browser error console, this can also sometimes provide useful information.
+- Consider setting the `ENV` variable `LOG_LEVEL` to `debug`.
 
 ## Service Widget Errors
 

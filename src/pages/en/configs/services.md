@@ -86,6 +86,8 @@ Services may have an icon attached to them, you can use icons from [Dashboard Ic
 
 Services may have an optional `ping` property that allows you to monitor the availability of an endpoint you chose and have the response time displayed.  You do not need to set your ping URL equal to your href URL.
 
+*Note:* the ping feature works by making an http `HEAD` request to the URL, and falls back to `GET` in case that fails. It will not, for example, login if the URL requires auth or is behind e.g. Authelia. In the case of a reverse proxy and/or auth this usually requires the use of an 'internal' URL to make the ping feature correctly display status.
+
 ```yaml
 - Group A:
     - Sonarr:
