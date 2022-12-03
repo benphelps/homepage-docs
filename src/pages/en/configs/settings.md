@@ -22,9 +22,9 @@ If you'd like to use a background image instead of the solid theme color, you ma
 background: https://images.unsplash.com/photo-1502790671504-542ad42d5189?auto=format&fit=crop&w=2560&q=80
 ```
 
-Or you may pass the path to a local image relative to the `/app/public` directory, which could be configured like this,
+Or you may pass the path to a local image relative to e.g. `/app/public/images` directory. *Note: do not create a bind mount to the entire `/app/public/` directory.* 
 
-Inside of your Docker Compose file, mount a path to where your images are kept:
+For example, inside of your Docker Compose file, mount a path to where your images are kept:
 
 ```yaml
 volumes:
