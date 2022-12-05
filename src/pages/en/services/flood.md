@@ -14,4 +14,4 @@ widget:
     password: password # if set
 ```
 
-*Added in vX.X.X*
+*Added in v0.5.4*
