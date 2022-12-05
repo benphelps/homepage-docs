@@ -85,6 +85,7 @@ export const SIDEBAR: Sidebar = {
             { text: 'Download Clients', links: [
                 { text: 'Autobrr', link: 'en/services/autobrr' },
                 { text: 'Deluge', link: 'en/services/deluge' },
+                { text: 'Flood', link: 'en/services/flood' },
                 { text: 'Jackett', link: 'en/services/jackett' },
                 { text: 'NZBGet', link: 'en/services/nzbget' },
                 { text: 'Prowlarr', link: 'en/services/prowlarr' },
