@@ -4,13 +4,14 @@ description: Open-Meteo Information Widget Configuration
 layout: ../../../layouts/MainLayout.astro
 ---
 
-No registration is required at all!
+No registration is required at all! See [https://open-meteo.com/en/docs](https://open-meteo.com/en/docs)
 
 ```yaml
 - openmeteo:
     label: Kyiv # optional
     latitude: 50.449684
     longitude: 30.525026
+    timezone: Europe/Kiev # optional
     units: metric # or imperial
     cache: 5 # Time in minutes to cache API responses, to stay within limits
 ```
