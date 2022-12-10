@@ -1,5 +1,5 @@
 ---
-title: Services
+title: Settings
 description: Service Configuration
 layout: ../../../layouts/MainLayout.astro
 ---
