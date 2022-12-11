@@ -64,7 +64,7 @@ Services may have descriptions,
 
 ## Icons
 
-Services may have an icon attached to them, you can use icons from [Dashboard Icons](https://github.com/walkxcode/dashboard-icons) automatically, by passing the name of the icon, with, or without `.png`. If you would like to load a remote icon, you may pass the URL to it. If you would like to load a local icon, first create a Docker mount to `/app/public/icons` and then reference your icon as `/icons/myicon.png`.
+Services may have an icon attached to them, you can use icons from [Dashboard Icons](https://github.com/walkxcode/dashboard-icons) automatically, by passing the name of the icon, with, or without `.png`. You can also specify icons from [material design icons](https://materialdesignicons.com) with `mdi-XX`. If you would like to load a remote icon, you may pass the URL to it. If you would like to load a local icon, first create a Docker mount to `/app/public/icons` and then reference your icon as `/icons/myicon.png`.
 
 ```yaml
 - Group A:
@@ -78,6 +78,12 @@ Services may have an icon attached to them, you can use icons from [Dashboard Ic
         icon: radarr.png
         href: http://radarr.host/
         description: Movie management
+        
+- Group C:
+    - Service:
+        icon: mdi-flask-outline
+        href: http://service.host/
+        description: My cool service
 ```
 
 <img width="1038" alt="Service Icons" src="https://user-images.githubusercontent.com/82196/187040777-da1361d7-f0c4-4531-95db-136cd00a1611.png">
