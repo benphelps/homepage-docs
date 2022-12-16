@@ -81,6 +81,7 @@ export const SIDEBAR: Sidebar = {
                 { text: 'Radarr', link: 'en/services/radarr' },
                 { text: 'Readarr', link: 'en/services/readarr' },
                 { text: 'Sonarr', link: 'en/services/sonarr' },
+                { text: 'Tdarr', link: 'en/services/tdarr' },
             ]},
             { text: 'Download Clients', links: [
                 { text: 'Autobrr', link: 'en/services/autobrr' },
