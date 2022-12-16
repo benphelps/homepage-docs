@@ -123,6 +123,7 @@ export const SIDEBAR: Sidebar = {
                 { text: 'Paperless-ngx', link: 'en/services/paperlessngx' },
                 { text: 'Tube Archivist', link: 'en/services/tubearchivist' },
                 { text: 'Watchtower', link: 'en/services/watchtower' },
+                { text: 'Tdarr', link: 'en/services/tdarr' },
             ]},
         ],
         'Information Widgets': [
