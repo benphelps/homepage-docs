@@ -131,6 +131,16 @@ labels:
   - homepage.widget.key=yourembyapikeyhere
 ```
 
+## Docker Swarm
+
+Docker swarm is supported and containers are specified with the same `server` and `container` notation. To enable swarm support you will need to include a `swarm` setting in your docker.yaml, e.g.
+
+```yaml
+my-docker:
+  socket: /var/run/docker.sock
+  swarm: true
+```
+
 ## Caveats
 
-Currently, there is no way to define rigid ordering when using service discovery, and the order will be determined by the order returned from the Docker API.  Discovered services take precedence over services defined in `services.yaml` and will show above them.
+Currently, there is no way to define rigid ordering when using service discovery, and the order will be determined by the order returned from the Docker API.  Discovered services take precedence over services defined in `services.yaml` and will show above them. You can still designate categories that include discovered and explicit services in a `layout` block in settings.yaml.
