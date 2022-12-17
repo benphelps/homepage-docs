@@ -98,6 +98,7 @@ export const SIDEBAR: Sidebar = {
             { text: 'Network Utilities', links: [
                 { text: 'AdGuard Home', link: 'en/services/adguard-home' },
                 { text: 'Gotify', link: 'en/services/gotify' },
+                { text: 'NextDNS', link: 'en/services/nextdns' },
                 { text: 'PiHole', link: 'en/services/pihole' },
                 { text: 'Speedtest Tracker', link: 'en/services/speedtest-tracker' },
                 { text: 'Syncthing Relay Server', link: 'en/services/syncthing-relay-server' },
