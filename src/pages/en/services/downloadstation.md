@@ -1,6 +1,6 @@
 ---
-title: Synology Diskstation
-description: Synology Diskstation Widget Configuration
+title: Synology Download Station
+description: Synology Download Station Widget Configuration
 layout: ../../../layouts/MainLayout.astro
 ---
 
