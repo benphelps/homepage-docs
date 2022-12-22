@@ -103,6 +103,7 @@ export const SIDEBAR: Sidebar = {
                 { text: 'Speedtest Tracker', link: 'en/services/speedtest-tracker' },
                 { text: 'Syncthing Relay Server', link: 'en/services/syncthing-relay-server' },
                 { text: 'Synology Diskstation', link: 'en/services/diskstation' },
+                { text: 'TP Link Omada', link: 'en/services/omada' },
                 { text: 'Unifi Controller', link: 'en/services/unifi-controller' },
                 { text: 'Gluetun', link: 'en/services/gluetun' },
             ]},
