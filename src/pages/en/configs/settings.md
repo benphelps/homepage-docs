@@ -50,7 +50,7 @@ backgroundOpacity: 0.5
 If you'd like to use a custom favicon instead of the included one, you may provide a full URL to an image of your choice.
 
 ```yaml
-favicon: https://www.google.com/favicon.ico
+icon: https://www.google.com/favicon.ico
 ```
 
 Or you may pass the path to a local image relative to the `/app/public` directory. See [Background Image](#background-image) for more detailed information on how to provide your own files.
