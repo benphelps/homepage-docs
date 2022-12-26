@@ -71,6 +71,7 @@ export const SIDEBAR: Sidebar = {
                 { text: 'Plex (Tautulli)', link: 'en/services/plex-tautulli' },
                 { text: 'Plex', link: 'en/services/plex' },
                 { text: 'Navidrome', link: 'en/services/navidrome' },
+                { text: 'Xteve', link: 'en/services/xteve' },
             ]},
             { text: 'Media Management Tools', links: [
                 { text: 'Bazarr', link: 'en/services/bazarr' },
