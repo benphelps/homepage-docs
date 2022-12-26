@@ -112,6 +112,7 @@ export const SIDEBAR: Sidebar = {
             { text: 'Network Infrastructure', links: [
                 { text: 'Authentik', link: 'en/services/authentik' },
                 { text: 'NGINX Proxy Manager', link: 'en/services/nginx-proxy-manager' },
+                { text: 'OPNSense', link: 'en/services/opnsense' },
                 { text: 'Portainer', link: 'en/services/portainer' },
                 { text: 'Proxmox', link: 'en/services/proxmox' },
                 { text: 'Scrutiny', link: 'en/services/scrutiny' },
