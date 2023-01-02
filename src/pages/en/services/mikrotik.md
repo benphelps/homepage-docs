@@ -4,12 +4,14 @@ description: Mikrotik Widget Configuration
 layout: ../../../layouts/MainLayout.astro
 ---
 
+HTTPS may be required, [per the documentation](https://help.mikrotik.com/docs/display/ROS/REST+API#RESTAPI-Overview)
+
 Allowed fields: `["uptime", "cpuLoad", "memoryUsed", "numberOfLeases"]`.
 
 ```yaml
 widget:
     type: mikrotik
-    url: http://mikrotik.host.or.ip
+    url: https://mikrotik.host.or.ip
     username: username
     password: password
 ```
