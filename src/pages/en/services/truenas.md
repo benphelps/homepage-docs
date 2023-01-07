@@ -12,7 +12,9 @@ To create an API Key, follow [the official TrueNAS documentation](https://www.tr
 widget:
     type: truenas
     url: http://truenas.host.or.ip
-    key: 1-VIjBXOp1hQA5M6S9Nk4mmwaqCpmmRigbFt3wYFixxwQcUiMOo3oNbmp2PoHj2R3e
+    username: user # not required if using api key
+    password: pass # not required if using api key
+    key: yourtruenasapikey # not required if using username / password
 ```
 
 *Added in v0.5.0*
