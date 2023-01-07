@@ -217,5 +217,5 @@ quicklaunch:
 By default the homepage logfile is written to the a `logs` subdirectory of the `config` folder.  In order to customize this path, you can set the `logpath` setting.  A `logs` folder will be created in that location where the logfile will be written.
 
 ```yaml
-logfile: /logfile/path
+logpath: /logfile/path
 ```
