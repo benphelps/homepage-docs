@@ -1,6 +1,6 @@
 ---
-title: qBitorrent
-description: qBitorrent Widget Configuration
+title: qBittorrent
+description: qBittorrent Widget Configuration
 layout: ../../../layouts/MainLayout.astro
 ---
 
