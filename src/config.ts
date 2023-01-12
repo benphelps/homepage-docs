@@ -126,6 +126,7 @@ export const SIDEBAR: Sidebar = {
             { text: 'Other', links: [
                 { text: 'Homebridge', link: 'en/services/homebridge' },
                 { text: 'Miniflux', link: 'en/services/miniflux' },
+                { text: 'Moonraker', link: 'en/services/moonraker' },
                 { text: 'Paperless-ngx', link: 'en/services/paperlessngx' },
                 { text: 'Tdarr', link: 'en/services/tdarr' },
                 { text: 'Tube Archivist', link: 'en/services/tubearchivist' },
