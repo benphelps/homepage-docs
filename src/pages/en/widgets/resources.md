@@ -8,7 +8,7 @@ You can include all or some of the available resources. If you do not want to se
 
 The disk path is the path reported by `df` (Mounted On), or the mount point of the disk.
 
-The cpu and memory resource information are the container's usage while [glances](/en/widgets/glances) displays the host machine's usage.
+The cpu and memory resource information are the container's usage while [glances](/en/widgets/glances) displays statistics for the host machine on which it is installed.
 
 **Any disk you wish to access must be mounted to your container as a volume.**
 
