@@ -5,7 +5,7 @@ layout: ../../../layouts/MainLayout.astro
 ---
 
 No extra configuration is required.
-The username and password are the same as used to login to the web interface.
+If your traefik install requires authentication, include the username and password used to login to the web interface.
 
 Allowed fields: `["routers", "services", "middleware"]`.
 
@@ -13,8 +13,8 @@ Allowed fields: `["routers", "services", "middleware"]`.
 widget:
     type: traefik
     url: http://traefik.host.or.ip
-    username: username
-    password: password
+    username: username # optional
+    password: password # optional
 ```
 
 *Added in v0.1.0*
