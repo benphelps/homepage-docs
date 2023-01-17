@@ -19,6 +19,28 @@ services:
       - /var/run/docker.sock:/var/run/docker.sock # (optional) For docker integrations
 ```
 
+### Running as non-root
+
+By default, the Homepage container runs as root.  Homepage also supports running your container as non-root via the standard `PUID` and `PGID` environment variables.  When using these variables, make sure that any volumes mounted in to the container have the correct ownership and permissions set.
+
+In the docker compose example below, the environment varialbes `$PUID` and `$PGID` are set in a `.env` file.
+
+```yaml
+version: "3.3"
+services:
+  homepage:
+    image: ghcr.io/benphelps/homepage:latest
+    container_name: homepage
+    ports:
+      - 3000:3000
+    volumes:
+      - /path/to/config:/app/config # Make sure your local config directory exists
+      - /var/run/docker.sock:/var/run/docker.sock # (optional) For docker integrations
+    environment:
+      PUID: $PUID
+      PGID: $PGID
+```
+
 ### With Docker Run
 
 ```bash
