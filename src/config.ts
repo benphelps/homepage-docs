@@ -77,6 +77,7 @@ export const SIDEBAR: Sidebar = {
                 { text: 'Bazarr', link: 'en/services/bazarr' },
                 { text: 'Jellyseerr', link: 'en/services/jellyseerr' },
                 { text: 'Lidarr', link: 'en/services/lidarr' },
+                { text: 'Medusa', link: 'en/services/medusa' },
                 { text: 'Ombi', link: 'en/services/ombi' },
                 { text: 'Overseerr', link: 'en/services/overseerr' },
                 { text: 'Radarr', link: 'en/services/radarr' },
