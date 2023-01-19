@@ -47,3 +47,7 @@ All service widgets work essentially the same, that is, homepage makes a proxied
     curl -L -k 'http://SONARRIPORHOST:PORT/api/v3/queue?apikey=YOURAPIKEY'
     ```
     This will return some data which may reveal an issue causing a true bug in the service widget.
+
+## Missing custom icons
+
+If, after correctly adding and mapping your custom icons via the [Icons](/en/configs/services/#icons) instructions, you are still unable to see your icons please try recreating your container.

@@ -77,6 +77,7 @@ export const SIDEBAR: Sidebar = {
                 { text: 'Bazarr', link: 'en/services/bazarr' },
                 { text: 'Jellyseerr', link: 'en/services/jellyseerr' },
                 { text: 'Lidarr', link: 'en/services/lidarr' },
+                { text: 'Medusa', link: 'en/services/medusa' },
                 { text: 'Ombi', link: 'en/services/ombi' },
                 { text: 'Overseerr', link: 'en/services/overseerr' },
                 { text: 'Radarr', link: 'en/services/radarr' },
@@ -126,6 +127,8 @@ export const SIDEBAR: Sidebar = {
             { text: 'Other', links: [
                 { text: 'Homebridge', link: 'en/services/homebridge' },
                 { text: 'Miniflux', link: 'en/services/miniflux' },
+                { text: 'Moonraker', link: 'en/services/moonraker' },
+                { text: 'OctoPrint', link: 'en/services/octoprint' },
                 { text: 'Paperless-ngx', link: 'en/services/paperlessngx' },
                 { text: 'Tdarr', link: 'en/services/tdarr' },
                 { text: 'Tube Archivist', link: 'en/services/tubearchivist' },
