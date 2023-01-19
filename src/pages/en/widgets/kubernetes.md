@@ -31,4 +31,4 @@ It provides CPU and Memory usage, by node and/or at the cluster level.
       showLabel: true
 ```
 
-*Added in v0.5.11*
+*Added in v0.6.0*

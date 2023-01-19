@@ -12,4 +12,4 @@ widget:
     url: http://octoprint.host.or.ip:port
 ```
 
-*Added in v0.5.11*
+*Added in v0.6.0*

@@ -22,4 +22,4 @@ or for a custom search:
     target: _blank
 ```
 
-*Added in v0.1.6, updated in 0.5.11*
+*Added in v0.1.6, updated in 0.6.0*

@@ -13,4 +13,4 @@ widget:
     key: medusaapikeyapikeyapikeyapikeyapikey
 ```
 
-*Added in v0.5.11*
+*Added in v0.6.0*
