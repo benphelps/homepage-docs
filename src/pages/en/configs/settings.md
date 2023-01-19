@@ -186,12 +186,16 @@ This can also be set for individual services. Note setting this at the service l
 
 ## Providers
 
-The `providers` section allows you to define shared API provider options and secrets. Currently this allows you to define your weather API keys in secret.
+The `providers` section allows you to define shared API provider options and secrets. Currently this allows you to define your weather API keys in secret. is also the location of the Longhorn URL and credentials.
 
 ```yaml
 providers:
   openweathermap: openweathermapapikey
   weatherapi: weatherapiapikey
+  longhorn:
+    url: https://longhorn.example.com
+    username: admin
+    password: LonghornPassword
 ```
 
 You can then pass `provider` instead of `apiKey` in your widget configuration.
