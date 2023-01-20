@@ -53,6 +53,7 @@ export const SIDEBAR: Sidebar = {
 		'Getting Started': [
 			{ text: 'Installation', link: 'en/installation' },
             { text: 'Docker', link: 'en/installation/docker' },
+            { text: 'Kubernetes', link: 'en/installation/helm' },
             { text: 'Unraid', link: 'en/installation/unraid' },
             { text: 'Source', link: 'en/installation/source' },
 		],
@@ -62,6 +63,7 @@ export const SIDEBAR: Sidebar = {
             { text: 'Information Widgets', link: 'en/configs/widgets' },
             { text: 'Bookmarks', link: 'en/configs/bookmarks' },
             { text: 'Docker', link: 'en/configs/docker' },
+            { text: 'Kubernetes', link: 'en/configs/kubernetes' },
             { text: 'Settings', link: 'en/configs/settings' }
         ],
         'Service Widgets': [
@@ -145,7 +147,9 @@ export const SIDEBAR: Sidebar = {
             { text: 'Greeting', link: 'en/widgets/greeting' },
             { text: 'Logo', link: 'en/widgets/logo' },
             { text: 'Unifi Controller', link: 'en/widgets/unifi_controller' },
-            { text: 'Glances', link: 'en/widgets/glances' }
+            { text: 'Glances', link: 'en/widgets/glances' },
+            { text: 'Kubernetes', link: 'en/widgets/kubernetes' },
+            { text: 'Longhorn', link: 'en/widgets/longhorn' }
         ],
 		'More': [
             { text: 'Troubleshooting', link: 'en/more/troubleshooting' },
