@@ -54,6 +54,8 @@ my-docker:
 
 If you'd rather use the socket directly, first make sure that you're passing the local socket into the Docker container.
 
+*Note that in order to use the socket directly homepage must be running as root*
+
 ```yaml
 homepage:
     image: ghcr.io/benphelps/homepage:latest
