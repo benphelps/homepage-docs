@@ -131,6 +131,7 @@ labels:
   - homepage.widget.type=emby
   - homepage.widget.url=http://emby.home
   - homepage.widget.key=yourembyapikeyhere
+  - homepage.widget.fields=["field1","field2"] # optional
 ```
 
 ## Docker Swarm
