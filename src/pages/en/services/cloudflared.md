@@ -9,9 +9,9 @@ Allowed fields: `["status", "origin_ip"]`.
 ```yaml
 widget:
     type: cloudflared
-    email: email@domain.com
+    email: email@domain.com # cloudflare login email
     accountid: accountid # from zero trust dashboard url e.g. https://one.dash.cloudflare.com/<accountid>/home/quick-start
-    tunnelid: tunnelid # found in tunnels dashboard
+    tunnelid: tunnelid # found in tunnels dashboard under the tunnel name
     key: cloudflareapikey # global api key you setup in your account at https://dash.cloudflare.com/profile/api-tokens
 ```
 
