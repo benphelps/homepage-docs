@@ -77,6 +77,7 @@ export const SIDEBAR: Sidebar = {
             ]},
             { text: 'Media Management Tools', links: [
                 { text: 'Bazarr', link: 'en/services/bazarr' },
+                { text: 'Immich', link: 'en/services/immich' },
                 { text: 'Jellyseerr', link: 'en/services/jellyseerr' },
                 { text: 'Lidarr', link: 'en/services/lidarr' },
                 { text: 'Medusa', link: 'en/services/medusa' },
@@ -114,6 +115,7 @@ export const SIDEBAR: Sidebar = {
             ]},
             { text: 'Network Infrastructure', links: [
                 { text: 'Authentik', link: 'en/services/authentik' },
+                { text: 'Cloudflare Tunnels', link: 'en/services/cloudflared' },
                 { text: 'NGINX Proxy Manager', link: 'en/services/nginx-proxy-manager' },
                 { text: 'OPNSense', link: 'en/services/opnsense' },
                 { text: 'Portainer', link: 'en/services/portainer' },
@@ -132,6 +134,7 @@ export const SIDEBAR: Sidebar = {
                 { text: 'Moonraker', link: 'en/services/moonraker' },
                 { text: 'OctoPrint', link: 'en/services/octoprint' },
                 { text: 'Paperless-ngx', link: 'en/services/paperlessngx' },
+                { text: 'Proxmox Backup Server', link: 'en/services/proxmoxbackupserver' },
                 { text: 'Tdarr', link: 'en/services/tdarr' },
                 { text: 'Tube Archivist', link: 'en/services/tubearchivist' },
                 { text: 'Watchtower', link: 'en/services/watchtower' },
