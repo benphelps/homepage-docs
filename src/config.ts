@@ -133,6 +133,7 @@ export const SIDEBAR: Sidebar = {
                 { text: 'Moonraker', link: 'en/services/moonraker' },
                 { text: 'OctoPrint', link: 'en/services/octoprint' },
                 { text: 'Paperless-ngx', link: 'en/services/paperlessngx' },
+                { text: 'Proxmox Backup Server', link: 'en/services/proxmoxbackupserver' },
                 { text: 'Tdarr', link: 'en/services/tdarr' },
                 { text: 'Tube Archivist', link: 'en/services/tubearchivist' },
                 { text: 'Watchtower', link: 'en/services/watchtower' },
