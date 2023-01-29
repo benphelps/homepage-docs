@@ -77,6 +77,7 @@ export const SIDEBAR: Sidebar = {
             ]},
             { text: 'Media Management Tools', links: [
                 { text: 'Bazarr', link: 'en/services/bazarr' },
+                { text: 'Immich', link: 'en/services/immich' },
                 { text: 'Jellyseerr', link: 'en/services/jellyseerr' },
                 { text: 'Lidarr', link: 'en/services/lidarr' },
                 { text: 'Medusa', link: 'en/services/medusa' },
