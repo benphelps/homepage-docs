@@ -209,11 +209,15 @@ You can then pass `provider` instead of `apiKey` in your widget configuration.
 
 ## Quick Launch
 
-There is currently one setting for the 'Quick Launch' feature which lets you control whether item descriptions are included in searches. This is off by default. When enabled, results that match the item name will be placed above those that only match the description.
+There are currently two settings for the 'Quick Launch' feature:
+
+-  `searchDescriptions`: which lets you control whether item descriptions are included in searches. This is off by default. When enabled, results that match the item name will be placed above those that only match the description.
+- `hideInternetSearch`: disable automatically including the currently-selected web search (e.g. from the widget) as a Quick Launch option.
 
 ```yaml
 quicklaunch:
     searchDescriptions: true
+    hideInternetSearch: true
 ```
 
 ## Log Path
