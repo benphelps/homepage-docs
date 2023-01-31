@@ -22,4 +22,11 @@ or for a custom search:
     target: _blank
 ```
 
+multiple providers is also supported via a dropdown (excluding custom):
+
+```yaml
+- search:
+    provider: [brave, google, duckduckgo]
+```
+
 *Added in v0.1.6, updated in 0.6.0*
