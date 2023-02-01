@@ -80,3 +80,9 @@ ingress:
           - path: /
             pathType: Prefix
 ```
+
+Future config changes or to upgrade Homepage can be accomplished by editing the file and running `helm upgrade`
+
+```sh
+helm upgrade homepage jameswynn/homepage -f values.yaml
+```
