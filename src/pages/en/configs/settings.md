@@ -209,11 +209,15 @@ You can then pass `provider` instead of `apiKey` in your widget configuration.
 
 ## Quick Launch
 
-There is currently one setting for the 'Quick Launch' feature which lets you control whether item descriptions are included in searches. This is off by default. When enabled, results that match the item name will be placed above those that only match the description.
+There are currently two settings for the 'Quick Launch' feature:
+
+-  `searchDescriptions`: which lets you control whether item descriptions are included in searches. This is off by default. When enabled, results that match the item name will be placed above those that only match the description.
+- `hideInternetSearch`: disable automatically including the currently-selected web search (e.g. from the widget) as a Quick Launch option.
 
 ```yaml
 quicklaunch:
     searchDescriptions: true
+    hideInternetSearch: true
 ```
 
 ## Log Path
@@ -223,3 +227,7 @@ By default the homepage logfile is written to the a `logs` subdirectory of the `
 ```yaml
 logpath: /logfile/path
 ```
+
+## Custom CSS
+
+Version 0.6.5 introduced the ability to incorporate custom CSS into your installation. This can be achieved by mounting a file to `src/styles/custom.css` (or editing this file if running from source). As homepage uses tailwind css there are not many traditional classes / IDs to target with your css, see the [tailwind docs](https://tailwindcss.com/docs) for more information.
