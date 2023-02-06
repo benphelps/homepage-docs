@@ -53,7 +53,7 @@ export const SIDEBAR: Sidebar = {
 		'Getting Started': [
 			{ text: 'Installation', link: 'en/installation' },
             { text: 'Docker', link: 'en/installation/docker' },
-            { text: 'Kubernetes', link: 'en/installation/helm' },
+            { text: 'Kubernetes', link: 'en/installation/k8s' },
             { text: 'Unraid', link: 'en/installation/unraid' },
             { text: 'Source', link: 'en/installation/source' },
 		],
