@@ -112,6 +112,7 @@ export const SIDEBAR: Sidebar = {
                 { text: 'PiHole', link: 'en/services/pihole' },
                 { text: 'Speedtest Tracker', link: 'en/services/speedtest-tracker' },
                 { text: 'Syncthing Relay Server', link: 'en/services/syncthing-relay-server' },
+                { text: 'Synology Disk Station', link: 'en/services/diskstation' },
                 { text: 'Synology Download Station', link: 'en/services/downloadstation' },
                 { text: 'TP Link Omada', link: 'en/services/omada' },
                 { text: 'Unifi Controller', link: 'en/services/unifi-controller' },
