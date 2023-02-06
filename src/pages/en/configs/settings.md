@@ -231,7 +231,3 @@ By default the homepage logfile is written to the a `logs` subdirectory of the `
 ```yaml
 logpath: /logfile/path
 ```
-
-## Custom CSS
-
-Version 0.6.5 introduced the ability to incorporate custom CSS into your installation. This can be achieved by mounting a file to `src/styles/custom.css` (or editing this file if running from source). As homepage uses tailwind css there are not many traditional element classes / IDs to target with your css, see the [tailwind docs](https://tailwindcss.com/docs) for more information.
