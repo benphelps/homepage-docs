@@ -209,11 +209,11 @@ You can then pass `provider` instead of `apiKey` in your widget configuration.
 
 ## Quick Launch
 
-You can use the 'Quick Launch' feature to search configured services and the internet if you just start typing while on your homepage (NOTE: This won't work if the search widget has focus).
+You can use the 'Quick Launch' feature to search services and perform a web search. To use Quick Launch, just start typing while on your homepage (as long as the search widget doesnt have focus).
 
-<img width="1000" alt="boxed" src="https://user-images.githubusercontent.com/27318077/216876036-d36d27ff-f8a9-49bd-9eeb-c3b10e568d13.png">
+<img width="1000" alt="quicklaunch" src="https://user-images.githubusercontent.com/4887959/216880811-90ff72cb-2990-4475-889b-7c3a31e6beef.png">
 
-There are currently two settings for the 'Quick Launch' feature:
+There are currently two settings for the Quick Launch feature:
 
 -  `searchDescriptions`: which lets you control whether item descriptions are included in searches. This is off by default. When enabled, results that match the item name will be placed above those that only match the description.
 - `hideInternetSearch`: disable automatically including the currently-selected web search (e.g. from the widget) as a Quick Launch option.
