@@ -8,7 +8,7 @@ You have a few options for deploying homepage, depending on your needs. We offer
 
 [Deploy with Docker](/en/installation/docker)
 
-[Deploy with Helm](/en/installation/helm)
+[Deploy on Kubernetes](/en/installation/k8s)
 
 [Deploy on UNRAID](/en/installation/unraid)
 
