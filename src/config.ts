@@ -84,6 +84,7 @@ export const SIDEBAR: Sidebar = {
                 { text: 'Mylar', link: 'en/services/mylar' },
                 { text: 'Ombi', link: 'en/services/ombi' },
                 { text: 'Overseerr', link: 'en/services/overseerr' },
+                { text: 'PhotoPrism', link: 'en/services/photoprism' },
                 { text: 'Radarr', link: 'en/services/radarr' },
                 { text: 'Readarr', link: 'en/services/readarr' },
                 { text: 'Sonarr', link: 'en/services/sonarr' },
