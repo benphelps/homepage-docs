@@ -22,7 +22,7 @@ If you'd like to use a background image instead of the solid theme color, you ma
 background: https://images.unsplash.com/photo-1502790671504-542ad42d5189?auto=format&fit=crop&w=2560&q=80
 ```
 
-Or you may pass the path to a local image relative to e.g. `/app/public/images` directory. *Note: do not create a bind mount to the entire `/app/public/` directory.* 
+Or you may pass the path to a local image relative to e.g. `/app/public/images` directory. *Note: do not create a bind mount to the entire `/app/public/` directory.*
 
 For example, inside of your Docker Compose file, mount a path to where your images are kept:
 
@@ -209,7 +209,11 @@ You can then pass `provider` instead of `apiKey` in your widget configuration.
 
 ## Quick Launch
 
-There are currently two settings for the 'Quick Launch' feature:
+You can use the 'Quick Launch' feature to search services and perform a web search. To use Quick Launch, just start typing while on your homepage (as long as the search widget doesnt have focus).
+
+<img width="1000" alt="quicklaunch" src="https://user-images.githubusercontent.com/4887959/216880811-90ff72cb-2990-4475-889b-7c3a31e6beef.png">
+
+There are currently two settings for the Quick Launch feature:
 
 -  `searchDescriptions`: which lets you control whether item descriptions are included in searches. This is off by default. When enabled, results that match the item name will be placed above those that only match the description.
 - `hideInternetSearch`: disable automatically including the currently-selected web search (e.g. from the widget) as a Quick Launch option.
