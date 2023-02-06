@@ -22,7 +22,7 @@ If you'd like to use a background image instead of the solid theme color, you ma
 background: https://images.unsplash.com/photo-1502790671504-542ad42d5189?auto=format&fit=crop&w=2560&q=80
 ```
 
-Or you may pass the path to a local image relative to e.g. `/app/public/images` directory. *Note: do not create a bind mount to the entire `/app/public/` directory.* 
+Or you may pass the path to a local image relative to e.g. `/app/public/images` directory. *Note: do not create a bind mount to the entire `/app/public/` directory.*
 
 For example, inside of your Docker Compose file, mount a path to where your images are kept:
 
@@ -208,6 +208,10 @@ You can then pass `provider` instead of `apiKey` in your widget configuration.
 ```
 
 ## Quick Launch
+
+You can use the 'Quick Launch' feature to search configured services and the internet if you just start typing while on your homepage (NOTE: This won't work if the search widget has focus).
+
+<img width="1000" alt="boxed" src="https://user-images.githubusercontent.com/27318077/216876036-d36d27ff-f8a9-49bd-9eeb-c3b10e568d13.png">
 
 There are currently two settings for the 'Quick Launch' feature:
 
