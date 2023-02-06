@@ -4,7 +4,7 @@ description: Install on Kubernetes
 layout: ../../../layouts/MainLayout.astro
 ---
 
-## Method 1:  Helm
+## Install with Helm
 
 There is an [unofficial helm chart](https://github.com/jameswynn/helm-charts/tree/main/charts/homepage) that creates all the necessary manifests, including the service account and RBAC entities necessary for service discovery.
 
@@ -83,9 +83,9 @@ ingress:
             pathType: Prefix
 ```
 
-## Method 2: Kubernetes Manifests
+## Install with Kubernetes Manifests
 
-If you don't want to use the unofficial Helm chart, you can also create your own Kubernetes manifests and use `kubectl apply -f homepage-manifest.yaml`.
+If you don't want to use the unofficial Helm chart, you can also create your own Kubernetes manifests and apply them with `kubectl apply -f filename.yaml`.
 
 Here's an example of a Kubernetes manifest file that would work:
 
