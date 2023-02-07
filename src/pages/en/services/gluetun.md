@@ -4,6 +4,8 @@ description: Gluetun Widget Configuration
 layout: ../../../layouts/MainLayout.astro
 ---
 
+Requires [HTTP control server options](https://github.com/qdm12/gluetun/wiki/HTTP-control-server-options) to be enabled.
+
 Allowed fields: `["public_ip", "region", "country"]`.
 
 ```yaml
