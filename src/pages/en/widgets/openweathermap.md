@@ -12,7 +12,8 @@ The free tier "One Call API" is all thats required, you will need to [subscribe]
     latitude: 50.449684
     longitude: 30.525026
     units: metric # or imperial
-    apiKey: youropenweathermapkey
+    provider: openweathermap
+    apiKey: youropenweathermapkey # required only if not using provider, this reveals api key in requests
     cache: 5 # Time in minutes to cache API responses, to stay within limits
 ```
 
