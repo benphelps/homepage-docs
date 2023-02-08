@@ -31,7 +31,7 @@ You will need to generate an API Token for an existing user. Here is an example 
 
 Use `Token ID` as the `username` setting and `Secret` as the `password` setting.
 
-Allowed fields: `["vms", "lxc", "cpu", "mem"]`.
+Allowed fields: `["vms", "lxc", "resources.cpu", "resources.mem"]`.
 
 ```yaml
 widget:
