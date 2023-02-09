@@ -85,9 +85,9 @@ ingress:
 
 ## Install with Kubernetes Manifests
 
-If you don't want to use the unofficial Helm chart, you can also create your own Kubernetes manifests and apply them with `kubectl apply -f filename.yaml`.
+If you don't want to use the unofficial Helm chart, you can also create your own Kubernetes manifest(s) and apply them with `kubectl apply -f filename.yaml`.
 
-Here's an example of a Kubernetes manifest file that would work:
+Here's a working example of the resources you need:
 
 #### ServiceAccount
 ```yaml
