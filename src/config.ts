@@ -134,6 +134,7 @@ export const SIDEBAR: Sidebar = {
                 { text: 'Mastodon', link: 'en/services/mastodon' },
             ]},
             { text: 'Other', links: [
+                { text: 'Fileflows', link: 'en/services/fileflows' },
                 { text: 'Homebridge', link: 'en/services/homebridge' },
                 { text: 'Miniflux', link: 'en/services/miniflux' },
                 { text: 'Moonraker', link: 'en/services/moonraker' },
