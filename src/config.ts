@@ -135,6 +135,7 @@ export const SIDEBAR: Sidebar = {
             ]},
             { text: 'Other', links: [
                 { text: 'Fileflows', link: 'en/services/fileflows' },
+                { text: 'Grafana', link: 'en/services/grafana' },
                 { text: 'Homebridge', link: 'en/services/homebridge' },
                 { text: 'Miniflux', link: 'en/services/miniflux' },
                 { text: 'Moonraker', link: 'en/services/moonraker' },
