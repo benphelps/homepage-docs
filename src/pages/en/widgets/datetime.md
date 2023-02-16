@@ -13,7 +13,6 @@ Formatting is locale aware and will present your date in the regional format you
     text_size: xl
     format:
       timeStyle: short
-      hour12: false
 ```
 
 Any options passed to `format` are passed directly to [Intl.DateTimeFormat](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Intl/DateTimeFormat/DateTimeFormat), please reference the MDN documentation for all available options.
