@@ -26,7 +26,7 @@ A few examples,
 # 13:37
 format:
   timeStyle: short
-  hour12: false
+  hourCycle: h23
 ```
 
 ```yaml
