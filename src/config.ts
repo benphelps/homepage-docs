@@ -139,6 +139,7 @@ export const SIDEBAR: Sidebar = {
                 { text: 'Homebridge', link: 'en/services/homebridge' },
                 { text: 'Miniflux', link: 'en/services/miniflux' },
                 { text: 'Moonraker', link: 'en/services/moonraker' },
+                { text: 'Nextcloud', link: 'en/services/nextcloud' },
                 { text: 'OctoPrint', link: 'en/services/octoprint' },
                 { text: 'Paperless-ngx', link: 'en/services/paperlessngx' },
                 { text: 'Proxmox Backup Server', link: 'en/services/proxmoxbackupserver' },
