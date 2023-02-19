@@ -161,6 +161,7 @@ export const SIDEBAR: Sidebar = {
         ],
 		'More': [
             { text: 'Troubleshooting', link: 'en/more/troubleshooting' },
+            { text: 'Development', link: 'en/more/development' },
             { text: 'Changelog', link: 'en/more/changelog' },
             { text: 'Translations', link: 'en/more/translations' },
         ],
