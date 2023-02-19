@@ -146,6 +146,7 @@ export const SIDEBAR: Sidebar = {
                 { text: 'Proxmox Backup Server', link: 'en/services/proxmoxbackupserver' },
                 { text: 'Tdarr', link: 'en/services/tdarr' },
                 { text: 'Tube Archivist', link: 'en/services/tubearchivist' },
+                { text: 'Unmanic', link: 'en/services/unmanic' },
                 { text: 'Watchtower', link: 'en/services/watchtower' },
             ]},
         ],
