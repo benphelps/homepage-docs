@@ -224,6 +224,14 @@ quicklaunch:
     hideInternetSearch: true
 ```
 
+## Homepage Version
+
+By default the release version is displayed at the bottom of the page. To hide this, use the `hideVersion` setting, like so:
+
+```yaml
+hideVersion: true
+```
+
 ## Log Path
 
 By default the homepage logfile is written to the a `logs` subdirectory of the `config` folder.  In order to customize this path, you can set the `logpath` setting.  A `logs` folder will be created in that location where the logfile will be written.
