@@ -18,7 +18,7 @@ Allowed fields: `["chapterCount", "seriesCount", "volumeCount"]`.
 widget:
     type: kavita
     url: http://kavita.host.or.ip
-    key: <BEARER_TOKEN> # eyJhbGciOiJIUzUxMiIsInR5cCI6I...
+    key: bearer_token # eyJhbGciOiJIUzUxMiIsInR5cCI6I...
 ```
 
 _Added in v0.6.9_
