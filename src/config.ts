@@ -145,6 +145,7 @@ export const SIDEBAR: Sidebar = {
                 { text: 'OctoPrint', link: 'en/services/octoprint' },
                 { text: 'Paperless-ngx', link: 'en/services/paperlessngx' },
                 { text: 'Proxmox Backup Server', link: 'en/services/proxmoxbackupserver' },
+                { text: 'Pterodactyl', link: 'en/services/pterodactyl' },
                 { text: 'Tdarr', link: 'en/services/tdarr' },
                 { text: 'Tube Archivist', link: 'en/services/tubearchivist' },
                 { text: 'Unmanic', link: 'en/services/unmanic' },
