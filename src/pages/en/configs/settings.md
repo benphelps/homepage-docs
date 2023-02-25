@@ -24,6 +24,8 @@ background: https://images.unsplash.com/photo-1502790671504-542ad42d5189?auto=fo
 
 Or you may pass the path to a local image relative to e.g. `/app/public/images` directory. *Note: do not create a bind mount to the entire `/app/public/` directory.*
 
+You will need to restart the container any time you add new images, this is a limitation of the Next.js static site server.
+
 For example, inside of your Docker Compose file, mount a path to where your images are kept:
 
 ```yaml
