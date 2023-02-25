@@ -144,6 +144,7 @@ export const SIDEBAR: Sidebar = {
                 { text: 'Nextcloud', link: 'en/services/nextcloud' },
                 { text: 'OctoPrint', link: 'en/services/octoprint' },
                 { text: 'Paperless-ngx', link: 'en/services/paperlessngx' },
+                { text: 'Prometheus', link: 'en/services/prometheus' },
                 { text: 'Proxmox Backup Server', link: 'en/services/proxmoxbackupserver' },
                 { text: 'Pterodactyl', link: 'en/services/pterodactyl' },
                 { text: 'Tdarr', link: 'en/services/tdarr' },
