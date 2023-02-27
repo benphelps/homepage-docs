@@ -139,6 +139,7 @@ export const SIDEBAR: Sidebar = {
                 { text: 'Grafana', link: 'en/services/grafana' },
                 { text: 'Homebridge', link: 'en/services/homebridge' },
                 { text: 'Kopia', link: 'en/services/kopia' },
+                { text: 'Minecraft', link: 'en/services/minecraft'},
                 { text: 'Miniflux', link: 'en/services/miniflux' },
                 { text: 'Moonraker', link: 'en/services/moonraker' },
                 { text: 'Nextcloud', link: 'en/services/nextcloud' },
