@@ -20,4 +20,4 @@ widget:
     uuid: <YOUR_CHECK_UUID>
 ```
 
-_Added in v0.6.9_
+_Added in v0.6.7, updated in v0.6.10_
