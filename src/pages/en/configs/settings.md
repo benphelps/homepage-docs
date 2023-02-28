@@ -211,19 +211,29 @@ You can then pass `provider` instead of `apiKey` in your widget configuration.
 
 ## Quick Launch
 
-You can use the 'Quick Launch' feature to search services and perform a web search. To use Quick Launch, just start typing while on your homepage (as long as the search widget doesnt have focus).
+You can use the 'Quick Launch' feature to search services, perform a web search or open a URL. To use Quick Launch, just start typing while on your homepage (as long as the search widget doesnt have focus).
 
 <img width="1000" alt="quicklaunch" src="https://user-images.githubusercontent.com/4887959/216880811-90ff72cb-2990-4475-889b-7c3a31e6beef.png">
 
 There are currently two settings for the Quick Launch feature:
 
--  `searchDescriptions`: which lets you control whether item descriptions are included in searches. This is off by default. When enabled, results that match the item name will be placed above those that only match the description.
-- `hideInternetSearch`: disable automatically including the currently-selected web search (e.g. from the widget) as a Quick Launch option.
+- `searchDescriptions`: which lets you control whether item descriptions are included in searches. This is off by default. When enabled, results that match the item name will be placed above those that only match the description.
+- `hideInternetSearch`: disable automatically including the currently-selected web search (e.g. from the widget) as a Quick Launch option. This is false by default, enabling the feature.
+- `hideVisitURL`: disable detecting and offering an option to open URLs. This is false by default, enabling the feature.
 
 ```yaml
 quicklaunch:
     searchDescriptions: true
     hideInternetSearch: true
+    hideVisitURL: true
+```
+
+## Homepage Version
+
+By default the release version is displayed at the bottom of the page. To hide this, use the `hideVersion` setting, like so:
+
+```yaml
+hideVersion: true
 ```
 
 ## Log Path
