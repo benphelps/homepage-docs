@@ -14,8 +14,7 @@ widget:
     accountid: accountid # from zero trust dashboard url e.g. (https://dash.cloudflare.com/) -> Choose domain -> Overview page -> Right Down Corner Account ID
     tunnelid: tunnelid # found in tunnels dashboard under the tunnel name (https://one.dash.cloudflare.com/) Acces -> Tunnels -> TunnelID
     key: cloudflareapitoken # api token with `Account.Cloudflare Tunnel:Read` https://dash.cloudflare.com/profile/api-tokens
-    (create custom token)
-    Permissions: Account - Cloudflare Tunnel - Read
+    (create custom token) Permissions: Account - Cloudflare Tunnel - Read
     (save the generated key as we need this later)
 ```
 
