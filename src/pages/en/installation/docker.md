@@ -48,3 +48,11 @@ services:
 ```bash
 docker run -p 3000:3000 -v /path/to/config:/app/config -v /var/run/docker.sock:/var/run/docker.sock ghcr.io/benphelps/homepage:latest
 ```
+
+### Using Environment Secrets
+
+You can also include environment variables in your config files to protect sensitive information. Note:
+
+* Environment variables must start with `HOMEPAGE_VAR_` or `HOMEPAGE_FILE_`
+* The value of env var `HOMEPAGE_VAR_XXX` will replace `{{HOMEPAGE_VAR_XXX}}` in any config
+* The value of env var `HOMEPAGE_FILE_XXX` must be a file path, the contents of which will be used to replace `{{HOMEPAGE_FILE_XXX}}` in any config
