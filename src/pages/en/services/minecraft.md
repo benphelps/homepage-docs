@@ -9,8 +9,7 @@ Allowed fields: `["players", "version", "status"]`.
 ```yaml
 widget:
     type: minecraft
-    url: https://api.mcsrvstat.us
-    domain: <your minecraft server domain>
+    url: udp://minecraftserveripordomain:port
 ```
 
-*Added in vNext*
+*Added in v0.6.11*
