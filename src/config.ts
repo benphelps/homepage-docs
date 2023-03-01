@@ -132,6 +132,7 @@ export const SIDEBAR: Sidebar = {
             ]},
             { text: 'Information Providers', links: [
                 { text: 'Coin Market Cap', link: 'en/services/coin-market-cap' },
+                { text: 'Ghostfolio', link: 'en/services/ghostfolio'},
                 { text: 'Mastodon', link: 'en/services/mastodon' },
             ]},
             { text: 'Other', links: [
