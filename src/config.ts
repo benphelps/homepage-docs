@@ -117,6 +117,7 @@ export const SIDEBAR: Sidebar = {
                 { text: 'TP Link Omada', link: 'en/services/omada' },
                 { text: 'Unifi Controller', link: 'en/services/unifi-controller' },
                 { text: 'Uptime Kuma', link: 'en/services/uptime-kuma' },
+                { text: 'Uptime Kuma Monitor', link: 'en/services/uptime-kuma-monitor' },
                 { text: "Health Checks", link: "en/services/healthchecks" },
             ]},
             { text: 'Network Infrastructure', links: [
