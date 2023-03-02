@@ -16,3 +16,5 @@ widget:
     url: http://ghostfoliohost:port
     key: ghostfoliobearertoken
 ```
+
+*Added in v0.6.11*
