@@ -136,6 +136,7 @@ export const SIDEBAR: Sidebar = {
             ]},
             { text: 'Other', links: [
                 { text: 'Fileflows', link: 'en/services/fileflows' },
+                { text: 'Ghostfolio', link: 'en/services/ghostfolio'},
                 { text: 'Grafana', link: 'en/services/grafana' },
                 { text: 'Homebridge', link: 'en/services/homebridge' },
                 { text: 'Kopia', link: 'en/services/kopia' },
