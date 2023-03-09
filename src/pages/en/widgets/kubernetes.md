@@ -11,7 +11,7 @@ It provides CPU and Memory usage, by node and/or at the cluster level.
 ```yaml
 - kubernetes:
     cluster:
-      # Shows the cluster node
+      # Shows cluster-wide statistics
       show: true
       # Shows the aggregate CPU stats
       cpu: true
@@ -21,7 +21,7 @@ It provides CPU and Memory usage, by node and/or at the cluster level.
       showLabel: true
       label: "cluster"
     nodes:
-      # Shows the clusters
+      # Shows node-specific statistics
       show: true
       # Shows the CPU for each node
       cpu: true
