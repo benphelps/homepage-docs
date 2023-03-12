@@ -6,7 +6,7 @@ layout: ../../../layouts/MainLayout.astro
 
 No extra configuration is required. 
 
-Note that the only version of this software that currently supports an API is henrywhitaker3/Speedtest-Tracker
+This widget is compatible with both [alexjustesen/speedtest-tracker](https://github.com/alexjustesen/speedtest-tracker) and [henrywhitaker3/Speedtest-Tracker](https://github.com/henrywhitaker3/Speedtest-Tracker).
 
 
 Allowed fields: `["download", "upload", "ping"]`.
