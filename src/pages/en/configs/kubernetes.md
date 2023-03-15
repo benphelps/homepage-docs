@@ -8,7 +8,8 @@ The Kubernetes connectivity has the following requirements:
 
 * Kubernetes 1.19+
 * Metrics Service
-* An Ingress controller
+* An 
+controller
 
 The Kubernetes connection is configured in the `kubernetes.yaml` file. There are 3 modes to choose from:
 
@@ -92,6 +93,41 @@ spec:
 ```
 
 When the Kubernetes cluster connection has been properly configured, this service will be automatically discovered and added to your Homepage.  **You do not need to specify the `namespace` or `app` values, as they will be automatically inferred.**
+
+### Traefik IngressRoute support
+
+Homepage can also read ingresses defined using the Traefik IngressRoute custom resource definition. Due to the complex nature of Traefik routing rules, it is required for the `gethomepage.dev/href` annotation to be set:
+
+```yaml
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: emby
+  annotations:
+    gethomepage.dev/href: "https://emby.example.com"
+    gethomepage.dev/enabled: "true"
+    gethomepage.dev/description: Media Server
+    gethomepage.dev/group: Media
+    gethomepage.dev/icon: emby.png
+    gethomepage.dev/name: Emby
+    gethomepage.dev/widget.type: "emby"
+    gethomepage.dev/widget.url: "https://emby.example.com"
+    gethomepage.dev/podSelector: ""
+spec:
+  rules:
+    - host: emby.example.com
+      http:
+        paths:
+          - backend:
+              service:
+                name: emby
+                port:
+                  number: 8080
+            path: /
+            pathType: Prefix
+```
+
+If the `href` attribute is not present, Homepage will ignore the specific IngressRoute.
 
 ## Caveats
 
