@@ -8,8 +8,7 @@ The Kubernetes connectivity has the following requirements:
 
 * Kubernetes 1.19+
 * Metrics Service
-* An 
-controller
+* An Ingress controller
 
 The Kubernetes connection is configured in the `kubernetes.yaml` file. There are 3 modes to choose from:
 
