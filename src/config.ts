@@ -76,6 +76,7 @@ export const SIDEBAR: Sidebar = {
                 { text: 'Xteve', link: 'en/services/xteve' },
             ]},
             { text: 'Media Management Tools', links: [
+                { text: 'Audiobookshelf', link: 'en/services/audiobookshelf' },
                 { text: 'Bazarr', link: 'en/services/bazarr' },
                 { text: 'Immich', link: 'en/services/immich' },
                 { text: 'Jellyseerr', link: 'en/services/jellyseerr' },
