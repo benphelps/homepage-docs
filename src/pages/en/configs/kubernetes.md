@@ -98,8 +98,8 @@ When the Kubernetes cluster connection has been properly configured, this servic
 Homepage can also read ingresses defined using the Traefik IngressRoute custom resource definition. Due to the complex nature of Traefik routing rules, it is required for the `gethomepage.dev/href` annotation to be set:
 
 ```yaml
-apiVersion: networking.k8s.io/v1
-kind: Ingress
+apiVersion: traefik.containo.us/v1alpha1
+kind: IngressRoute
 metadata:
   name: emby
   annotations:
@@ -113,17 +113,19 @@ metadata:
     gethomepage.dev/widget.url: "https://emby.example.com"
     gethomepage.dev/podSelector: ""
 spec:
-  rules:
-    - host: emby.example.com
-      http:
-        paths:
-          - backend:
-              service:
-                name: emby
-                port:
-                  number: 8080
-            path: /
-            pathType: Prefix
+  entryPoints:
+    - websecure
+  routes:
+  - kind: Rule
+    match: Host(`emby.example.com`)
+    services:
+    - kind: Service
+      name: emby
+      namespace: emby
+      port: 8080
+      scheme: http
+      strategy: RoundRobin
+      weight: 10
 ```
 
 If the `href` attribute is not present, Homepage will ignore the specific IngressRoute.
