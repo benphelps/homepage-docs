@@ -4,7 +4,7 @@ description: Nextcloud Widget Configuration
 layout: ../../../layouts/MainLayout.astro
 ---
 
-Use username+password, or the NC-Token key, info on the token can be found at `Settings > System`. If both are provided, the username+password are ignored.
+Use username & password, or the `NC-Token` key. Information about the token can be found under **Settings** > **System**. If both are provided, NC-Token will be used.
 
 Allowed fields: `["cpuload", "memoryusage", "freespace", "activeusers"]`.
 
