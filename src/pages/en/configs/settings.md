@@ -157,7 +157,7 @@ base: http://host.local/homepage
 
 ## Language
 
-You may override the browser language detection by setting your desired language manually using:
+Set your desired language using:
 
 ```yaml
 language: fr
