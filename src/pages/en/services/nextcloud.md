@@ -4,7 +4,7 @@ description: Nextcloud Widget Configuration
 layout: ../../../layouts/MainLayout.astro
 ---
 
-Find your API key under `Settings > General`.
+Create an app password under `Settings > Personal > Security > Devices & sessions`.
 
 Allowed fields: `["cpuload", "memoryusage", "freespace", "activeusers"]`.
 
