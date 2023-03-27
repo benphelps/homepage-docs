@@ -151,6 +151,7 @@ export const SIDEBAR: Sidebar = {
                 { text: 'Tube Archivist', link: 'en/services/tubearchivist' },
                 { text: 'Unmanic', link: 'en/services/unmanic' },
                 { text: 'Watchtower', link: 'en/services/watchtower' },
+                { text: 'Whats Up Docker', link: 'en/services/whatsupdocker' },
             ]},
         ],
         'Information Widgets': [
