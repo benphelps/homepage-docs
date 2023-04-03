@@ -6,7 +6,7 @@ layout: ../../../layouts/MainLayout.astro
 
 Bookmarks function much the same as [Services](/en/configs/services), in how groups and lists work. They're just much simpler, smaller, and contain no extra features other than being a link out.
 
-The design of hompage expects `abbr` to be 2 letters, but is not otherwise forced.
+The design of homepage expects `abbr` to be 2 letters, but is not otherwise forced.
 
 You can also use an icon for bookmarks similar to the [options for service icons](/en/configs/services/#icons). If both icon and abbreviation are supplied, the icon takes precedence.
 

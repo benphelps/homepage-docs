@@ -6,7 +6,7 @@ layout: ../../../layouts/MainLayout.astro
 
 Find your API key under `Settings > General`.
 
-Allowed fields: `["enableIndexers", "numberOfGrabs", "numberOfQueries", "numberOfFailGrabs", "numberOfFailQueries"]`.
+Allowed fields: `["numberOfGrabs", "numberOfQueries", "numberOfFailGrabs", "numberOfFailQueries"]`.
 
 ```yaml
 widget:
