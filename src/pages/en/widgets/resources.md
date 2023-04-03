@@ -10,6 +10,8 @@ The disk path is the path reported by `df` (Mounted On), or the mount point of t
 
 The cpu and memory resource information are the container's usage while [glances](/en/widgets/glances) displays statistics for the host machine on which it is installed.
 
+_Note: unfortunately, the package used for getting CPU temp ([systeminformation](https://systeminformation.io)) is not compatibile with some setups and will not report any value(s) for CPU temp._
+
 **Any disk you wish to access must be mounted to your container as a volume.**
 
 ```yaml
