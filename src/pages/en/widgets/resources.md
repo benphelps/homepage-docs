@@ -17,6 +17,9 @@ The cpu and memory resource information are the container's usage while [glances
     cpu: true
     memory: true
     disk: /disk/mount/path
+    cputemp: true
+    uptime: true
+    units: imperial # only used by cpu temp
 ```
 
 You can also pass a `label` option, which allows you to group resources under named sections,
@@ -65,4 +68,4 @@ You can additionally supply an optional `expanded` property set to true in order
 
 ![194136533-c4238c82-4d67-41a4-b3c8-18bf26d33ac2](https://user-images.githubusercontent.com/3441425/194728642-a9885274-922b-4027-acf5-a746f58fdfce.png)
 
-*Added in v0.1.0*
+*Added in v0.1.0, updated in v0.6.11*

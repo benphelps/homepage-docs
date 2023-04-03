@@ -76,6 +76,7 @@ export const SIDEBAR: Sidebar = {
                 { text: 'Xteve', link: 'en/services/xteve' },
             ]},
             { text: 'Media Management Tools', links: [
+                { text: 'Audiobookshelf', link: 'en/services/audiobookshelf' },
                 { text: 'Bazarr', link: 'en/services/bazarr' },
                 { text: 'Immich', link: 'en/services/immich' },
                 { text: 'Jellyseerr', link: 'en/services/jellyseerr' },
@@ -136,9 +137,11 @@ export const SIDEBAR: Sidebar = {
             ]},
             { text: 'Other', links: [
                 { text: 'Fileflows', link: 'en/services/fileflows' },
+                { text: 'Ghostfolio', link: 'en/services/ghostfolio'},
                 { text: 'Grafana', link: 'en/services/grafana' },
                 { text: 'Homebridge', link: 'en/services/homebridge' },
                 { text: 'Kopia', link: 'en/services/kopia' },
+                { text: 'Minecraft', link: 'en/services/minecraft'},
                 { text: 'Miniflux', link: 'en/services/miniflux' },
                 { text: 'Moonraker', link: 'en/services/moonraker' },
                 { text: 'Nextcloud', link: 'en/services/nextcloud' },

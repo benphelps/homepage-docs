@@ -12,6 +12,18 @@ my-remote-docker:
   host: 192.168.0.101
   port: 2375
 ```
+## Using Docker TLS
+
+Since Docker supports connecting with TLS and client certificate authentication, you can include TLS details when connecting to the HTTP API. Further details of setting up Docker to accept TLS connections, and generation of the keys and certs can be found [in the Docker documentation](https://docs.docker.com/engine/security/protect-access/#use-tls-https-to-protect-the-docker-daemon-socket). The file entries are relative to the `config` directory (location of `docker.yaml` file).
+```yaml
+my-remote-docker:
+  host: 192.168.0.101
+  port: 275
+  tls:
+    keyFile: tls/key.pem
+    caFile: tls/ca.pem
+    certFile: tls/cert.pem
+```
 
 ## Using Docker Socket Proxy
 
