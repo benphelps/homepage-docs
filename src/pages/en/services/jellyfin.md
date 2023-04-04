@@ -13,8 +13,8 @@ widget:
     type: jellyfin
     url: http://jellyfin.host.or.ip
     key: apikeyapikeyapikeyapikeyapikey
-    enableBlocks: true # optional, defaults to false
-    enableNowPlaying: true # optional, defaults to true
+    enableBlocks: 'true' # optional, defaults to false
+    enableNowPlaying: 'true' # optional, defaults to true
 ```
 
 *Added in v0.1.0*
