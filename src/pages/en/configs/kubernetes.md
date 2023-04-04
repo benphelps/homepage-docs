@@ -93,6 +93,43 @@ spec:
 
 When the Kubernetes cluster connection has been properly configured, this service will be automatically discovered and added to your Homepage.  **You do not need to specify the `namespace` or `app` values, as they will be automatically inferred.**
 
+### Traefik IngressRoute support
+
+Homepage can also read ingresses defined using the Traefik IngressRoute custom resource definition. Due to the complex nature of Traefik routing rules, it is required for the `gethomepage.dev/href` annotation to be set:
+
+```yaml
+apiVersion: traefik.containo.us/v1alpha1
+kind: IngressRoute
+metadata:
+  name: emby
+  annotations:
+    gethomepage.dev/href: "https://emby.example.com"
+    gethomepage.dev/enabled: "true"
+    gethomepage.dev/description: Media Server
+    gethomepage.dev/group: Media
+    gethomepage.dev/icon: emby.png
+    gethomepage.dev/name: Emby
+    gethomepage.dev/widget.type: "emby"
+    gethomepage.dev/widget.url: "https://emby.example.com"
+    gethomepage.dev/podSelector: ""
+spec:
+  entryPoints:
+    - websecure
+  routes:
+  - kind: Rule
+    match: Host(`emby.example.com`)
+    services:
+    - kind: Service
+      name: emby
+      namespace: emby
+      port: 8080
+      scheme: http
+      strategy: RoundRobin
+      weight: 10
+```
+
+If the `href` attribute is not present, Homepage will ignore the specific IngressRoute.
+
 ## Caveats
 
 Similarly to Docker service discovery, there currently is no rigid ordering to discovered services and discovered services will be displayed above those specified in the `services.yaml`.
