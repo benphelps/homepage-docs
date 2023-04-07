@@ -162,3 +162,16 @@ As of v0.6.4 discovered services can include an optional `weight` field to deter
   - Default weight for discovered services is 0
   - Default weight for configured services is their index within their group scaled by 100, i.e. (index + 1) * 100
   - If two items have the same weight value, then they will be sorted by name
+
+
+## Show stats
+
+You can show the docker stats by clicking the status indicator but this can also be controlled per-service with:
+
+```yaml
+- Example Service:
+  ...
+  showStats: true
+```
+
+Also see the settings for [show docker stats](/en/configs/docker#show-docker-stats).

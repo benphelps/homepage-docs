@@ -243,3 +243,21 @@ By default the homepage logfile is written to the a `logs` subdirectory of the `
 ```yaml
 logpath: /logfile/path
 ```
+
+## Show Docker Stats
+
+You can show all docker stats expanded in `settings.yaml`:
+
+```yaml
+showStats: true
+```
+
+or per-service (`services.yaml`) with:
+
+```yaml
+- Example Service:
+    ...
+    showStats: true
+```
+
+If you have both set the per-service settings take precedence.
