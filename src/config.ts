@@ -108,6 +108,7 @@ export const SIDEBAR: Sidebar = {
                 { text: 'AdGuard Home', link: 'en/services/adguard-home' },
                 { text: 'Gluetun', link: 'en/services/gluetun' },
                 { text: 'Gotify', link: 'en/services/gotify' },
+                { text: "Health Checks", link: "en/services/healthchecks" },                
                 { text: 'Mikrotik', link: 'en/services/mikrotik' },
                 { text: 'NextDNS', link: 'en/services/nextdns' },
                 { text: 'PiHole', link: 'en/services/pihole' },
@@ -118,7 +119,6 @@ export const SIDEBAR: Sidebar = {
                 { text: 'TP Link Omada', link: 'en/services/omada' },
                 { text: 'Unifi Controller', link: 'en/services/unifi-controller' },
                 { text: 'Uptime Kuma', link: 'en/services/uptime-kuma' },
-                { text: "Health Checks", link: "en/services/healthchecks" },
             ]},
             { text: 'Network Infrastructure', links: [
                 { text: 'Authentik', link: 'en/services/authentik' },
