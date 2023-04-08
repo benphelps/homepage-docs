@@ -92,7 +92,7 @@ As an example, this would produce the following layout:
 
 <img width="1260" alt="Screenshot 2022-09-15 at 8 03 57 PM" src="https://user-images.githubusercontent.com/82196/190466646-8ca94505-0fcf-4964-9687-3a6c7cd3144f.png">
 
-## Sorting
+### Sorting
 
 Groups will sort based on the order in the layout block. You can also mix in groups defined by docker labels, e.g.
 
@@ -118,6 +118,16 @@ You can also add an icon to a category under the `layout` setting similar to the
     icon: https://cdn-icons-png.flaticon.com/512/252/252035.png
   ...
 ```
+
+### Five Columns
+
+You can add a fifth column (when `style: columns` which is default) by adding:
+
+```yaml
+fiveColumns: true
+```
+
+By default homepage will max out at 4 columns for column style
 
 ## Header Style
 
