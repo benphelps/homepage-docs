@@ -10,7 +10,7 @@ Allowed fields: `["people_home", "lights_on", "switches_on"]`.
 
 ---
 
-Custom states and/or templates can be queried via the `custom` property like in the example below.
+Up to a maximum of four custom states and/or templates can be queried via the `custom` property like in the example below.
 The `custom` property will have no effect as long as the `fields` property is defined.
 
 + `state` will query the state of the specified `entity_id`
