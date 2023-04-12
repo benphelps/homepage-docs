@@ -4,13 +4,12 @@ description: Home Assistant Widget Configuration
 layout: ../../../layouts/MainLayout.astro
 ---
 
-This widget can display information from Home Assistant.
-
-You will need to generate a long-live access token for an existing Home Assistant user in its profile.
+You will need to generate a long-lived access token for an existing Home Assistant user in its profile.
 
 Allowed fields: `["people_home", "lights_on", "switches_on"]`.
 
 ---
+
 Custom states and/or templates can be queried via the `custom` property like in the example below.
 The `custom` property will have no effect as long as the `fields` property is defined.
 
@@ -18,7 +17,7 @@ The `custom` property will have no effect as long as the `fields` property is de
   - state labels and values can be user defined and may reference entity attributes in curly brackets
   - if no state label is defined it will default to `"{attributes.friendly_name}"`
   - if no state value is defined it will default to `"{state} {attributes.unit_of_measurement}"`
-+ `template` will query the specified template (see <a href="https://www.home-assistant.io/docs/configuration/templating" target="_blank">Home Assistant Templating</a>)
++ `template` will query the specified template, see (Home Assistant Templating)[https://www.home-assistant.io/docs/configuration/templating]
   - if no template label is defined it will be empty
 
 ```yaml
