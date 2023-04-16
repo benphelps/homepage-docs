@@ -19,6 +19,23 @@ As an example, we'll place two resource widgets, one that reports all stats, and
 Which results in something like this:
 <img width="484" alt="Resource Widget" src="https://user-images.githubusercontent.com/82196/189524632-f989de29-9a54-4edb-88a9-e548b9cfc61c.png" />
 
+Information widgets can have individual styling: `styleBoxed: true`:
+
+```yaml
+- resources:
+    cpu: true
+    memory: true
+    disk: /mnt/storage
+    styleBoxed: true
+
+- glances:
+    url: http://host.or.ip:port
+    uptime: true
+    styleBoxed: true
+```
+Which results in something like this:
+<img width="700" alt="Information Widgets" src="https://user-images.githubusercontent.com/5442891/232258758-ed5262d6-f940-462c-b39e-00e54c19b9ce.png" />
+
 ## Available Widgets
 
 Here are all the currently available widgets.
