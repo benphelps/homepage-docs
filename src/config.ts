@@ -108,7 +108,7 @@ export const SIDEBAR: Sidebar = {
                 { text: 'AdGuard Home', link: 'en/services/adguard-home' },
                 { text: 'Gluetun', link: 'en/services/gluetun' },
                 { text: 'Gotify', link: 'en/services/gotify' },
-                { text: "Health Checks", link: "en/services/healthchecks" },                
+                { text: "Health Checks", link: "en/services/healthchecks" },
                 { text: 'Mikrotik', link: 'en/services/mikrotik' },
                 { text: 'NextDNS', link: 'en/services/nextdns' },
                 { text: 'PiHole', link: 'en/services/pihole' },
@@ -137,6 +137,7 @@ export const SIDEBAR: Sidebar = {
             ]},
             { text: 'Other', links: [
                 { text: 'Fileflows', link: 'en/services/fileflows' },
+                { text: 'FreshRSS', link: 'en/services/freshrss' },
                 { text: 'Ghostfolio', link: 'en/services/ghostfolio'},
                 { text: 'Grafana', link: 'en/services/grafana' },
                 { text: 'Homebridge', link: 'en/services/homebridge' },
