@@ -39,12 +39,17 @@ and then reference that image:
 background: /images/background.png
 ```
 
-### Background Opacity
+### Background Opacity & Filters
 
-You can change the opacity of the background, to blend it with the primary theme color,
+You can specify filters to apply over your background image for blur, saturation and brightness as well as opacity to blend with the background color. The first three filter settings use tailwind CSS classes, see notes below regarding the options for each. You do not need to specify all options.
 
 ```yaml
-backgroundOpacity: 0.5
+background: 
+  image: /images/background.png
+  blur: sm # sm, "", md, xl... see https://tailwindcss.com/docs/backdrop-blur
+  saturate: 50 # 0, 50, 100... see https://tailwindcss.com/docs/backdrop-saturate
+  brightness: 50 # 0, 50, 75... see https://tailwindcss.com/docs/backdrop-brightness
+  opacity: 50 # 0-100
 ```
 
 ## Favicon
