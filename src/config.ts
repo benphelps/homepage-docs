@@ -124,6 +124,7 @@ export const SIDEBAR: Sidebar = {
                 { text: 'Authentik', link: 'en/services/authentik' },
                 { text: 'Cloudflare Tunnels', link: 'en/services/cloudflared' },
                 { text: 'NGINX Proxy Manager', link: 'en/services/nginx-proxy-manager' },
+                { text: 'Nomad', link: 'en/services/nomad' },
                 { text: 'OPNSense', link: 'en/services/opnsense' },
                 { text: 'Portainer', link: 'en/services/portainer' },
                 { text: 'Proxmox', link: 'en/services/proxmox' },
