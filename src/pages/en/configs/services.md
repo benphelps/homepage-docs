@@ -64,7 +64,12 @@ Services may have descriptions,
 
 ## Icons
 
-Services may have an icon attached to them, you can use icons from [Dashboard Icons](https://github.com/walkxcode/dashboard-icons) automatically, by passing the name of the icon, with, or without `.png`. You can also specify icons from [material design icons](https://materialdesignicons.com) with `mdi-XX`. If you would like to load a remote icon, you may pass the URL to it. If you would like to load a local icon, first create a Docker mount to `/app/public/icons` and then reference your icon as `/icons/myicon.png`.
+Services may have an icon attached to them, you can use icons from [Dashboard Icons](https://github.com/walkxcode/dashboard-icons) automatically, by passing the name of the icon, with, or without `.png`.
+You can also specify prefixed icons from [material design icons](https://materialdesignicons.com) with `mdi-XX` or [simple icons](https://simpleicons.org/) with `si-XX`.
+If you would like to load a remote icon, you may pass the URL to it.
+If you would like to load a local icon, first create a Docker mount to `/app/public/icons` and then reference your icon as `/icons/myicon.png`.
+
+*Note: Material design icons for **brands** are being deprecated and may become unavailable in the future. It is recommended to source brand icons from simple icons.*
 
 ```yaml
 - Group A:
