@@ -6,7 +6,7 @@ layout: ../../../layouts/MainLayout.astro
 
 This widget shows the running and total counts of both QEMU VMs and LX Containers in the Proxmox cluster. It also shows the CPU and memory usage of the first node in the cluster.
 
-You will need to generate an API Token for an existing user. Here is an example of how to do this.
+You will need to generate an API Token for new or an existing user. Here is an example of how to do this for a new user.
 
 1. Navigate to the Proxmox portal, click on Datacenter
 2. Expand Permissions, click on Groups
@@ -27,9 +27,9 @@ You will need to generate an API Token for an existing user. Here is an example 
 10. Click the Add button
     - User: user from bullet 8 above
     - Token ID: something informative like the application or purpose like `homepage`
-    - Privilege Separation: Unchecked
+    - Privilege Separation: Checked
 
-Use `Token ID` as the `username` setting and `Secret` as the `password` setting.
+Use `username@pam!Token ID` as the `username` (e.g `api@pam!homepage`) setting and `Secret` as the `password` setting.
 
 Allowed fields: `["vms", "lxc", "resources.cpu", "resources.mem"]`.
 
