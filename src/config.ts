@@ -68,6 +68,7 @@ export const SIDEBAR: Sidebar = {
         ],
         'Service Widgets': [
             { text: 'Streaming Media Providers', links: [
+                { text: 'Channels DVR Server', link: 'en/services/channelsdvrserver' },
                 { text: 'Emby', link: 'en/services/emby' },
                 { text: 'Jellyfin', link: 'en/services/jellyfin' },
                 { text: 'Plex (Tautulli)', link: 'en/services/plex-tautulli' },
