@@ -28,6 +28,12 @@ You will need to generate an API Token for new or an existing user. Here is an e
     - User: user from bullet 8 above
     - Token ID: something informative like the application or purpose like `homepage`
     - Privilege Separation: Checked
+11. Click on the Permissions "folder"
+12. Click Add -> API Token Permission
+    - Path: /
+    - API Token: Your API
+    - Role: PVE Auditor
+    - Propagate: Checked
 
 Use `username@pam!Token ID` as the `username` (e.g `api@pam!homepage`) setting and `Secret` as the `password` setting.
 
