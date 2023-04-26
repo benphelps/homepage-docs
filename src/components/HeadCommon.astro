@@ -35,9 +35,9 @@ import "../styles/index.css";
         theme === "dark" ||
         (!theme && window.matchMedia("(prefers-color-scheme: dark)").matches)
     ) {
-        root.classList.add("dark");
+        root.classList.add("dark", "theme-dark");
     } else {
-        root.classList.remove("dark");
+        root.classList.remove("dark", "theme-dark");
     }
 </script>
 
