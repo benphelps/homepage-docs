@@ -6,7 +6,7 @@ layout: ../../../layouts/MainLayout.astro
 
 The core Plex API is somewhat limited but basic info regarding library sizes and the number of active streams is supported. For more detailed info regarding active streams see the [Plex Tautulli widget](/en/services/plex-tautulli).
 
-Allowed fields: no configurable fields for this widget.
+Allowed fields: `["streams", "albums", "movies", "tv"]`.
 
 ```yaml
 widget:
