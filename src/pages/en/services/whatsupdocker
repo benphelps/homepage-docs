@@ -6,7 +6,7 @@ layout: ../../../layouts/MainLayout.astro
 
 Currently requires unauthenticated whatsupdocker instance.
 
-Allowed fields: no configurable fields for this widget.
+Allowed fields: `["monitoring", "updates"]`.
 
 ```yaml
 widget:
