@@ -97,6 +97,7 @@ export const SIDEBAR: Sidebar = {
                 { text: 'Flood', link: 'en/services/flood' },
                 { text: 'Jackett', link: 'en/services/jackett' },
                 { text: 'NZBGet', link: 'en/services/nzbget' },
+                { text: 'NZBHydra2', link: 'en/services/nzbhydra2' },
                 { text: 'Prowlarr', link: 'en/services/prowlarr' },
                 { text: 'Pyload', link: 'en/services/pyload' },
                 { text: 'qBittorrent', link: 'en/services/qbittorrent' },
