@@ -17,7 +17,7 @@ You will need to generate an API Token for new or an existing user. Here is an e
     - Path: /
     - Group: group from bullet 4 above
     - Role: PVEAuditor
-    - Propagate: Checked
+    - Propagate: UnChecked
 7. Expand Permissions, click on Users
 8. Click the Add button
     - User name: something informative like `api`
