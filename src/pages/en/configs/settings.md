@@ -276,3 +276,22 @@ or per-service (`services.yaml`) with:
 ```
 
 If you have both set the per-service settings take precedence.
+
+
+## Hide Widget Error Messages
+
+Hide the visible API error messages either globally in `settings.yaml`:
+
+```yaml
+hideErrors: true
+```
+
+or per-service (`services.yaml`) with:
+
+```yaml
+- Example Service:
+    ...
+    hideErrors: true
+```
+
+If either value is set to true, the errror message will be hidden.
