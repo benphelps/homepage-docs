@@ -124,6 +124,15 @@ You can also add an icon to a category under the `layout` setting similar to the
   ...
 ```
 
+### Icon Style
+
+The default style for icons (e.g. `icon: mdi-XXXX`) is a gradient, or you can specify that prefixed icons match your theme with a 'flat' style using the setting below.
+More information about prefixed icons can be found in [options for service icons](/en/configs/services/#icons).
+
+```yaml
+iconStyle: theme # optional, defaults to gradient
+```
+
 ### Five Columns
 
 You can add a fifth column (when `style: columns` which is default) by adding:
