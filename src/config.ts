@@ -68,6 +68,7 @@ export const SIDEBAR: Sidebar = {
         ],
         'Service Widgets': [
             { text: 'Streaming Media Providers', links: [
+                { text: 'Channels DVR Server', link: 'en/services/channelsdvrserver' },
                 { text: 'Emby', link: 'en/services/emby' },
                 { text: 'Jellyfin', link: 'en/services/jellyfin' },
                 { text: 'Plex (Tautulli)', link: 'en/services/plex-tautulli' },
@@ -108,7 +109,7 @@ export const SIDEBAR: Sidebar = {
                 { text: 'AdGuard Home', link: 'en/services/adguard-home' },
                 { text: 'Gluetun', link: 'en/services/gluetun' },
                 { text: 'Gotify', link: 'en/services/gotify' },
-                { text: "Health Checks", link: "en/services/healthchecks" },                
+                { text: "Health Checks", link: "en/services/healthchecks" },
                 { text: 'Mikrotik', link: 'en/services/mikrotik' },
                 { text: 'NextDNS', link: 'en/services/nextdns' },
                 { text: 'PiHole', link: 'en/services/pihole' },
@@ -137,8 +138,10 @@ export const SIDEBAR: Sidebar = {
             ]},
             { text: 'Other', links: [
                 { text: 'Fileflows', link: 'en/services/fileflows' },
+                { text: 'FreshRSS', link: 'en/services/freshrss' },
                 { text: 'Ghostfolio', link: 'en/services/ghostfolio'},
                 { text: 'Grafana', link: 'en/services/grafana' },
+                { text: 'Home Assistant', link: 'en/services/homeassistant' },
                 { text: 'Homebridge', link: 'en/services/homebridge' },
                 { text: 'Kopia', link: 'en/services/kopia' },
                 { text: 'Minecraft', link: 'en/services/minecraft'},
@@ -154,6 +157,7 @@ export const SIDEBAR: Sidebar = {
                 { text: 'Tube Archivist', link: 'en/services/tubearchivist' },
                 { text: 'Unmanic', link: 'en/services/unmanic' },
                 { text: 'Watchtower', link: 'en/services/watchtower' },
+                { text: 'Whats Up Docker', link: 'en/services/whatsupdocker' },
             ]},
         ],
         'Information Widgets': [
