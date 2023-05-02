@@ -9,3 +9,5 @@ widget:
     type: channelsdvrserver
     url: http://192.168.1.55:8089
 ```
+
+*Added in v0.6.17*

@@ -36,3 +36,6 @@ widget:
         value: "{attributes.wind_speed} {attributes.wind_speed_unit}"
 ```
 
+*Added in v0.6.17*
+
+
