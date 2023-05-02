@@ -14,4 +14,4 @@ widget:
     url: http://whatsupdocker:port
 ```
 
-*Added in v0.6.11*
+*Added in v0.6.17*
