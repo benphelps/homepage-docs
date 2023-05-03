@@ -8,6 +8,8 @@ Use username & password, or the `NC-Token` key. Information about the token can 
 
 Allowed fields: `["cpuload", "memoryusage", "freespace", "activeusers", "numfiles", "numshares"]`.
 
+Note that a maximum of 4 fields can be displayed.
+
 ```yaml
 widget:
     type: nextcloud
