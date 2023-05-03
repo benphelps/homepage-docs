@@ -6,11 +6,12 @@ layout: ../../../layouts/MainLayout.astro
 
 Use username & password, or the `NC-Token` key. Information about the token can be found under **Settings** > **System**. If both are provided, NC-Token will be used.
 
-Allowed fields: `["cpuload", "memoryusage", "freespace", "activeusers"]`.
+Allowed fields: `["freespace", "activeusers", "numfiles", "numshares"]`.
 
 ```yaml
 widget:
     type: nextcloud
+    activeUserPeriod: last5minutes # last5minutes (default), last1hour, last24hours
     url: https://nexcloud.host.or.ip:port
     key: token
 ```
