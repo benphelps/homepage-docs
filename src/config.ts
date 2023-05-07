@@ -129,6 +129,7 @@ export const SIDEBAR: Sidebar = {
                 { text: 'Portainer', link: 'en/services/portainer' },
                 { text: 'Proxmox', link: 'en/services/proxmox' },
                 { text: 'Scrutiny', link: 'en/services/scrutiny' },
+                { text: 'Tailscale', link: 'en/services/tailscale' },
                 { text: 'Traefik', link: 'en/services/traefik' },
                 { text: 'Truenas', link: 'en/services/truenas' },
             ]},
