@@ -128,6 +128,7 @@ export const SIDEBAR: Sidebar = {
                 { text: 'OPNSense', link: 'en/services/opnsense' },
                 { text: 'Portainer', link: 'en/services/portainer' },
                 { text: 'Proxmox', link: 'en/services/proxmox' },
+                { text: 'QNAP', link: 'en/services/qnap' },
                 { text: 'Scrutiny', link: 'en/services/scrutiny' },
                 { text: 'Traefik', link: 'en/services/traefik' },
                 { text: 'Truenas', link: 'en/services/truenas' },
