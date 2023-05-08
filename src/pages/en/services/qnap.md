@@ -14,4 +14,4 @@ widget:
     password: pass
 ```
 
-*Added in dev*
+*Added in v0.6.18*
