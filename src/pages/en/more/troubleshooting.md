@@ -15,7 +15,9 @@ layout: ../../../layouts/MainLayout.astro
 
 All service widgets work essentially the same, that is, homepage makes a proxied call to an API made available by that service. The majority of the time widgets don't work it is a configuration issue. Of course, sometimes things do break. Some basic steps to try:
 
-1. Verify the homepage installation can connect to the IP address or host you are using for the widget `url`. This is most simply achieved by pinging the server from the homepage machine, in Docker this means *from inside the container* itself, e.g.:
+1. Ensure that you follow the rule mentionned on https://gethomepage.dev/en/configs/service-widgets/. **Unless otherwise noted, URLs should not end with a / or other API path. Each widget will handle the path on its own.**. This is very important as including a trailing slash can result in an error.
+
+2. Verify the homepage installation can connect to the IP address or host you are using for the widget `url`. This is most simply achieved by pinging the server from the homepage machine, in Docker this means *from inside the container* itself, e.g.:
 
     ```
     docker exec homepage ping SERVICEIPORDOMAIN
@@ -23,7 +25,7 @@ All service widgets work essentially the same, that is, homepage makes a proxied
     
     If your homepage install (container) cannot reach the service then you need to figure out why, for example in Docker this can mean putting the two containers on the same network, checking firewall issues, etc.
 
-2. If you have verified that homepage can in fact reach the service then you can also check the API output using e.g. `curl`, which is often helpful if you do need to file a bug report. Again, depending on your networking setup this may need to be run from *inside the container* as IP / hostname resolution can differ inside vs outside.
+3. If you have verified that homepage can in fact reach the service then you can also check the API output using e.g. `curl`, which is often helpful if you do need to file a bug report. Again, depending on your networking setup this may need to be run from *inside the container* as IP / hostname resolution can differ inside vs outside.
 
     *Note: `curl` is not installed in the base image by default but can be added inside the container with `apk add curl`.*
     
