@@ -1,6 +1,6 @@
 ---
-title: pfSense API
-description: pfSense API Widget Configuration
+title: pfSense
+description: pfSense Widget Configuration
 layout: ../../../layouts/MainLayout.astro
 ---
 
@@ -12,17 +12,17 @@ Currently the only supported authentication mode is 'Local Database'.
 
 WAN interface to monitor can be defined by updating the `wan` param.
 
-Load is returned instead of cpu utilisation. This is a limitation in the pfSense API due to the complexity of this calculation. This may become available in future versions.
+Load is returned instead of cpu utilization. This is a limitation in the pfSense API due to the complexity of this calculation. This may become available in future versions.
 
-Allowed fields: `["load", "memory", "disk", "temp", "wanStatus", "wanIP"]`.
+Allowed fields: `["load", "memory", "temp", "wanStatus", "wanIP", "disk"]` (maximum of 4)
 
 ```yaml
 widget:
-    type: pfsenseapi
-    url: http://pfsenseapi.host.or.ip:port
+    type: pfsense
+    url: http://pfsense.host.or.ip:port
     username: user
     password: pass
     wan: igb0
 ```
 
-*Added in dev*
+*Added in v0.6.18*
