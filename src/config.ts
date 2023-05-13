@@ -126,6 +126,7 @@ export const SIDEBAR: Sidebar = {
                 { text: 'Cloudflare Tunnels', link: 'en/services/cloudflared' },
                 { text: 'NGINX Proxy Manager', link: 'en/services/nginx-proxy-manager' },
                 { text: 'OPNSense', link: 'en/services/opnsense' },
+                { text: 'pfSense', link: 'en/services/pfsense' },
                 { text: 'Portainer', link: 'en/services/portainer' },
                 { text: 'Proxmox', link: 'en/services/proxmox' },
                 { text: 'QNAP', link: 'en/services/qnap' },
