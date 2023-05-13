@@ -113,6 +113,7 @@ export const SIDEBAR: Sidebar = {
                 { text: 'Mikrotik', link: 'en/services/mikrotik' },
                 { text: 'NextDNS', link: 'en/services/nextdns' },
                 { text: 'PiHole', link: 'en/services/pihole' },
+                { text: 'pfSense API', link: 'en/services/pfsense-api' },
                 { text: 'Speedtest Tracker', link: 'en/services/speedtest-tracker' },
                 { text: 'Syncthing Relay Server', link: 'en/services/syncthing-relay-server' },
                 { text: 'Synology Disk Station', link: 'en/services/diskstation' },
