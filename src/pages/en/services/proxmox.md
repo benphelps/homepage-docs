@@ -28,10 +28,10 @@ You will need to generate an API Token for new or an existing user. Here is an e
     - User: user from bullet 8 above
     - Token ID: something informative like the application or purpose like `homepage`
     - Privilege Separation: Checked
-11. Click on the Permissions "folder"
+11. Go back to the "Permissions" menu
 12. Click Add -> API Token Permission
     - Path: /
-    - API Token: Your API
+    - API Token: select the Token ID created in Step 10
     - Role: PVE Auditor
     - Propagate: Checked
 
