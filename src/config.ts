@@ -137,7 +137,7 @@ export const SIDEBAR: Sidebar = {
                 { text: 'Mastodon', link: 'en/services/mastodon' },
             ]},
             { text: 'Other', links: [
-                { text: 'ChangeDetection.io', link: 'en/services/changedetectionio'}
+                { text: 'Changedetection.io', link: 'en/services/changedetectionio'}
                 { text: 'Fileflows', link: 'en/services/fileflows' },
                 { text: 'FreshRSS', link: 'en/services/freshrss' },
                 { text: 'Ghostfolio', link: 'en/services/ghostfolio'},

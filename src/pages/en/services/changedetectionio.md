@@ -1,6 +1,6 @@
 ---
-title: ChangeDetection.io
-description: ChangeDetection.io Widget Configuration
+title: Changedetection.io
+description: Changedetection.io Widget Configuration
 layout: ../../../layouts/MainLayout.astro
 ---
 
