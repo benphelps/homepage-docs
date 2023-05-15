@@ -123,6 +123,7 @@ export const SIDEBAR: Sidebar = {
             ]},
             { text: 'Network Infrastructure', links: [
                 { text: 'Authentik', link: 'en/services/authentik' },
+                { text: 'Caddy', link: 'en/services/caddy' },
                 { text: 'Cloudflare Tunnels', link: 'en/services/cloudflared' },
                 { text: 'NGINX Proxy Manager', link: 'en/services/nginx-proxy-manager' },
                 { text: 'OPNSense', link: 'en/services/opnsense' },
