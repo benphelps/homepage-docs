@@ -1,6 +1,6 @@
 ---
 title: ChangeDetection.io
-description: ChaneDetection.io Widget Configuration
+description: ChangeDetection.io Widget Configuration
 layout: ../../../layouts/MainLayout.astro
 ---
 
