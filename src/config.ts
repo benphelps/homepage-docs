@@ -141,6 +141,7 @@ export const SIDEBAR: Sidebar = {
                 { text: 'Fileflows', link: 'en/services/fileflows' },
                 { text: 'FreshRSS', link: 'en/services/freshrss' },
                 { text: 'Ghostfolio', link: 'en/services/ghostfolio'},
+                { text: 'GitHub', link: 'en/services/github'},
                 { text: 'Grafana', link: 'en/services/grafana' },
                 { text: 'Home Assistant', link: 'en/services/homeassistant' },
                 { text: 'Homebridge', link: 'en/services/homebridge' },
