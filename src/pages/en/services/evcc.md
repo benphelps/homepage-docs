@@ -12,4 +12,4 @@ widget:
     url: http://evcc.host.or.ip:7070
 ```
 
-*Added in v0.6.17*
+*Added in v0.6.18*
