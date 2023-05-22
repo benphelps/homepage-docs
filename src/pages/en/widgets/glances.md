@@ -4,7 +4,7 @@ description: Glances Information Widget Configuration
 layout: ../../../layouts/MainLayout.astro
 ---
 
-The Glances widget allows you to monitor the resources (CPU, memory, CPU temp & Uptime) of another machine, it is designed to match the `resources` info widget. You can have multiple instances by adding another configuration block. The `cputemp` & `uptime` states require separate API calls and thus are not enabled by default
+The Glances widget allows you to monitor the resources (CPU, memory, storage, temp & uptime) of another machine, and is designed to match the `resources` info widget. You can have multiple instances by adding another configuration block. The `cputemp`, `uptime` & `disk` states require separate API calls and thus are not enabled by default
 
 ```yaml
 - glances:
@@ -13,6 +13,8 @@ The Glances widget allows you to monitor the resources (CPU, memory, CPU temp & 
     password: pass # optional if auth enabled in Glances
     cputemp: true # disabled by default
     uptime: true # disabled by default
+    disk: true # disabled by default
+    expanded: true # show the expanded view
     label: MyMachine # optional
 ```
 
