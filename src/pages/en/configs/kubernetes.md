@@ -77,6 +77,7 @@ metadata:
     gethomepage.dev/widget.type: "emby"
     gethomepage.dev/widget.url: "https://emby.example.com"
     gethomepage.dev/podSelector: ""
+    gethomepage.dev/weight: 10 # optional
 spec:
   rules:
     - host: emby.example.com
@@ -112,6 +113,7 @@ metadata:
     gethomepage.dev/widget.type: "emby"
     gethomepage.dev/widget.url: "https://emby.example.com"
     gethomepage.dev/podSelector: ""
+    gethomepage.dev/weight: 10 # optional
 spec:
   entryPoints:
     - websecure
