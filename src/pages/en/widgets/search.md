@@ -8,7 +8,7 @@ You can add a search bar to your top widget area that can search using Google, D
 
 ```yaml
 - search:
-    provider: google # google, duckduckgo, bing, baidu, brave or custom
+    provider: google # google, duckduckgo, bing, baidu, brave, WolframAlpha or custom
     focus: true # Optional, will set focus to the search bar on page load
     target: _blank # One of _self, _blank, _parent or _top
 ```
