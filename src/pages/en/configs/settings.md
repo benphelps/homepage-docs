@@ -103,13 +103,13 @@ Groups will sort based on the order in the layout block. You can also mix in gro
 
 ```yaml
 layout:
-  Auto-Discovered1:
-  Configured1:
-  Configured2:
-  Auto-Discovered2:
-  Configured3:
-    style: row
-    columns: 3
+  - Auto-Discovered1:
+  - Configured1:
+  - Configured2:
+  - Auto-Discovered2:
+  - Configured3:
+      style: row
+      columns: 3
 ```
 
 ### Category Icons

@@ -37,6 +37,8 @@ dockerproxy:
     container_name: dockerproxy
     environment:
         - CONTAINERS=1 # Allow access to viewing containers
+        - SERVICES=1 # Allow access to viewing services (necessary when using Docker Swarm)
+        - TASKS=1 # Allow access to viewing tasks (necessary when using Docker Swarm)
         - POST=0 # Disallow any POST operations (effectively read-only)
     ports:
         - 2375:2375
@@ -128,6 +130,8 @@ services:
 
 When your Docker instance has been properly configured, this service will be automatically discovered and added to your Homepage.  **You do not need to specify the `server` or `container` values, as they will be automatically inferred.**
 
+**When using docker swarm use *deploy/labels***
+
 ## Widgets
 
 You may also configure widgets, along with the standard service entry, again, using dot notation.
@@ -148,12 +152,33 @@ labels:
 
 ## Docker Swarm
 
-Docker swarm is supported and containers are specified with the same `server` and `container` notation. To enable swarm support you will need to include a `swarm` setting in your docker.yaml, e.g.
+Docker swarm is supported and Docker services are specified with the same `server` and `container` notation. To enable swarm support you will need to include a `swarm` setting in your docker.yaml, e.g.
 
 ```yaml
 my-docker:
   socket: /var/run/docker.sock
   swarm: true
+```
+
+For the automatic service discovery to discover all services it is important that homepage should be deployed on a manager node. Set deploy requirements to the master node in your stack yaml config, e.g.
+
+```yaml
+....
+  deploy:
+    placement:
+      constraints:
+        - node.role == manager
+...
+```
+
+In order to detect every service within the Docker swarm it is necessary that service labels should be used and not container labels. Specify the homepage labels as:
+
+```yaml
+....
+  deploy:
+    labels:
+      - homepage.icon=foobar
+...
 ```
 
 ## Ordering
