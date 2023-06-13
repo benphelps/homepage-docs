@@ -6,7 +6,7 @@ layout: ../../../layouts/MainLayout.astro
 
 Find your API key under `Settings > General`.
 
-Allowed fields: `["wanted", "queued", "albums"]`.
+Allowed fields: `["wanted", "queued", "artists"]`.
 
 ```yaml
 widget:
@@ -15,4 +15,4 @@ widget:
     key: apikeyapikeyapikeyapikeyapikey
 ```
 
-*Added in v0.3.39*
+*Added in v0.3.39, updated in v0.6.21*

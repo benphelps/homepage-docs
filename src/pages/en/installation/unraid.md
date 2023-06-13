@@ -8,7 +8,7 @@ Homepage has an UNRAID community package that you may use to install homepage. T
 
 ## Install the Plugin
 
-- In the UNRAID webGUI, go to the **Docker** tab.
+- In the UNRAID webGUI, go to the **Apps** tab.
 - In the search bar, search for `homepage`.
 - Click on **Install**.
 - Change the parameters to your liking.

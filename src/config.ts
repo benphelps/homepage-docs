@@ -113,6 +113,7 @@ export const SIDEBAR: Sidebar = {
                 { text: "Health Checks", link: "en/services/healthchecks" },
                 { text: 'Mikrotik', link: 'en/services/mikrotik' },
                 { text: 'NextDNS', link: 'en/services/nextdns' },
+                { text: 'PiAlert', link: 'en/services/pialert' },
                 { text: 'PiHole', link: 'en/services/pihole' },
                 { text: 'Speedtest Tracker', link: 'en/services/speedtest-tracker' },
                 { text: 'Syncthing Relay Server', link: 'en/services/syncthing-relay-server' },
