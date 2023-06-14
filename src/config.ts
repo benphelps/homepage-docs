@@ -74,6 +74,7 @@ export const SIDEBAR: Sidebar = {
                 { text: 'Plex (Tautulli)', link: 'en/services/plex-tautulli' },
                 { text: 'Plex', link: 'en/services/plex' },
                 { text: 'Navidrome', link: 'en/services/navidrome' },
+                { text: 'NextPVR', link: 'en/services/nextpvr' },
                 { text: 'Xteve', link: 'en/services/xteve' },
             ]},
             { text: 'Media Management Tools', links: [
@@ -97,6 +98,7 @@ export const SIDEBAR: Sidebar = {
                 { text: 'Deluge', link: 'en/services/deluge' },
                 { text: 'Flood', link: 'en/services/flood' },
                 { text: 'Jackett', link: 'en/services/jackett' },
+                { text: 'Jdownloader', link: 'en/services/jdownloader' },
                 { text: 'NZBGet', link: 'en/services/nzbget' },
                 { text: 'Prowlarr', link: 'en/services/prowlarr' },
                 { text: 'Pyload', link: 'en/services/pyload' },
