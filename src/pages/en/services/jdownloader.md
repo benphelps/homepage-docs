@@ -6,7 +6,7 @@ layout: ../../../layouts/MainLayout.astro
 
 Basic widget to show number of items in download queue, along with the queue size and current download speed.
 
-Allowed fields: `["downloadCount", "downloadQueueSize", "downloadSpeed"]`.
+Allowed fields: `["downloadCount", "downloadTotalBytes","downloadBytesRemaining", "downloadSpeed"]`.
 
 ```yaml
 widget:
