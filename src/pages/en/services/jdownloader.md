@@ -16,4 +16,4 @@ widget:
     client: Name of JDownloader Instance
 ```
 
-*Added in v0.4.18*
+*Added in v0.6.22*
