@@ -6,7 +6,7 @@ layout: ../../../layouts/MainLayout.astro
 
 Find your API key under `Settings > General`.
 
-Allowed fields: `["wanted", "queued", "series"]`. 
+Allowed fields: `["wanted", "missing", "queued", "movies"]`. 
 
 A detailed queue listing is disabled by default, but can be enabled with the `enableQueue` option.
 
