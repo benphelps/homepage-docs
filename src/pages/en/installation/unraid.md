@@ -32,6 +32,8 @@ You may need to set the permissions of the folders to be able to edit the files.
 
 - To use the [Docker integration](/en/configs/docker), you only need to use the `container:` parameter. There is no need to set the server.
 
+    *Note:* To view detailed container statistics (CPU, RAM, etc.), or if you use a remote docker socket, `container:` will still need to be set.
+
   - Example:
 
     ```
@@ -40,5 +42,5 @@ You may need to set the permissions of the folders to be able to edit the files.
       href: https://app.plex.com
       container: plex
     ```
-
-- When you upload a new image in to the **/images** folder, you will need to restart the container for it to show up in the WebUI. Please see the [service icons](/en/configs/services#icons) for more information.
+  
+- When you upload a new image into the **/images** folder, you will need to restart the container for it to show up in the WebUI. Please see the [service icons](/en/configs/services#icons) for more information.
