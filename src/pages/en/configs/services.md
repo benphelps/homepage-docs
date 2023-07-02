@@ -8,7 +8,7 @@ Services are configured inside the `services.yaml` file. You can have any number
 
 ## Groups
 
-Groups are defined as the top-level array entries.
+Groups are defined as top-level array entries.
 
 ```yaml
 - Group A:
@@ -24,7 +24,7 @@ Groups are defined as the top-level array entries.
 
 ## Services
 
-Services are defined as array entires on groups,
+Services are defined as array entries on groups,
 
 ```yaml
 - Group A:
@@ -116,7 +116,7 @@ Services may have an optional `ping` property that allows you to monitor the ava
         ping: http://some.other.host/
 ```
 
-![image](https://user-images.githubusercontent.com/3441425/202920225-792d01f7-f885-4c06-88c3-49dbbf44e03e.png)
+<img width="1038" alt="Ping" src="https://github.com/benphelps/homepage/assets/88257202/7bc13bd3-0d0b-44e3-888c-a20e069a3233">
 
 ## Docker Integration
 
@@ -138,11 +138,13 @@ Services may be connected to a Docker container, either running on the local mac
         container: other-container
 ```
 
-<img width="1038" alt="Service Containers" src="https://user-images.githubusercontent.com/82196/187040793-cc4c7e3d-8fea-4161-b5e9-ac38a2dc67db.png">
+<img width="1038" alt="Service Containers" src="https://github.com/benphelps/homepage/assets/88257202/4c685783-52c6-4e55-afb3-affe9baac09b">
 
-**Clicking on the status light on a service with Docker integration enabled, will expand the container stats, where you can see CPU, Memory and Network activity.**
+**Clicking on the status label of a service with Docker integration enabled will expand the container stats, where you can see CPU, Memory, and Network activity.**
 
-<img width="1038" alt="Docker Stats Expanded" src="https://user-images.githubusercontent.com/82196/187041538-d42e9496-c585-408b-bd3e-22f6928aa27b.png">
+*Note:* This can also be controlled with `showStats`. See [show docker stats](/en/configs/docker#show-docker-stats) for more information
+
+<img width="1038" alt="Docker Stats Expanded" src="https://github.com/benphelps/homepage/assets/88257202/f95fd595-449e-48ae-af67-fd89618904ec">
 
 ## Service Integrations
 
