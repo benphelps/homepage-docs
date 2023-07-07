@@ -25,5 +25,6 @@ disk:
   - /
   - /boot
   ...
+```
 
 *Added in v0.4.18, updated in v0.6.11, v0.6.21*
