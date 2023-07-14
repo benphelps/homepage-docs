@@ -41,7 +41,7 @@ dockerproxy:
         - TASKS=1 # Allow access to viewing tasks (necessary when using Docker Swarm)
         - POST=0 # Disallow any POST operations (effectively read-only)
     ports:
-        - 2375:2375
+        - 127.0.0.1:2375:2375
     volumes:
         - /var/run/docker.sock:/var/run/docker.sock:ro # Mounted as read-only
     restart: unless-stopped
