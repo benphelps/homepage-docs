@@ -6,7 +6,7 @@ layout: ../../../layouts/MainLayout.astro
 
 Find your API key under `Settings > General > API Key`.
 
-Allowed fields: `["pending", "approved", "available"]`.
+Allowed fields: `["total", "movie", "tv", "pending", "approved", "declined", "processing", "available"]`.
 
 ```yaml
 widget:
