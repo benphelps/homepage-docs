@@ -16,4 +16,13 @@ widget:
     key: apikeyapikeyapikeyapikeyapikey
 ```
 
-*Added in v0.3.24*
+You can also specify slugs instead of symbols (since symbols aren't garaunteed to be unique). If you supply both, slugs will be used. For example:
+
+```yaml
+widget:
+    type: coinmarketcap
+    slugs: [chia-network, uniswap]
+    key: apikeyapikeyapikeyapikeyapikey
+```
+
+*Added in v0.3.24, updated in v0.6.22*

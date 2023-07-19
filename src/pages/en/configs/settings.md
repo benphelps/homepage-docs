@@ -143,9 +143,19 @@ fiveColumns: true
 
 By default homepage will max out at 4 columns for column style
 
+### Collapsible sections
+
+You can disable the collapsible feature of services & bookmarks by adding:
+
+```yaml
+disableCollapse: true
+```
+
+By defualt the feature is enabled.
+
 ## Header Style
 
-There are currently 3 options for header styles, you can see each one below.
+There are currently 4 options for header styles, you can see each one below.
 
 <img width="1000" alt="underlined" src="https://user-images.githubusercontent.com/82196/194725622-39ce271c-34e5-414d-be53-62d221811f88.png">
 
@@ -167,6 +177,14 @@ headerStyle: boxed
 
 ```yaml
 headerStyle: clean
+```
+
+---
+
+<img width="1000" alt="boxedWidgets" src="https://user-images.githubusercontent.com/5442891/232258758-ed5262d6-f940-462c-b39e-00e54c19b9ce.png">
+
+```yaml
+headerStyle: boxedWidgets
 ```
 
 ## Base URL
