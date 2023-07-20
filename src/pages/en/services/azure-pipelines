@@ -1,0 +1,27 @@
+---
+title: Azure Pipelines
+description: Azure Pipelines Widget Configuration
+layout: ../../../layouts/MainLayout.astro
+---
+
+This widget checks if the relevant pipeline is running or not, and if not, on which status it end.
+
+You will need to generate an API token for an existing user. To do so follow these steps:
+
+1. Navigate to azure organization portal. (https://dev.azure.com/{organization})
+2. Click user settings. (top corner next to your name badge.)
+3. Click Personal-access-token.
+4. Create new token with `Build` - `Read` permissions.
+5. Put PAT in widget.key settings.
+
+Allowed fields: `["result", "status", "buildId"]`.
+
+```yaml
+widget:
+    type: azurePipelines
+    organization: my-organization
+    project: my-project
+    definitionId: pipeline definition id
+    branchName: fill-for-specific, leave-empty-for all.
+    key: personal-access-token
+```
