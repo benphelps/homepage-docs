@@ -14,13 +14,6 @@ You will need to generate an API token for an existing user. To do so follow the
 4. Create new token with `Build` - `Read` permissions.
 5. Put PAT in widget.key settings.
 
-To get creatorId:
-1. Make sure your account is connected to your organization dev.azure.com website.
-2. from browser, postman or any http client go to: https://vsaex.dev.azure.com/{organization}/_apis/userentitlements/
-3. search for your organization email address.
-4. find your object and take `id` member. this is your `creatorId`.
-
-
 Allowed fields: `["totalPrs", "myPrs", "approvedNotCompleted"]`.
 
 ```yaml
@@ -28,7 +21,7 @@ widget:
     type: azurePipelines
     organization: my-organization
     project: my-project
-    creatorId: my-creator-id
+    userEmail: my-organization-email
     repositoryId: my-repository-id (name)
     key: personal-access-token
 ```
