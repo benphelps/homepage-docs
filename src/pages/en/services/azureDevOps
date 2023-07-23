@@ -1,0 +1,36 @@
+---
+title: Azure DevOps
+description: Azure DevOps Widget Configuration
+layout: ../../../layouts/MainLayout.astro
+---
+This widget have 2 functions:
+1. Pipelines - This type checks if the relevant pipeline is running or not, and if not, on which status it end.\
+Allowed fields: `["result", "status", "buildId"]`.
+
+2. Pull Requests - This type gives back the amount of open PRs, the amount of the PRs you have open, and how many PRs that you open are marked 
+as 'Approved' by atleast 1 person and not yet completed.\
+Allowed fields: `["totalPrs", "myPrs", "approvedNotCompleted"]`.
+
+
+You will need to generate an API token for an existing user. To do so follow these steps:
+
+1. Navigate to azure organization portal. (https://dev.azure.com/{organization})
+2. Click user settings. (top corner next to your name badge.)
+3. Click Personal-access-token.
+4. Create new token with `Build` -> `Read` permissions.
+5. Put PAT in widget.key settings.
+
+
+
+```yaml
+widget:
+    type: azureDevOps
+    azureType: Piplines / PullRequests
+    organization: my-organization
+    project: my-project
+    userEmail: my-organization-email (Pull Requests)
+    repositoryId: my-repository-id (name) (Pull Requests)
+    definitionId: pipeline definition id (Pipelines)
+    branchName: fill-for-specific, leave-empty-for all. (Pipelines)
+    key: personal-access-token
+```
