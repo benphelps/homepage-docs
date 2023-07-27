@@ -144,7 +144,7 @@ export const SIDEBAR: Sidebar = {
                 { text: 'Mastodon', link: 'en/services/mastodon' },
             ]},
             { text: 'Other', links: [
-                { text: 'AzureDevOps', link: 'en/services/azureDevOps'},
+                { text: 'AzureDevOps', link: 'en/services/azuredevops'},
                 { text: 'Changedetection.io', link: 'en/services/changedetectionio'},
                 { text: 'EVCC', link: 'en/services/evcc'},                
                 { text: 'Fileflows', link: 'en/services/fileflows' },
