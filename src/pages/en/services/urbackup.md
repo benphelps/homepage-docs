@@ -12,7 +12,7 @@ Optionally, the widget can also report the total amount of disk space consumed b
 
 Note: client status is only shown for backups that the specified user has access to. Disk Usage shown is the total for all backups, regardless of permissions.
 
-Allowed fields: `["type", "username", "password", "url", "maxDays", "diskUsage"]`.
+Allowed fields: `["ok", "errored", "noRecent", "totalUsed"]`.
 
 ```yaml
 widget:
