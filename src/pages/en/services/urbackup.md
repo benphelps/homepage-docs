@@ -21,5 +21,5 @@ widget:
     password: urbackupPassword
     url: http://urbackupUrl:55414
     maxDays: 5 #optional
-    diskUsage: true #optional
+    fields: ["ok", "errored", "noRecent", "totalUsed"] #optional
 ```
