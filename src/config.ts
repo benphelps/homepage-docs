@@ -149,6 +149,7 @@ export const SIDEBAR: Sidebar = {
                 { text: 'EVCC', link: 'en/services/evcc'},                
                 { text: 'Fileflows', link: 'en/services/fileflows' },
                 { text: 'FreshRSS', link: 'en/services/freshrss' },
+                { text: 'GameDig', link: 'en/services/gamedig'},
                 { text: 'Ghostfolio', link: 'en/services/ghostfolio'},
                 { text: 'Grafana', link: 'en/services/grafana' },
                 { text: 'Home Assistant', link: 'en/services/homeassistant' },
