@@ -123,6 +123,7 @@ export const SIDEBAR: Sidebar = {
                 { text: 'TP Link Omada', link: 'en/services/omada' },
                 { text: 'Unifi Controller', link: 'en/services/unifi-controller' },
                 { text: 'Uptime Kuma', link: 'en/services/uptime-kuma' },
+                { text: 'UrBackup', link: 'en/services/urbackup' }
             ]},
             { text: 'Network Infrastructure', links: [
                 { text: 'Authentik', link: 'en/services/authentik' },
@@ -146,7 +147,7 @@ export const SIDEBAR: Sidebar = {
             { text: 'Other', links: [
                 { text: 'AzureDevOps', link: 'en/services/azuredevops'},
                 { text: 'Changedetection.io', link: 'en/services/changedetectionio'},
-                { text: 'EVCC', link: 'en/services/evcc'},                
+                { text: 'EVCC', link: 'en/services/evcc'},
                 { text: 'Fileflows', link: 'en/services/fileflows' },
                 { text: 'FreshRSS', link: 'en/services/freshrss' },
                 { text: 'GameDig', link: 'en/services/gamedig'},
