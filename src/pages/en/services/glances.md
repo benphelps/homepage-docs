@@ -12,8 +12,8 @@ The Glances widget allows you to monitor the resources (cpu, memory, diskio, sen
 widget:
     type: glances
     url: http://glances.host.or.ip:port
-    username: username
-    password: password
+    username: user # optional if auth enabled in Glances
+    password: pass # optional if auth enabled in Glances
     metric: cpu
 ```
 
