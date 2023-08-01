@@ -4,7 +4,7 @@ description: Glances Widget Configuration
 layout: ../../../layouts/MainLayout.astro
 ---
 
-[replace with image url]
+<img width="1614" alt="glances" src="https://github.com/benphelps/homepage-docs/assets/82196/25648c97-2c1b-4db0-b5a5-f1509806079c">
 
 The Glances widget allows you to monitor the resources (cpu, memory, diskio, sensors & processes) of host or another machine You can have multiple instances by adding another service block.
 
