@@ -25,11 +25,18 @@ _Please note, this widget does not need an `href`, `icon` or `description` on it
           type: glances
           url: http://glances.host.or.ip:port
           metric: cpu
+- Network Usage:
+      widget:
+          type: glances
+          url: http://glances.host.or.ip:port
+          metric: network:enp0s25
 ```
 
 ## Metrics
 
 The metric field in the configuration determines the type of system monitoring data to be displayed. Here are the supported metrics:
+
+`info`: System information. Shows the system's hostname, OS, kernel version, CPU type, CPU usage, RAM usage and SWAP usage.
 
 `cpu`: CPU usage. Shows how much of the system's computational resources are currently being used.
 
