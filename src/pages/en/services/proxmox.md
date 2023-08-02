@@ -39,12 +39,15 @@ Use `username@pam!Token ID` as the `username` (e.g `api@pam!homepage`) setting a
 
 Allowed fields: `["vms", "lxc", "resources.cpu", "resources.mem"]`.
 
+You can set the optional `node` setting when you want to show metrics for a single node. By default it will show the average for the complete cluster.
+
 ```yaml
 widget:
     type: proxmox
     url: http://proxmox.host.or.ip:8006
     username: api_token_id
     password: api_token_secret
+    node: pve-1 # optional
 ```
 
 *Added in v0.4.9*
