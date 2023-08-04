@@ -52,10 +52,9 @@ background:
   opacity: 50 # 0-100
 ```
 
-### Service Card Blur
+### Card Background Blur
 
-You can apply a blur filter to the Service cards, this will blur the backround behind the service by the specified amount.
-This option is incompatible with the backround blur, saturate and brightness filters
+You can apply a blur filter to the service & bookmark cards. Note this option is incompatible with the backround blur, saturate and brightness filters.
 
 ```yaml
 cardBlur: sm # sm, "", md, etc... see https://tailwindcss.com/docs/backdrop-blur
