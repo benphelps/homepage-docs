@@ -121,6 +121,20 @@ layout:
       columns: 3
 ```
 
+### Headers
+
+You can hide headers for each section in the layout as well by passing `header` as false, like so:
+
+```yaml
+layout:
+    Section A:
+        header: false
+    Section B:
+        style: row
+        columns: 3
+        header: false
+```
+
 ### Category Icons
 
 You can also add an icon to a category under the `layout` setting similar to the [options for service icons](/en/configs/services/#icons), e.g.
