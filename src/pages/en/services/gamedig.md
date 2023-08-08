@@ -6,7 +6,7 @@ layout: ../../../layouts/MainLayout.astro
 
 Uses the [GameDig](https://www.npmjs.com/package/gamedig) library to get game server information for any supported server type.
 
-Allowed fields (limited to a max of 4): `["name", "map", "currentPlayers", "players", "maxPlayers", "bots", "ping"]`.
+Allowed fields (limited to a max of 4): `["status", "name", "map", "currentPlayers", "players", "maxPlayers", "bots", "ping"]`.
 
 ```yaml
 widget:
