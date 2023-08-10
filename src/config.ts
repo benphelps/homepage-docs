@@ -158,6 +158,7 @@ export const SIDEBAR: Sidebar = {
                 { text: 'Home Assistant', link: 'en/services/homeassistant' },
                 { text: 'Homebridge', link: 'en/services/homebridge' },
                 { text: 'Kopia', link: 'en/services/kopia' },
+                { text: 'Mealie', link: 'en/services/mealie'},
                 { text: 'Minecraft', link: 'en/services/minecraft'},
                 { text: 'Miniflux', link: 'en/services/miniflux' },
                 { text: 'Mjpeg', link: 'en/services/mjpeg' },
