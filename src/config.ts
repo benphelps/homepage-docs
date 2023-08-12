@@ -130,6 +130,7 @@ export const SIDEBAR: Sidebar = {
                 { text: 'Caddy', link: 'en/services/caddy' },
                 { text: 'Cloudflare Tunnels', link: 'en/services/cloudflared' },
                 { text: 'NGINX Proxy Manager', link: 'en/services/nginx-proxy-manager' },
+                { text: 'OpenMediaVault', link: 'en/services/openmediavault' },
                 { text: 'OPNSense', link: 'en/services/opnsense' },
                 { text: 'pfSense', link: 'en/services/pfsense' },
                 { text: 'Portainer', link: 'en/services/portainer' },
