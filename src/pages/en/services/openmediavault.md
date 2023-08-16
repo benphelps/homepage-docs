@@ -23,6 +23,8 @@ The method field determines the type of data to be displayed and is required. Su
 
 `smart.getListBg`: Shows S.M.A.R.T. status from disks. Allowed fields: `["passed", "failed"]`
 
+`zfs.getStats`: Shows Hits/Misses charts from ZFS plugin. Allowed fields: `["zfsHits", "zfsMisses"]`
+
 `downloader.getDownloadList`: Displays the number of tasks from the Downloader plugin currently being downloaded and total. Allowed fields: `["downloading", "total"]`
 
 
