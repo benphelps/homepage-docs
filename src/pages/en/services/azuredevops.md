@@ -26,3 +26,5 @@ widget:
     repositoryId: prRepositoryId # required for pull requests
     key: personalaccesstoken
 ```
+
+*Added in v0.6.25*
