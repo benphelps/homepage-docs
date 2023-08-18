@@ -14,3 +14,5 @@ widget:
     url: http://mealie-frontend.host.or.ip
     key: mealieapitoken
 ```
+
+*Added in v0.6.29*
