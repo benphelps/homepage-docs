@@ -148,7 +148,6 @@ export const SIDEBAR: Sidebar = {
             ]},
             { text: 'Other', links: [
                 { text: 'AzureDevOps', link: 'en/services/azuredevops'},
-                { text: 'Calibre-web', link: 'en/services/calibre-web' },
                 { text: 'Changedetection.io', link: 'en/services/changedetectionio'},
                 { text: 'EVCC', link: 'en/services/evcc'},
                 { text: 'Fileflows', link: 'en/services/fileflows' },
