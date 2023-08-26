@@ -6,11 +6,11 @@ layout: ../../../layouts/MainLayout.astro
 
 This widget can show information from custom self-hosted or third party API.
 
-Fields to show needs to be defined in the `mappings` section. `mappings` uses YAML object to locate the value in the APIs JSON object. Final field definition needs to be the key with the desired value information.
+Fields need to be defined in the `mappings` section YAML object to correlate with the value in the APIs JSON object. Final field definition needs to be the key with the desired value information.
 
 ```yaml
 widget:
-    type: custom
+    type: customapi
     url: http://custom.api.host.or.ip:port/path/to/exact/api/endpoint
     refreshInterval: 10000 # optional - in milliseconds, defaults to 10s
     username: username # auth - optional
@@ -21,13 +21,13 @@ widget:
         format: text # optional - defaults to text
       - field: # needs to be YAML string or object
           path:
-            to: key
+            to: key2
         format: number # optional - defaults to text
         label: Field 2
       - field: # needs to be YAML string or object
           path:
             to:
-              another: key
+              another: key3
         label: Field 3
         format: percent # optional - defaults to text
 ```
@@ -70,3 +70,5 @@ we can define the `mappings` section as following:
             1: name # Citadel of Ricks
         label: Location
 ```
+
+*Added in v0.6.29*
