@@ -150,6 +150,7 @@ export const SIDEBAR: Sidebar = {
                 { text: 'AzureDevOps', link: 'en/services/azuredevops'},
                 { text: 'Calibre-web', link: 'en/services/calibre-web' },
                 { text: 'Changedetection.io', link: 'en/services/changedetectionio'},
+                { text: 'Custom API', link: 'en/services/customapi'},
                 { text: 'EVCC', link: 'en/services/evcc'},
                 { text: 'Fileflows', link: 'en/services/fileflows' },
                 { text: 'FreshRSS', link: 'en/services/freshrss' },
