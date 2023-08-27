@@ -15,6 +15,8 @@ widget:
     refreshInterval: 10000 # optional - in milliseconds, defaults to 10s
     username: username # auth - optional
     password: password # auth - optional
+    method: GET # optional, e.g. POST
+    headers: # optional, must be object, see below
     mappings:
       - field: key # needs to be YAML string or object
         label: Field 1
@@ -55,7 +57,7 @@ For the following JSON object from the API:
 }
 ```
 
-we can define the `mappings` section as following:
+Define the `mappings` section as an aray, for example:
 ```yaml
     mappings:
       - field: name # Rick Sanchez
@@ -69,6 +71,12 @@ we can define the `mappings` section as following:
           locations:
             1: name # Citadel of Ricks
         label: Location
+```
+
+Pass custom headers using the `headers` option, for example:
+```yaml
+  headers:
+    X-API-Token: token
 ```
 
 *Added in v0.6.29*
