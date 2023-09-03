@@ -54,5 +54,8 @@ The metric field in the configuration determines the type of system monitoring d
 
 `gpu:<gpu_id>`: GPU usage for the specified GPU. Replace `<gpu_id>` with the id of your GPU, e.g., `gpu:0`, as specificed in glances.
 
+`fs:<mnt_point>`: Disk usage for the specified mount point. Replace `<mnt_point>` with the path of your disk, e.g., `/mnt/storage`, as specificed in glances.
+
+
 
 *Added in v0.6.26*
