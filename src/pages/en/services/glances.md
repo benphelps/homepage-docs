@@ -56,6 +56,21 @@ The metric field in the configuration determines the type of system monitoring d
 
 `fs:<mnt_point>`: Disk usage for the specified mount point. Replace `<mnt_point>` with the path of your disk, e.g., `/mnt/storage`, as specificed in glances.
 
+## Views
 
+All widgets offer an alternative to the full or "graph" view, which is the compact, or "graphless" view.
+
+<img width="970" alt="Screenshot 2023-09-06 at 1 51 48 PM" src="https://github.com/benphelps/homepage-docs/assets/82196/cc6b9adc-4218-4274-96ca-36c3e64de5d0">
+
+To switch to the alternative "graphless" view, simply passs `graph: false` as an option to the widget, like so:
+
+```yaml
+- Network Usage:
+      widget:
+          type: glances
+          url: http://glances.host.or.ip:port
+          metric: network:enp0s25
+          ggraph: false
+```
 
 *Added in v0.6.26*
