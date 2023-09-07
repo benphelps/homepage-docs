@@ -72,7 +72,7 @@ You can specify a custom color by adding a hex color code as suffix e.g. `mdi-XX
 
 To use a remote icon, use the absolute URL (e.g. `https://...`).
 
-To use a local icon, first create a Docker mount to `/app/public/icons` and then reference your icon as `/icons/myicon.png`.
+To use a local icon, first create a Docker mount to `/app/public/icons` and then reference your icon as `/icons/myicon.png`. You will need to restart the container when adding new icons.
 
 *Note: Material Design Icons for **brands** were deprecated and may be removed in the future. Using Simple Icons for brand icons will prevent any issues if / when the Material Design Icons are removed.*
 
