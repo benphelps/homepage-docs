@@ -13,6 +13,8 @@ The Glances widget allows you to monitor the resources (CPU, memory, storage, te
     url: http://host.or.ip:port
     username: user # optional if auth enabled in Glances
     password: pass # optional if auth enabled in Glances
+    cpu: true # optional, enabled by default, disable by setting to false
+    mem: true # optional, enabled by default, disable by setting to false
     cputemp: true # disabled by default
     uptime: true # disabled by default
     disk: / # disabled by default, use mount point of disk(s) in glances. Can also be a list (see below)
