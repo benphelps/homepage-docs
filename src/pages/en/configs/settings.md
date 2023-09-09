@@ -14,6 +14,14 @@ You can customize the title of the page if you'd like.
 title: My Awesome Homepage
 ```
 
+## Start URL
+
+You can customize the start_url as required for installable apps. The default is "/".
+
+```yaml
+startUrl: https://custom.url
+```
+
 ## Background Image
 
 If you'd like to use a background image instead of the solid theme color, you may provide a full URL to an image of your choice.
