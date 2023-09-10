@@ -64,7 +64,8 @@ export const SIDEBAR: Sidebar = {
             { text: 'Bookmarks', link: 'en/configs/bookmarks' },
             { text: 'Docker', link: 'en/configs/docker' },
             { text: 'Kubernetes', link: 'en/configs/kubernetes' },
-            { text: 'Settings', link: 'en/configs/settings' }
+            { text: 'Settings', link: 'en/configs/settings' },
+            { text: 'Custom CSS / JS', link: 'en/configs/custom-css-js' }
         ],
         'Service Widgets': [
             { text: 'Streaming Media Providers', links: [
