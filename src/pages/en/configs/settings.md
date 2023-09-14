@@ -164,6 +164,42 @@ More information about prefixed icons can be found in [options for service icons
 iconStyle: theme # optional, defaults to gradient
 ```
 
+### Tabs
+
+Version 0.6.30 introduced a tabbed view to layouts which can be optionally specified in the layout. Tabs is only active if you set the `tab` field on at least one layout group.
+
+Tabs are sorted based on the order in the layout block. If a group has no tab specified (and tabs are set on other groups), services and bookmarks will be shown on all tabs.
+
+Every tab can be accessed directly by visiting Homepage URL with #Group name at the end of the URL.
+
+For example, the following would create four tabs:
+
+```yaml
+  Bookmark Group on First Tab:
+    tab: First
+
+  First Service Group:
+    tab: First
+    style: row
+    columns: 4
+
+  Second Service Group:
+    tab: Second
+    columns: 4
+
+  Third Service Group:
+    tab: Third
+    style: row
+
+  Bookmark Group on Fourth Tab:
+    tab: Fourth
+
+  Service Group on every Tab:
+    style: row
+    columns: 4
+```
+
+
 ### Five Columns
 
 You can add a fifth column (when `style: columns` which is default) by adding:
