@@ -34,7 +34,7 @@ widget:
         format: percent # optional - defaults to text
 ```
 
-Supported formats for the values are `text`, `number`, `float` and `percent`.
+Supported formats for the values are `text`, `number`, `float`, `percent`, `bytes` and `bitrate`.
 
 ## Example
 
@@ -72,6 +72,30 @@ Define the `mappings` section as an aray, for example:
             1: name # Citadel of Ricks
         label: Location
 ```
+
+## Data Transformation
+
+You can manipulate data with the following tools `remap`, `scale` and `suffix`, for example:
+
+```yaml
+      - field: key4
+        label: Field 4
+        format: text
+        remap:
+          - value: 0
+            to: None
+          - value: 1
+            to: Connected
+          - any: true # will map all other values
+            to: Unknown
+      - field: key5
+        label: Power
+        format: float
+        scale: 0.001 # can be number or string e.g. 1/16
+        suffix: kW
+```
+
+## Custom Headers
 
 Pass custom headers using the `headers` option, for example:
 ```yaml
