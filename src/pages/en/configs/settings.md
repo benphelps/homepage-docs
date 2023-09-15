@@ -170,7 +170,7 @@ Version 0.6.30 introduced a tabbed view to layouts which can be optionally speci
 
 Tabs are sorted based on the order in the layout block. If a group has no tab specified (and tabs are set on other groups), services and bookmarks will be shown on all tabs.
 
-Every tab can be accessed directly by visiting Homepage URL with #Group name at the end of the URL.
+Every tab can be accessed directly by visiting Homepage URL with `#{Group name}` (lowercase and URI-encoded) at the end of the URL.
 
 For example, the following would create four tabs:
 
