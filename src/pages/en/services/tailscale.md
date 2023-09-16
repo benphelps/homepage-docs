@@ -4,7 +4,7 @@ description: Tailscale Widget Configuration
 layout: ../../../layouts/MainLayout.astro
 ---
 
-You will need to generate an API access key from the [keys page](https://login.tailscale.com/admin/settings/keys) on the Tailscale dashboard.
+You will need to generate an API access token from the [keys page](https://login.tailscale.com/admin/settings/keys) on the Tailscale dashboard.
 
 To find your device ID, go to the [machine overview page](https://login.tailscale.com/admin/machines) and select your machine. In the "Machine Details" section, copy your `ID`. It will end with `CNTRL`.
 
