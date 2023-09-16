@@ -14,6 +14,14 @@ You can customize the title of the page if you'd like.
 title: My Awesome Homepage
 ```
 
+## Start URL
+
+You can customize the start_url as required for installable apps. The default is "/".
+
+```yaml
+startUrl: https://custom.url
+```
+
 ## Background Image
 
 If you'd like to use a background image instead of the solid theme color, you may provide a full URL to an image of your choice.
@@ -155,6 +163,42 @@ More information about prefixed icons can be found in [options for service icons
 ```yaml
 iconStyle: theme # optional, defaults to gradient
 ```
+
+### Tabs
+
+Version 0.6.30 introduced a tabbed view to layouts which can be optionally specified in the layout. Tabs is only active if you set the `tab` field on at least one layout group.
+
+Tabs are sorted based on the order in the layout block. If a group has no tab specified (and tabs are set on other groups), services and bookmarks will be shown on all tabs.
+
+Every tab can be accessed directly by visiting Homepage URL with `#Group` (name lowercase and URI-encoded) at the end of the URL.
+
+For example, the following would create four tabs:
+
+```yaml
+  Bookmark Group on First Tab:
+    tab: First
+
+  First Service Group:
+    tab: First
+    style: row
+    columns: 4
+
+  Second Service Group:
+    tab: Second
+    columns: 4
+
+  Third Service Group:
+    tab: Third
+    style: row
+
+  Bookmark Group on Fourth Tab:
+    tab: Fourth
+
+  Service Group on every Tab:
+    style: row
+    columns: 4
+```
+
 
 ### Five Columns
 

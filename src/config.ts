@@ -64,7 +64,8 @@ export const SIDEBAR: Sidebar = {
             { text: 'Bookmarks', link: 'en/configs/bookmarks' },
             { text: 'Docker', link: 'en/configs/docker' },
             { text: 'Kubernetes', link: 'en/configs/kubernetes' },
-            { text: 'Settings', link: 'en/configs/settings' }
+            { text: 'Settings', link: 'en/configs/settings' },
+            { text: 'Custom CSS / JS', link: 'en/configs/custom-css-js' }
         ],
         'Service Widgets': [
             { text: 'Streaming Media Providers', links: [
@@ -124,6 +125,7 @@ export const SIDEBAR: Sidebar = {
                 { text: 'TP Link Omada', link: 'en/services/omada' },
                 { text: 'Unifi Controller', link: 'en/services/unifi-controller' },
                 { text: 'Uptime Kuma', link: 'en/services/uptime-kuma' },
+                { text: 'UptimeRobot', link: 'en/services/uptimerobot' },
                 { text: 'UrBackup', link: 'en/services/urbackup' }
             ]},
             { text: 'Network Infrastructure', links: [

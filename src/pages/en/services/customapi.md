@@ -15,6 +15,8 @@ widget:
     refreshInterval: 10000 # optional - in milliseconds, defaults to 10s
     username: username # auth - optional
     password: password # auth - optional
+    method: GET # optional, e.g. POST
+    headers: # optional, must be object, see below
     mappings:
       - field: key # needs to be YAML string or object
         label: Field 1
@@ -32,7 +34,7 @@ widget:
         format: percent # optional - defaults to text
 ```
 
-Supported formats for the values are `text`, `number`, `float` and `percent`.
+Supported formats for the values are `text`, `number`, `float`, `percent`, `bytes` and `bitrate`.
 
 ## Example
 
@@ -55,7 +57,7 @@ For the following JSON object from the API:
 }
 ```
 
-we can define the `mappings` section as following:
+Define the `mappings` section as an aray, for example:
 ```yaml
     mappings:
       - field: name # Rick Sanchez
@@ -69,6 +71,36 @@ we can define the `mappings` section as following:
           locations:
             1: name # Citadel of Ricks
         label: Location
+```
+
+## Data Transformation
+
+You can manipulate data with the following tools `remap`, `scale` and `suffix`, for example:
+
+```yaml
+      - field: key4
+        label: Field 4
+        format: text
+        remap:
+          - value: 0
+            to: None
+          - value: 1
+            to: Connected
+          - any: true # will map all other values
+            to: Unknown
+      - field: key5
+        label: Power
+        format: float
+        scale: 0.001 # can be number or string e.g. 1/16
+        suffix: kW
+```
+
+## Custom Headers
+
+Pass custom headers using the `headers` option, for example:
+```yaml
+  headers:
+    X-API-Token: token
 ```
 
 *Added in v0.6.29*
