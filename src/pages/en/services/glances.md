@@ -62,7 +62,7 @@ All widgets offer an alternative to the full or "graph" view, which is the compa
 
 <img width="970" alt="Screenshot 2023-09-06 at 1 51 48 PM" src="https://github.com/benphelps/homepage-docs/assets/82196/cc6b9adc-4218-4274-96ca-36c3e64de5d0">
 
-To switch to the alternative "graphless" view, simply passs `graph: false` as an option to the widget, like so:
+To switch to the alternative "graphless" view, simply passs `chart: false` as an option to the widget, like so:
 
 ```yaml
 - Network Usage:
@@ -70,7 +70,7 @@ To switch to the alternative "graphless" view, simply passs `graph: false` as an
           type: glances
           url: http://glances.host.or.ip:port
           metric: network:enp0s25
-          ggraph: false
+          chart: false
 ```
 
 *Added in v0.6.26*
