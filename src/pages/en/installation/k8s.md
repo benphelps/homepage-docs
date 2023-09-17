@@ -131,6 +131,8 @@ data:
   #  providers:
   #    longhorn:
   #      url: https://longhorn.my.network
+  custom.css: ""
+  custom.js: "" 
   bookmarks.yaml: |
     - Developer:
         - Github:
