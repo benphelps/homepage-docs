@@ -218,7 +218,7 @@ You can disable the collapsible feature of services & bookmarks by adding:
 disableCollapse: true
 ```
 
-By defualt the feature is enabled.
+By default the feature is enabled.
 
 ## Header Style
 
