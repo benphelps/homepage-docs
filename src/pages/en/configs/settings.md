@@ -380,12 +380,14 @@ Hide the visible API error messages either globally in `settings.yaml`:
 hideErrors: true
 ```
 
-or per-service (`services.yaml`) with:
+or per service widget (`services.yaml`) with:
 
 ```yaml
 - Example Service:
     ...
-    hideErrors: true
+    widget:
+    ...
+        hideErrors: true
 ```
 
 If either value is set to true, the errror message will be hidden.
