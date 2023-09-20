@@ -10,6 +10,8 @@ The design of homepage expects `abbr` to be 2 letters, but is not otherwise forc
 
 You can also use an icon for bookmarks similar to the [options for service icons](/en/configs/services/#icons). If both icon and abbreviation are supplied, the icon takes precedence.
 
+By default, the description will use the hostname of the link, but you can override it with a custom description.
+
 ```yaml
 - Developer:
     - Github:
@@ -20,6 +22,7 @@ You can also use an icon for bookmarks similar to the [options for service icons
     - Reddit:
         - icon: reddit.png
           href: https://reddit.com/
+          description: The front page of the internet
 
 - Entertainment:
     - YouTube:
@@ -27,4 +30,4 @@ You can also use an icon for bookmarks similar to the [options for service icons
           href: https://youtube.com/
 ```
 
-<img width="1000" alt="Bookmarks" src="https://user-images.githubusercontent.com/4887959/200081485-f641e312-106b-415e-a12d-bf4e05f6a511.png">
+<img width="1000" alt="Bookmarks" src="https://user-images.githubusercontent.com/19408/269307009-d7e45885-230f-4e07-b421-9822017ae878.png">
