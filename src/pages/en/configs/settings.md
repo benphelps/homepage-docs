@@ -179,6 +179,8 @@ Every tab can be accessed directly by visiting Homepage URL with `#Group` (name 
 For example, the following would create four tabs:
 
 ```yaml
+layout:
+  ...
   Bookmark Group on First Tab:
     tab: First
 
