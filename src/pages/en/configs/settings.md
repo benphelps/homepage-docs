@@ -99,9 +99,9 @@ Supported colors are: `slate`, `gray`, `zinc`, `neutral`, `stone`, `amber`, `yel
 
 ## Layout
 
-You can configure service sections to be either "column" or "row" based layouts, like so:
+You can configure service and bookmarks sections to be either "column" or "row" based layouts, like so:
 
-Assuming you have a group named `Media` in your `services.yaml` file,
+Assuming you have a group named `Media` in your `services.yaml` or `bookmarks.yaml` file,
 
 ```yaml
 layout:
@@ -115,6 +115,10 @@ As an example, this would produce the following layout:
 <img width="1260" alt="Screenshot 2022-09-15 at 8 03 57 PM" src="https://user-images.githubusercontent.com/82196/190466646-8ca94505-0fcf-4964-9687-3a6c7cd3144f.png">
 
 ### Sorting
+
+Service groups and bookmark groups can be mixed in order, **but should use different group names**. If you do not specify any bookmark groups they will all show at the bottom of the page.
+
+**_Using the same name for a service and bookmark group can cause unexpected behavior like a bookmark group being hidden_**
 
 Groups will sort based on the order in the layout block. You can also mix in groups defined by docker labels, e.g.
 
