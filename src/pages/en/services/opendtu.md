@@ -4,9 +4,7 @@ description: OpenDTU Widget
 layout: ../../../layouts/MainLayout.astro
 ---
 
-The widget supports OpenDTU 
-
-Allowed fields: `["totalGeneration", "relativeGeneration", "limit"]`.
+Allowed fields: `["yieldDay", "relativePower", "absolutePower", "limit"]`.
 
 ```yaml
 widget:
