@@ -170,6 +170,7 @@ export const SIDEBAR: Sidebar = {
                 { text: 'Moonraker', link: 'en/services/moonraker' },
                 { text: 'Nextcloud', link: 'en/services/nextcloud' },
                 { text: 'OctoPrint', link: 'en/services/octoprint' },
+                { text: 'OpenDTU', link: 'en/services/opendtu' },
                 { text: 'Paperless-ngx', link: 'en/services/paperlessngx' },
                 { text: 'Prometheus', link: 'en/services/prometheus' },
                 { text: 'Proxmox Backup Server', link: 'en/services/proxmoxbackupserver' },
