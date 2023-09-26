@@ -4,6 +4,8 @@ description: Unifi Controller Information Widget Configuration
 layout: ../../../layouts/MainLayout.astro
 ---
 
+_(Find the Unifi Controller service widget [here](/en/services/unifi-controller/))_
+
 You can display general connectivity status from your Unifi (Network) Controller. When authenticating you will want to use a local account that has at least read privileges.
 
 An optional 'site' parameter can be supplied, if it is not the widget will use the default site for the controller.
