@@ -81,7 +81,22 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
+         <loc>https://gethomepage.dev/0.1.0/services/jellyfin/</loc>
+         <lastmod>2023-09-27</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
          <loc>https://gethomepage.dev/0.1.0/services/mjpeg/</loc>
+         <lastmod>2023-09-27</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://gethomepage.dev/0.1.0/services/nzbget/</loc>
+         <lastmod>2023-09-27</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://gethomepage.dev/0.1.0/services/ombi/</loc>
          <lastmod>2023-09-27</lastmod>
          <changefreq>daily</changefreq>
     </url>
@@ -91,7 +106,42 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
+         <loc>https://gethomepage.dev/0.1.0/services/pihole/</loc>
+         <lastmod>2023-09-27</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://gethomepage.dev/0.1.0/services/portainer/</loc>
+         <lastmod>2023-09-27</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://gethomepage.dev/0.1.0/services/radarr/</loc>
+         <lastmod>2023-09-27</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://gethomepage.dev/0.1.0/services/rutorrent/</loc>
+         <lastmod>2023-09-27</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://gethomepage.dev/0.1.0/services/sonarr/</loc>
+         <lastmod>2023-09-27</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://gethomepage.dev/0.1.0/services/speedtest-tracker/</loc>
+         <lastmod>2023-09-27</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
          <loc>https://gethomepage.dev/0.1.0/services/tailscale/</loc>
+         <lastmod>2023-09-27</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://gethomepage.dev/0.1.0/services/traefik/</loc>
          <lastmod>2023-09-27</lastmod>
          <changefreq>daily</changefreq>
     </url>
@@ -102,6 +152,21 @@
     </url>
     <url>
          <loc>https://gethomepage.dev/0.1.0/services/urbackup/</loc>
+         <lastmod>2023-09-27</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://gethomepage.dev/0.1.0/widgets/openweathermap/</loc>
+         <lastmod>2023-09-27</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://gethomepage.dev/0.1.0/widgets/resources/</loc>
+         <lastmod>2023-09-27</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://gethomepage.dev/0.1.0/widgets/weather/</loc>
          <lastmod>2023-09-27</lastmod>
          <changefreq>daily</changefreq>
     </url>
