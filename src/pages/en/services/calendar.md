@@ -4,6 +4,8 @@ description: Calendar widget
 layout: ../../../layouts/MainLayout.astro
 ---
 
+<img alt="calendar" src="https://user-images.githubusercontent.com/5442891/271131282-6767a3ea-573e-4005-aeb9-6e14ee01e845.png">
+
 This widget shows monthly calendar, with optional integrations to show events from supported widgets.
 
 ```yaml
