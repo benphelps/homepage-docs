@@ -33,7 +33,8 @@ def fix_content(md_file):
 
 
 def deploy_version(version):
-    subprocess.run(['mike', 'deploy', '-u', version])
+    subprocess.run(['mike', 'deploy', '--branch',
+                   'mkdocs-build', '-u', version])
 
 
 def main():
