@@ -3,6 +3,7 @@ import re
 import shutil
 import subprocess
 
+
 def copy_files(src, dest, version):
     src_path = os.path.join(src, version, 'en')
 
@@ -17,32 +18,37 @@ def copy_files(src, dest, version):
                     shutil.copy2(os.path.join(subdir, file), new_path)
                     fix_content(dest_file_path)
 
+
 def fix_content(md_file):
     with open(md_file, 'r+') as f:
         content = f.read()
         content = re.sub(r'(\(/en/)', '(/', content)
         content = re.sub(r'layout: .*?\n---', '---\n', content)
-        content = re.sub(r'[\*_]Added in v[0-9.]+(?:, updated in v[0-9.]+)?[\*_]', '', content)
+        content = re.sub(
+            r'[\*_]Added in v[0-9.]+(?:, updated in v[0-9.]+)?[\*_]', '', content)
 
         f.seek(0)
         f.write(content)
         f.truncate()
 
+
 def deploy_version(version):
-    subprocess.run(['mike', 'deploy', version])
+    subprocess.run(['mike', 'deploy', '-u', version])
+
 
 def main():
     src = "migrate"
     dest = "docs"
+
+    # For 'latest'
+    copy_files(src, dest, 'latest')
+    deploy_version('0.1.0')
 
     versions = sorted([v for v in os.listdir(src) if v != 'latest'])
     for version in versions:
         copy_files(src, dest, version)
         deploy_version(version)
 
-    # For 'latest'
-    copy_files(src, dest, 'latest')
-    deploy_version('0.7.0')
 
 if __name__ == "__main__":
     main()
