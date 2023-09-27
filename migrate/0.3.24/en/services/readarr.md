@@ -1,7 +1,6 @@
 ---
 title: Readarr
 description: Readarr Widget Configuration
-layout: ../../../layouts/MainLayout.astro
 ---
 
 Find your API key under `Settings > General`.
@@ -14,5 +13,3 @@ widget:
     url: http://readarr.host.or.ip
     key: apikeyapikeyapikeyapikeyapikey
 ```
-
-*Added in v0.3.24*

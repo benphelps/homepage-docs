@@ -1,7 +1,6 @@
 ---
 title: TrueNas
 description: TrueNas Scale Widget Configuration
-layout: ../../../layouts/MainLayout.astro
 ---
 
 Allowed fields: `["load", "uptime", "alerts"]`.
@@ -16,5 +15,3 @@ widget:
     password: pass # not required if using api key
     key: yourtruenasapikey # not required if using username / password
 ```
-
-*Added in v0.5.0*

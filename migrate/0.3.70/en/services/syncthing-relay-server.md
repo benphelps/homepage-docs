@@ -1,7 +1,6 @@
 ---
 title: Syncthing Relay Server
 description: Syncthing Relay Server Widget Configuration
-layout: ../../../layouts/MainLayout.astro
 ---
 
 Pulls stats from the [relay server](https://docs.syncthing.net/users/strelaysrv.html). [See here](https://github.com/benphelps/homepage/pull/230#issuecomment-1253053472) for more information on configuration.
@@ -13,5 +12,3 @@ widget:
     type: strelaysrv
     url: http://syncthing.host.or.ip:22070
 ```
-
-*Added in v0.3.70*

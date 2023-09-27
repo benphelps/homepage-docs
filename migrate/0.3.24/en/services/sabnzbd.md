@@ -1,7 +1,6 @@
 ---
 title: SABnzbd
 description: SABnzbd Widget Configuration
-layout: ../../../layouts/MainLayout.astro
 ---
 
 Find your API key under `Config > General`.
@@ -14,5 +13,3 @@ widget:
     url: http://sabnzbd.host.or.ip
     key: apikeyapikeyapikeyapikeyapikey
 ```
-
-*Added in v0.3.24*

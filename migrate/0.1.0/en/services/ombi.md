@@ -1,7 +1,6 @@
 ---
 title: Ombi
 description: Ombi Widget Configuration
-layout: ../../../layouts/MainLayout.astro
 ---
 
 Find your API key under `Settings > Configuration > General`.
@@ -14,5 +13,3 @@ widget:
     url: http://ombi.host.or.ip
     key: apikeyapikeyapikeyapikeyapikey
 ```
-
-*Added in v0.1.0*

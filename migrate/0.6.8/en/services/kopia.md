@@ -1,7 +1,6 @@
 ---
 title: Kopia
 description: Kopia Widget Configuration
-layout: ../../../layouts/MainLayout.astro
 ---
 
 Allowed fields: `["status", "size", "lastrun", "nextrun"]`.
@@ -17,5 +16,3 @@ widget:
     snapshotHost: hostname # optional
     snapshotPath: path # optional
 ```
-
-*Added in v0.6.8, updated in v0.6.24*

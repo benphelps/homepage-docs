@@ -1,7 +1,6 @@
 ---
 title: Health checks
 description: Health checks Widget Configuration
-layout: ../../../layouts/MainLayout.astro
 ---
 
 To use the Health Checks widget, you first need to generate an API key. To do this, follow these steps:
@@ -19,5 +18,3 @@ widget:
     key: <YOUR_API_KEY>
     uuid: <YOUR_CHECK_UUID>
 ```
-
-_Added in v0.6.7, updated in v0.6.10_

@@ -1,7 +1,6 @@
 ---
 title: Moonraker (Klipper)
 description: Moonraker (Klipper) Widget Configuration
-layout: ../../../layouts/MainLayout.astro
 ---
 
 Allowed fields: `["printer_state", "print_status", "print_progress", "layers"]`.
@@ -11,5 +10,3 @@ widget:
     type: moonraker
     url: http://moonraker.host.or.ip:port
 ```
-
-*Added in v0.6.0*

@@ -1,7 +1,6 @@
 ---
 title: Traefik
 description: Traefik Widget Configuration
-layout: ../../../layouts/MainLayout.astro
 ---
 
 No extra configuration is required.
@@ -16,5 +15,3 @@ widget:
     username: username # optional
     password: password # optional
 ```
-
-*Added in v0.1.0*

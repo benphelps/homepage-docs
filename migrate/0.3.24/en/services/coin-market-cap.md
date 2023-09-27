@@ -1,7 +1,6 @@
 ---
 title: Coin Market Cap
 description: Coin Market Cap Widget Configuration
-layout: ../../../layouts/MainLayout.astro
 ---
 
 Get your API key from your [CoinMarketCap Pro Dashboard](https://pro.coinmarketcap.com/account).
@@ -24,5 +23,3 @@ widget:
     slugs: [chia-network, uniswap]
     key: apikeyapikeyapikeyapikeyapikey
 ```
-
-*Added in v0.3.24, updated in v0.6.22*

@@ -1,20 +1,19 @@
 ---
 title: Kubernetes
 description: Kubernetes Configuration
-layout: ../../../layouts/MainLayout.astro
 ---
 
 The Kubernetes connectivity has the following requirements:
 
-* Kubernetes 1.19+
-* Metrics Service
-* An Ingress controller
+-   Kubernetes 1.19+
+-   Metrics Service
+-   An Ingress controller
 
 The Kubernetes connection is configured in the `kubernetes.yaml` file. There are 3 modes to choose from:
 
-* **disabled** - disables kubernetes connectivity
-* **default** - uses the default kubeconfig [resolution](https://kubernetes.io/docs/concepts/configuration/organize-cluster-access-kubeconfig/)
-* **cluster** - uses a service account inside the cluster
+-   **disabled** - disables kubernetes connectivity
+-   **default** - uses the default kubeconfig [resolution](https://kubernetes.io/docs/concepts/configuration/organize-cluster-access-kubeconfig/)
+-   **cluster** - uses a service account inside the cluster
 
 ```yaml
 mode: default
@@ -43,18 +42,18 @@ For instance, it can be utilized to roll multiple underlying deployments under o
 
 ```yaml
 - Element Chat:
-    icon: matrix-light.png
-    href: https://chat.example.com
-    description: Matrix Synapse Powered Chat
-    app: matrix-element
-    namespace: comms
-    podSelector: >-
-        app.kubernetes.io/instance in (
-            matrix-element,
-            matrix-media-repo,
-            matrix-media-repo-postgresql,
-            matrix-synapse
-        )
+      icon: matrix-light.png
+      href: https://chat.example.com
+      description: Matrix Synapse Powered Chat
+      app: matrix-element
+      namespace: comms
+      podSelector: >-
+          app.kubernetes.io/instance in (
+              matrix-element,
+              matrix-media-repo,
+              matrix-media-repo-postgresql,
+              matrix-synapse
+          )
 ```
 
 **NOTE:** A blank string as a podSelector does not deactivate it, but will actually select all pods in the namespace. This is a useful way to capture the resource usage of a complex application siloed to a single namespace, like Longhorn.
@@ -67,32 +66,32 @@ Homepage features automatic service discovery by Ingress annotations. All config
 apiVersion: networking.k8s.io/v1
 kind: Ingress
 metadata:
-  name: emby
-  annotations:
-    gethomepage.dev/enabled: "true"
-    gethomepage.dev/description: Media Server
-    gethomepage.dev/group: Media
-    gethomepage.dev/icon: emby.png
-    gethomepage.dev/name: Emby
-    gethomepage.dev/widget.type: "emby"
-    gethomepage.dev/widget.url: "https://emby.example.com"
-    gethomepage.dev/podSelector: ""
-    gethomepage.dev/weight: 10 # optional
+    name: emby
+    annotations:
+        gethomepage.dev/enabled: "true"
+        gethomepage.dev/description: Media Server
+        gethomepage.dev/group: Media
+        gethomepage.dev/icon: emby.png
+        gethomepage.dev/name: Emby
+        gethomepage.dev/widget.type: "emby"
+        gethomepage.dev/widget.url: "https://emby.example.com"
+        gethomepage.dev/podSelector: ""
+        gethomepage.dev/weight: 10 # optional
 spec:
-  rules:
-    - host: emby.example.com
-      http:
-        paths:
-          - backend:
-              service:
-                name: emby
-                port:
-                  number: 8080
-            path: /
-            pathType: Prefix
+    rules:
+        - host: emby.example.com
+          http:
+              paths:
+                  - backend:
+                        service:
+                            name: emby
+                            port:
+                                number: 8080
+                    path: /
+                    pathType: Prefix
 ```
 
-When the Kubernetes cluster connection has been properly configured, this service will be automatically discovered and added to your Homepage.  **You do not need to specify the `namespace` or `app` values, as they will be automatically inferred.**
+When the Kubernetes cluster connection has been properly configured, this service will be automatically discovered and added to your Homepage. **You do not need to specify the `namespace` or `app` values, as they will be automatically inferred.**
 
 ### Traefik IngressRoute support
 
@@ -102,32 +101,32 @@ Homepage can also read ingresses defined using the Traefik IngressRoute custom r
 apiVersion: traefik.io/v1alpha1
 kind: IngressRoute
 metadata:
-  name: emby
-  annotations:
-    gethomepage.dev/href: "https://emby.example.com"
-    gethomepage.dev/enabled: "true"
-    gethomepage.dev/description: Media Server
-    gethomepage.dev/group: Media
-    gethomepage.dev/icon: emby.png
-    gethomepage.dev/name: Emby
-    gethomepage.dev/widget.type: "emby"
-    gethomepage.dev/widget.url: "https://emby.example.com"
-    gethomepage.dev/podSelector: ""
-    gethomepage.dev/weight: 10 # optional
+    name: emby
+    annotations:
+        gethomepage.dev/href: "https://emby.example.com"
+        gethomepage.dev/enabled: "true"
+        gethomepage.dev/description: Media Server
+        gethomepage.dev/group: Media
+        gethomepage.dev/icon: emby.png
+        gethomepage.dev/name: Emby
+        gethomepage.dev/widget.type: "emby"
+        gethomepage.dev/widget.url: "https://emby.example.com"
+        gethomepage.dev/podSelector: ""
+        gethomepage.dev/weight: 10 # optional
 spec:
-  entryPoints:
-    - websecure
-  routes:
-  - kind: Rule
-    match: Host(`emby.example.com`)
-    services:
-    - kind: Service
-      name: emby
-      namespace: emby
-      port: 8080
-      scheme: http
-      strategy: RoundRobin
-      weight: 10
+    entryPoints:
+        - websecure
+    routes:
+        - kind: Rule
+          match: Host(`emby.example.com`)
+          services:
+              - kind: Service
+                name: emby
+                namespace: emby
+                port: 8080
+                scheme: http
+                strategy: RoundRobin
+                weight: 10
 ```
 
 If the `href` attribute is not present, Homepage will ignore the specific IngressRoute.

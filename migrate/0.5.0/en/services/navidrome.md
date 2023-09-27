@@ -1,7 +1,6 @@
 ---
 title: Navidrome
 description: Navidrome Widget Configuration
-layout: ../../../layouts/MainLayout.astro
 ---
 
 For detailed information about how to generate the token see http://www.subsonic.org/pages/api.jsp.
@@ -16,5 +15,3 @@ widget:
     token: token #md5(password + salt)
     salt: randomsalt
 ```
-
-*Added in v0.5.0*

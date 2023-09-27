@@ -1,7 +1,6 @@
 ---
 title: OctoPrint
 description: OctoPrintWidget Configuration
-layout: ../../../layouts/MainLayout.astro
 ---
 
 Allowed fields: `["printer_state", "temp_tool", "temp_bed", "job_completion"]`.
@@ -12,5 +11,3 @@ widget:
     url: http://octoprint.host.or.ip:port
     key: youroctoprintapikey
 ```
-
-*Added in v0.6.0*

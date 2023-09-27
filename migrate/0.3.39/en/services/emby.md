@@ -1,7 +1,6 @@
 ---
 title: Emby
 description: Emby Widget Configuration
-layout: ../../../layouts/MainLayout.astro
 ---
 
 You can create an API key from inside Emby at `Settings > Advanced > Api Keys`.
@@ -16,5 +15,3 @@ widget:
     enableBlocks: true # optional, defaults to false
     enableNowPlaying: true # optional, defaults to true
 ```
-
-*Added in v0.3.39*

@@ -1,7 +1,6 @@
 ---
 title: Flood
 description: Flood Widget Configuration
-layout: ../../../layouts/MainLayout.astro
 ---
 
 Allowed fields: `["leech", "download", "seed", "upload"]`.
@@ -13,5 +12,3 @@ widget:
     username: username # if set
     password: password # if set
 ```
-
-*Added in v0.5.4*

@@ -1,7 +1,6 @@
 ---
 title: Mastodon
 description: Mastodon Widget Configuration
-layout: ../../../layouts/MainLayout.astro
 ---
 
 Use the base URL of the Mastodon instance you'd like to pull stats for. Does not require authentication as the stats are part of the public API endpoints.
@@ -13,5 +12,3 @@ widget:
     type: mastodon
     url: https://mastodon.host.name
 ```
-
-*Added in v0.3.70*

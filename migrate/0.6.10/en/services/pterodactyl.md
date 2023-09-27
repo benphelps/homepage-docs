@@ -1,7 +1,6 @@
 ---
 title: Pterodactyl
 description: Pterodactyl Widget Configuration
-layout: ../../../layouts/MainLayout.astro
 ---
 
 Allowed fields: `["nodes", "servers"]`
@@ -12,5 +11,3 @@ widget:
     url: http://pterodactylhost:port
     key: pterodactylapikey
 ```
-
-*Added in v0.6.10*

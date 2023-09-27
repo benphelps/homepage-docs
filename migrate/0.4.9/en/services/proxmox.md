@@ -1,7 +1,6 @@
 ---
 title: Proxmox
 description: Proxmox Widget Configuration
-layout: ../../../layouts/MainLayout.astro
 ---
 
 This widget shows the running and total counts of both QEMU VMs and LX Containers in the Proxmox cluster. It also shows the CPU and memory usage of the first node in the cluster.
@@ -49,5 +48,3 @@ widget:
     password: api_token_secret
     node: pve-1 # optional
 ```
-
-*Added in v0.4.9*

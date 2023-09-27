@@ -1,7 +1,6 @@
 ---
 title: UrBackup
 description: UrBackup Widget Configuration
-layout: ../../../layouts/MainLayout.astro
 ---
 
 The UrBackup widget retrieves the total number of clients that currently have no errors, have errors, or haven't backed up recently. Clients are considered "Errored" or "Out of Date" if either the file or image backups for that client have errors/are out of date, unless the client does not support image backups.

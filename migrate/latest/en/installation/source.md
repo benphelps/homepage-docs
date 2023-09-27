@@ -1,7 +1,6 @@
 ---
 title: Source Installation
 description: Install and run homepage from source
-layout: ../../../layouts/MainLayout.astro
 ---
 
 First, clone the repository:

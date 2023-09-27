@@ -1,7 +1,6 @@
 ---
 title: Mikrotik
 description: Mikrotik Widget Configuration
-layout: ../../../layouts/MainLayout.astro
 ---
 
 HTTPS may be required, [per the documentation](https://help.mikrotik.com/docs/display/ROS/REST+API#RESTAPI-Overview)
@@ -15,5 +14,3 @@ widget:
     username: username
     password: password
 ```
-
-*Added in v0.5.6*

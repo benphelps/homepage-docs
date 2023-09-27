@@ -1,7 +1,6 @@
 ---
 title: Overseerr
 description: Overseerr Widget Configuration
-layout: ../../../layouts/MainLayout.astro
 ---
 
 Find your API key under `Settings > General`.
@@ -14,5 +13,3 @@ widget:
     url: http://overseerr.host.or.ip
     key: apikeyapikeyapikeyapikeyapikey
 ```
-
-*Added in v0.3.18*

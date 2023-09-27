@@ -1,7 +1,6 @@
 ---
 title: Custom CSS & JS
 description: Adding Custom CSS or JS
-layout: ../../../layouts/MainLayout.astro
 ---
 
 As of version v0.6.30 homepage supports adding your own custom css & javascript. Please do so **at your own risk**.

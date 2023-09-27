@@ -1,7 +1,6 @@
 ---
 title: Authentik
 description: Authentik Widget Configuration
-layout: ../../../layouts/MainLayout.astro
 ---
 
 This widget reads the number of active users in the system, as well as logins for the last 24 hours.
@@ -23,5 +22,3 @@ widget:
     url: http://authentik.host.or.ip:22070
     key: api_token
 ```
-
-*Added in v0.4.0*

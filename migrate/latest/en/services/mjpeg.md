@@ -1,7 +1,6 @@
 ---
 title: MJPEG
 description: MJPEG Stream Widget Configuration
-layout: ../../../layouts/MainLayout.astro
 ---
 
 ![camera-preview](https://github.com/benphelps/homepage-docs/assets/82196/dc375ae3-0670-489f-8db6-83ff1f423d12)

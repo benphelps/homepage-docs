@@ -1,7 +1,6 @@
 ---
 title: Changedetection.io
 description: Changedetection.io Widget Configuration
-layout: ../../../layouts/MainLayout.astro
 ---
 
 Find your API key under `Settings > API`.
@@ -12,5 +11,3 @@ widget:
     url: http://changedetection.host.or.ip:port
     key: apikeyapikeyapikeyapikeyapikey
 ```
-
-*Added in v0.5.1*

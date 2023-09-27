@@ -1,7 +1,6 @@
 ---
 title: pfSense
 description: pfSense Widget Configuration
-layout: ../../../layouts/MainLayout.astro
 ---
 
 This widget requires the installation of the [pfsense-api](https://github.com/jaredhendrickson13/pfsense-api) which is a 3rd party package for pfSense routers.
@@ -24,5 +23,3 @@ widget:
     password: pass
     wan: igb0
 ```
-
-*Added in v0.6.18*

@@ -1,7 +1,6 @@
 ---
 title: Jellyfin
 description: Jellyfin Widget Configuration
-layout: ../../../layouts/MainLayout.astro
 ---
 
 You can create an API key from inside Jellyfin at `Settings > Advanced > Api Keys`.
@@ -16,5 +15,3 @@ widget:
     enableBlocks: true # optional, defaults to false
     enableNowPlaying: true # optional, defaults to true
 ```
-
-*Added in v0.1.0*

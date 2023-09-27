@@ -1,7 +1,6 @@
 ---
 title: Lidarr
 description: Lidarr Widget Configuration
-layout: ../../../layouts/MainLayout.astro
 ---
 
 Find your API key under `Settings > General`.
@@ -14,5 +13,3 @@ widget:
     url: http://lidarr.host.or.ip
     key: apikeyapikeyapikeyapikeyapikey
 ```
-
-*Added in v0.3.39, updated in v0.6.21*

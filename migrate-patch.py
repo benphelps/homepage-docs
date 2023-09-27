@@ -1,18 +1,23 @@
 import os
+import shutil
 
-def find_and_replace(src_folder, dest_folder):
-    for root, _, files in os.walk(src_folder):
-        rel_path = os.path.relpath(root, src_folder).replace('en/', '')
+src_dir = "docs"
+dest_dir = "migrate"
 
-        for file in files:
-            src_file = os.path.join(root, file)
-            dest_file = os.path.join(dest_folder, rel_path, file)
+# Traverse the migrate folder to build a lookup map
+lookup_map = {}
+for root, _, files in os.walk(dest_dir):
+    for file in files:
+        relative_path = os.path.relpath(root, dest_dir).split(os.sep)
+        if 'en' in relative_path:
+            index = relative_path.index('en') + 1
+            path_after_en = os.path.join(*relative_path[index:], file)
+            lookup_map[path_after_en] = os.path.join(root, file)
 
-            if os.path.exists(dest_file):
-                with open(src_file, 'r') as f1, open(dest_file, 'w') as f2:
-                    f2.write(f1.read())
-
-src_folder = "migrate"
-dest_folder = "docs"
-
-find_and_replace(src_folder, dest_folder)
+# Move the files
+for root, _, files in os.walk(src_dir):
+    for file in files:
+        relative_path = os.path.relpath(root, src_dir)
+        path_after_en = os.path.join(relative_path, file)
+        if path_after_en in lookup_map:
+            shutil.copy(os.path.join(root, file), lookup_map[path_after_en])

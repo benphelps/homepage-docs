@@ -28,8 +28,8 @@ def fix_content(md_file):
         f.write(content)
         f.truncate()
 
-# def deploy_version(version):
-    # subprocess.run(['mike', 'deploy', version])
+def deploy_version(version):
+    subprocess.run(['mike', 'deploy', version])
 
 def main():
     src = "migrate"
@@ -38,11 +38,11 @@ def main():
     versions = sorted([v for v in os.listdir(src) if v != 'latest'])
     for version in versions:
         copy_files(src, dest, version)
-        # deploy_version(version)
+        deploy_version(version)
 
     # For 'latest'
     copy_files(src, dest, 'latest')
-    # deploy_version('0.7.0')
+    deploy_version('0.7.0')
 
 if __name__ == "__main__":
     main()

@@ -1,7 +1,6 @@
 ---
 title: Tailscale
 description: Tailscale Widget Configuration
-layout: ../../../layouts/MainLayout.astro
 ---
 
 You will need to generate an API access token from the [keys page](https://login.tailscale.com/admin/settings/keys) on the Tailscale dashboard.
@@ -16,5 +15,3 @@ widget:
     deviceid: deviceid
     key: tailscalekey
 ```
-
-_Added in v0.6.18_

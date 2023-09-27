@@ -1,12 +1,11 @@
 ---
 title: Glances
 description: Glances Widget Configuration
-layout: ../../../layouts/MainLayout.astro
 ---
 
 <img width="1614" alt="glances" src="https://github.com/benphelps/homepage-docs/assets/82196/25648c97-2c1b-4db0-b5a5-f1509806079c">
 
-_(Find the Glances information widget [here](/en/widgets/glances/))_
+_(Find the Glances information widget [here](../widgets/glances.md))_
 
 The Glances widget allows you to monitor the resources (cpu, memory, diskio, sensors & processes) of host or another machine. You can have multiple instances by adding another service block.
 
@@ -72,5 +71,3 @@ To switch to the alternative "graphless" view, simply passs `chart: false` as an
           metric: network:enp0s25
           chart: false
 ```
-
-*Added in v0.6.26*

@@ -1,10 +1,9 @@
 ---
 title: Unifi Controller
 description: Unifi Controller Widget Configuration
-layout: ../../../layouts/MainLayout.astro
 ---
 
-_(Find the Unifi Controller information widget [here](/en/widgets/unifi_controller/))_
+_(Find the Unifi Controller information widget [here](../widgets/unifi_controller.md))_
 
 You can display general connectivity status from your Unifi (Network) Controller. When authenticating you will want to use an account that has at least read privileges.
 
@@ -21,4 +20,4 @@ widget:
     site: Site Name # optional
 ```
 
-*Added in v0.4.18, updated in 0.6.7*
+_Added in v0.4.18, updated in 0.6.7_

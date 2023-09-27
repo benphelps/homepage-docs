@@ -1,7 +1,6 @@
 ---
 title: Medusa
 description: Medusa Widget Configuration
-layout: ../../../layouts/MainLayout.astro
 ---
 
 Allowed fields: `["wanted", "queued", "series"]`.
@@ -12,5 +11,3 @@ widget:
     url: http://medusa.host.or.ip:port
     key: medusaapikeyapikeyapikeyapikeyapikey
 ```
-
-*Added in v0.6.0*

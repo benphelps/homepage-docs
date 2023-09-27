@@ -1,7 +1,6 @@
 ---
 title: Omada
 description: Omada Widget Configuration
-layout: ../../../layouts/MainLayout.astro
 ---
 
 The widget supports controller versions 3, 4 and 5.
@@ -16,5 +15,3 @@ widget:
     password: password
     site: sitename
 ```
-
-*Added in v0.5.6*

@@ -1,7 +1,6 @@
 ---
 title: Mealie
 description: Mealie Widget Configuration
-layout: ../../../layouts/MainLayout.astro
 ---
 
 Generate a user API key under `Profile > Manage Your API Tokens > Generate`.
@@ -14,5 +13,3 @@ widget:
     url: http://mealie-frontend.host.or.ip
     key: mealieapitoken
 ```
-
-*Added in v0.6.29*

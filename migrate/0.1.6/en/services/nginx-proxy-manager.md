@@ -1,7 +1,6 @@
 ---
 title: Nginx Proxy Manager
 description: Nginx Proxy Manager Widget Configuration
-layout: ../../../layouts/MainLayout.astro
 ---
 
 Login with the same admin username and password used to access the web UI.
@@ -15,5 +14,3 @@ widget:
     username: admin_username
     password: admin_password
 ```
-
-*Added in v0.1.6*

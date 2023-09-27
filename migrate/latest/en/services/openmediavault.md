@@ -1,7 +1,6 @@
 ---
 title: OpenMediaVault
 description: OpenMediaVault Widget Configuration
-layout: ../../../layouts/MainLayout.astro
 ---
 
 Provides useful information from your OpenMediaVault
@@ -24,5 +23,3 @@ The method field determines the type of data to be displayed and is required. Su
 `smart.getListBg`: Shows S.M.A.R.T. status from disks. Allowed fields: `["passed", "failed"]`
 
 `downloader.getDownloadList`: Displays the number of tasks from the Downloader plugin currently being downloaded and total. Allowed fields: `["downloading", "total"]`
-
-

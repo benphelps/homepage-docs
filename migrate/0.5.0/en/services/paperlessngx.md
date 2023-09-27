@@ -1,7 +1,6 @@
 ---
 title: Paperless-ngx
 description: Paperless-ngx Widget Configuration
-layout: ../../../layouts/MainLayout.astro
 ---
 
 Use username & password, or the token key. Information about the token can be found in the [Paperless-ngx API documentation](https://docs.paperless-ngx.com/api/#authorization). If both are provided, the token will be used.
@@ -22,5 +21,3 @@ widget:
     url: http://paperlessngx.host.or.ip:port
     key: token
 ```
-
-*Added in v0.5.0*

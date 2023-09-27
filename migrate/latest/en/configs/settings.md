@@ -1,7 +1,6 @@
 ---
 title: Settings
 description: Service Configuration
-layout: ../../../layouts/MainLayout.astro
 ---
 
 The `settings.yaml` file allows you to define application level options. For changes made to this file to take effect, you will need to regenerate the static HTML, this can be done by clicking the refresh icon in the bottom right of the page.
@@ -30,7 +29,7 @@ If you'd like to use a background image instead of the solid theme color, you ma
 background: https://images.unsplash.com/photo-1502790671504-542ad42d5189?auto=format&fit=crop&w=2560&q=80
 ```
 
-Or you may pass the path to a local image relative to e.g. `/app/public/images` directory. *Note: do not create a bind mount to the entire `/app/public/` directory.*
+Or you may pass the path to a local image relative to e.g. `/app/public/images` directory. _Note: do not create a bind mount to the entire `/app/public/` directory._
 
 You will need to restart the container any time you add new images, this is a limitation of the Next.js static site server.
 
@@ -38,7 +37,7 @@ For example, inside of your Docker Compose file, mount a path to where your imag
 
 ```yaml
 volumes:
-  - /my/homepage/images:/app/public/images
+    - /my/homepage/images:/app/public/images
 ```
 
 and then reference that image:
@@ -52,12 +51,12 @@ background: /images/background.png
 You can specify filters to apply over your background image for blur, saturation and brightness as well as opacity to blend with the background color. The first three filter settings use tailwind CSS classes, see notes below regarding the options for each. You do not need to specify all options.
 
 ```yaml
-background: 
-  image: /images/background.png
-  blur: sm # sm, "", md, xl... see https://tailwindcss.com/docs/backdrop-blur
-  saturate: 50 # 0, 50, 100... see https://tailwindcss.com/docs/backdrop-saturate
-  brightness: 50 # 0, 50, 75... see https://tailwindcss.com/docs/backdrop-brightness
-  opacity: 50 # 0-100
+background:
+    image: /images/background.png
+    blur: sm # sm, "", md, xl... see https://tailwindcss.com/docs/backdrop-blur
+    saturate: 50 # 0, 50, 100... see https://tailwindcss.com/docs/backdrop-saturate
+    brightness: 50 # 0, 50, 75... see https://tailwindcss.com/docs/backdrop-brightness
+    opacity: 50 # 0-100
 ```
 
 ### Card Background Blur
@@ -67,7 +66,6 @@ You can apply a blur filter to the service & bookmark cards. Note this option is
 ```yaml
 cardBlur: sm # sm, "", md, etc... see https://tailwindcss.com/docs/backdrop-blur
 ```
-
 
 ## Favicon
 
@@ -105,9 +103,9 @@ Assuming you have a group named `Media` in your `services.yaml` or `bookmarks.ya
 
 ```yaml
 layout:
-  Media:
-    style: row
-    columns: 4
+    Media:
+        style: row
+        columns: 4
 ```
 
 As an example, this would produce the following layout:
@@ -124,13 +122,13 @@ Groups will sort based on the order in the layout block. You can also mix in gro
 
 ```yaml
 layout:
-  - Auto-Discovered1:
-  - Configured1:
-  - Configured2:
-  - Auto-Discovered2:
-  - Configured3:
-      style: row
-      columns: 3
+    - Auto-Discovered1:
+    - Configured1:
+    - Configured2:
+    - Auto-Discovered2:
+    - Configured3:
+          style: row
+          columns: 3
 ```
 
 ### Headers
@@ -149,7 +147,7 @@ layout:
 
 ### Category Icons
 
-You can also add an icon to a category under the `layout` setting similar to the [options for service icons](/en/configs/services/#icons), e.g.
+You can also add an icon to a category under the `layout` setting similar to the [options for service icons](services.md#icons), e.g.
 
 ```yaml
   Home Management & Info:
@@ -162,7 +160,7 @@ You can also add an icon to a category under the `layout` setting similar to the
 ### Icon Style
 
 The default style for icons (e.g. `icon: mdi-XXXX`) is a gradient, or you can specify that prefixed icons match your theme with a 'flat' style using the setting below.
-More information about prefixed icons can be found in [options for service icons](/en/configs/services/#icons).
+More information about prefixed icons can be found in [options for service icons](services.md#icons).
 
 ```yaml
 iconStyle: theme # optional, defaults to gradient
@@ -204,7 +202,6 @@ layout:
     style: row
     columns: 4
 ```
-
 
 ### Five Columns
 
@@ -307,21 +304,21 @@ The `providers` section allows you to define shared API provider options and sec
 
 ```yaml
 providers:
-  openweathermap: openweathermapapikey
-  weatherapi: weatherapiapikey
-  longhorn:
-    url: https://longhorn.example.com
-    username: admin
-    password: LonghornPassword
+    openweathermap: openweathermapapikey
+    weatherapi: weatherapiapikey
+    longhorn:
+        url: https://longhorn.example.com
+        username: admin
+        password: LonghornPassword
 ```
 
 You can then pass `provider` instead of `apiKey` in your widget configuration.
 
 ```yaml
 - weather:
-    latitude: 50.449684
-    longitude: 30.525026
-    provider: weatherapi
+      latitude: 50.449684
+      longitude: 30.525026
+      provider: weatherapi
 ```
 
 ## Quick Launch
@@ -332,9 +329,9 @@ You can use the 'Quick Launch' feature to search services, perform a web search 
 
 There are a few optional settings for the Quick Launch feature:
 
-- `searchDescriptions`: which lets you control whether item descriptions are included in searches. This is off by default. When enabled, results that match the item name will be placed above those that only match the description.
-- `hideInternetSearch`: disable automatically including the currently-selected web search (e.g. from the widget) as a Quick Launch option. This is false by default, enabling the feature.
-- `hideVisitURL`: disable detecting and offering an option to open URLs. This is false by default, enabling the feature.
+-   `searchDescriptions`: which lets you control whether item descriptions are included in searches. This is off by default. When enabled, results that match the item name will be placed above those that only match the description.
+-   `hideInternetSearch`: disable automatically including the currently-selected web search (e.g. from the widget) as a Quick Launch option. This is false by default, enabling the feature.
+-   `hideVisitURL`: disable detecting and offering an option to open URLs. This is false by default, enabling the feature.
 
 ```yaml
 quicklaunch:
@@ -353,7 +350,7 @@ hideVersion: true
 
 ## Log Path
 
-By default the homepage logfile is written to the a `logs` subdirectory of the `config` folder.  In order to customize this path, you can set the `logpath` setting.  A `logs` folder will be created in that location where the logfile will be written.
+By default the homepage logfile is written to the a `logs` subdirectory of the `config` folder. In order to customize this path, you can set the `logpath` setting. A `logs` folder will be created in that location where the logfile will be written.
 
 ```yaml
 logpath: /logfile/path
@@ -376,7 +373,6 @@ or per-service (`services.yaml`) with:
 ```
 
 If you have both set the per-service settings take precedence.
-
 
 ## Hide Widget Error Messages
 
