@@ -39,7 +39,6 @@ theme:
     - toc.integrate
     - search.suggest
     - search.share
-  custom_dir: overrides
 
 extra:
   version:
