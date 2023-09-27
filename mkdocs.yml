@@ -6,11 +6,55 @@ site_url: https://gethomepage.dev/
 # Repository
 repo_name: benphelps/homepage
 repo_url: https://github.com/benphelps/homepage
-edit_uri: ""
+edit_uri: https://github.com/benphelps/homepage-docs/tree/main/docs/
 
 theme:
   name: material
+  palette:
+    # Palette toggle for automatic mode
+    - media: "(prefers-color-scheme)"
+      toggle:
+        icon: material/brightness-auto
+        name: Switch to light mode
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: black
+      accent: black
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: black
+      accent: blue
+      toggle:
+        icon: material/brightness-4
+        name: Switch to system preference
+  logo: assets/light_squircle@2x.png
+  features:
+    - navigation.instant
+    - content.action.edit
+    - navigation.tabs
+    - navigation.tabs.sticky
+    - toc.integrate
+    - search.suggest
+    - search.share
+  custom_dir: overrides
 
 extra:
   version:
     provider: mike
+
+markdown_extensions:
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.superfences
+  - attr_list
+  - md_in_html
