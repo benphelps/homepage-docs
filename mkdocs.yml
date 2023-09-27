@@ -1,0 +1,16 @@
+site_name: homepage docs
+
+# Project information
+site_url: https://gethomepage.dev/
+
+# Repository
+repo_name: benphelps/homepage
+repo_url: https://github.com/benphelps/homepage
+edit_uri: ""
+
+theme:
+  name: material
+
+extra:
+  version:
+    provider: mike
