@@ -40,6 +40,9 @@ theme:
     - search.suggest
     - search.share
 
+extra_css:
+  - "stylesheets/extra.css"
+
 extra:
   version:
     provider: mike
