@@ -1,4 +1,4 @@
-site_name: homepage docs
+site_name: homepage
 
 # Project information
 site_url: https://gethomepage.dev/
@@ -129,7 +129,7 @@ nav:
       - widgets/services/watchtower.md
       - widgets/services/whatsupdocker.md
       - widgets/services/xteve.md
-    - "Header Widgets":
+    - "Information Widgets":
       - widgets/info/index.md
       - widgets/info/datetime.md
       - widgets/info/glances.md
