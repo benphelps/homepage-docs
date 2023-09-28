@@ -11,7 +11,8 @@ This widget shows monthly calendar, with optional integrations to show events fr
 ```yaml
 widget:
   type: calendar
-  integrations:              # optional
+  firstDayInWeek: sunday    # optional - defaults to monday
+  integrations:             # optional
     - type: sonarr          # active widget type that is currently enabled on homepage - possible values: radarr, sonarr, lidarr, readarr
       service_group: Media  # group name where widget exists
       service_name: Sonarr  # service name for that widget
