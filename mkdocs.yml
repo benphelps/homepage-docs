@@ -143,11 +143,11 @@ nav:
       - widgets/info/search.md
       - widgets/info/unifi_controller.md
       - widgets/info/weather.md
+  - more/troubleshooting.md
   - "More":
     - more/index.md
     - more/development.md
     - more/translations.md
-    - more/troubleshooting.md
 
 theme:
   name: material
