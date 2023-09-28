@@ -33,12 +33,16 @@ theme:
   logo: assets/light_squircle@2x.png
   features:
     - navigation.instant
+    - navigation.instant.prefetch
     - content.action.edit
     - navigation.tabs
     - navigation.tabs.sticky
     - toc.integrate
     - search.suggest
     - search.share
+    - content.code.copy
+    - content.code.select
+    - navigation.tracking
 
 extra_css:
   - "stylesheets/extra.css"
