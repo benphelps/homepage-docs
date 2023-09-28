@@ -5,32 +5,32 @@ description: Glances Widget Configuration
 
 <img width="1614" alt="glances" src="https://github.com/benphelps/homepage-docs/assets/82196/25648c97-2c1b-4db0-b5a5-f1509806079c">
 
-_(Find the Glances information widget [here](../widgets/glances.md))_
+_(Find the Glances information widget [here](../services/glances.md))_
 
 The Glances widget allows you to monitor the resources (cpu, memory, diskio, sensors & processes) of host or another machine. You can have multiple instances by adding another service block.
 
 ```yaml
 widget:
-    type: glances
-    url: http://glances.host.or.ip:port
-    username: user # optional if auth enabled in Glances
-    password: pass # optional if auth enabled in Glances
-    metric: cpu
+  type: glances
+  url: http://glances.host.or.ip:port
+  username: user # optional if auth enabled in Glances
+  password: pass # optional if auth enabled in Glances
+  metric: cpu
 ```
 
 _Please note, this widget does not need an `href`, `icon` or `description` on its parent service. To achive the same effect as the examples above, see as an example:_
 
 ```yaml
 - CPU Usage:
-      widget:
-          type: glances
-          url: http://glances.host.or.ip:port
-          metric: cpu
+    widget:
+      type: glances
+      url: http://glances.host.or.ip:port
+      metric: cpu
 - Network Usage:
-      widget:
-          type: glances
-          url: http://glances.host.or.ip:port
-          metric: network:enp0s25
+    widget:
+      type: glances
+      url: http://glances.host.or.ip:port
+      metric: network:enp0s25
 ```
 
 ## Metrics
@@ -65,9 +65,9 @@ To switch to the alternative "graphless" view, simply passs `chart: false` as an
 
 ```yaml
 - Network Usage:
-      widget:
-          type: glances
-          url: http://glances.host.or.ip:port
-          metric: network:enp0s25
-          chart: false
+    widget:
+      type: glances
+      url: http://glances.host.or.ip:port
+      metric: network:enp0s25
+      chart: false
 ```

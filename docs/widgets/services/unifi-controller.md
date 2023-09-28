@@ -3,7 +3,7 @@ title: Unifi Controller
 description: Unifi Controller Widget Configuration
 ---
 
-_(Find the Unifi Controller information widget [here](../widgets/unifi_controller.md))_
+_(Find the Unifi Controller information widget [here](../info/unifi_controller.md))_
 
 You can display general connectivity status from your Unifi (Network) Controller. When authenticating you will want to use an account that has at least read privileges.
 
@@ -13,11 +13,11 @@ Allowed fields: `["uptime", "wan", "lan_users", "wlan_users"]`.
 
 ```yaml
 widget:
-    type: unifi
-    url: https://unifi.host.or.ip:port
-    username: username
-    password: password
-    site: Site Name # optional
+  type: unifi
+  url: https://unifi.host.or.ip:port
+  username: username
+  password: password
+  site: Site Name # optional
 ```
 
 _Added in v0.4.18, updated in 0.6.7_

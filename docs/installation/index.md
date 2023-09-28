@@ -1,9 +1,6 @@
 ---
 title: Installation
 description: Docs intro
-nav:
-    section:
-        - k8s.md
 ---
 
 <p>

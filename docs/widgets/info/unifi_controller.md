@@ -15,10 +15,10 @@ _Note: If you enter e.g. incorrect credentials and receive an "API Error", you m
 
 ```yaml
 - unifi_console:
-      url: https://unifi.host.or.ip:port
-      username: user
-      password: pass
-      site: Site Name # optional
+    url: https://unifi.host.or.ip:port
+    username: user
+    password: pass
+    site: Site Name # optional
 ```
 
 _Added in v0.4.18, updated in 0.6.7_

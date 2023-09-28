@@ -1,9 +1,9 @@
 ---
 title: Home
 hide:
-    - navigation
-    - toc
-    - path
+  - navigation
+  - toc
+  - path
 ---
 
 #
