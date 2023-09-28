@@ -23,19 +23,19 @@ startUrl: https://custom.url
 
 ## Background Image
 
+!!! warning inline end "Heads Up!"
+
+    You will need to restart the container any time you add new images, this is a limitation of the Next.js static site server.
+
 If you'd like to use a background image instead of the solid theme color, you may provide a full URL to an image of your choice.
 
 ```yaml
 background: https://images.unsplash.com/photo-1502790671504-542ad42d5189?auto=format&fit=crop&w=2560&q=80
 ```
 
-Or you may pass the path to a local image relative to e.g. `/app/public/images` directory. 
+Or you may pass the path to a local image relative to e.g. `/app/public/images` directory.
 
-!!! note
-
-    You will need to restart the container any time you add new images, this is a limitation of the Next.js static site server.
-
-!!! warning
+!!! warning inline start
 
     Do not create a bind mount to the entire `/app/public/` directory.
 
@@ -43,7 +43,7 @@ For example, inside of your Docker Compose file, mount a path to where your imag
 
 ```yaml
 volumes:
-    - /my/homepage/images:/app/public/images
+  - /my/homepage/images:/app/public/images
 ```
 
 and then reference that image:
@@ -58,11 +58,11 @@ You can specify filters to apply over your background image for blur, saturation
 
 ```yaml
 background:
-    image: /images/background.png
-    blur: sm # sm, "", md, xl... see https://tailwindcss.com/docs/backdrop-blur
-    saturate: 50 # 0, 50, 100... see https://tailwindcss.com/docs/backdrop-saturate
-    brightness: 50 # 0, 50, 75... see https://tailwindcss.com/docs/backdrop-brightness
-    opacity: 50 # 0-100
+  image: /images/background.png
+  blur: sm # sm, "", md, xl... see https://tailwindcss.com/docs/backdrop-blur
+  saturate: 50 # 0, 50, 100... see https://tailwindcss.com/docs/backdrop-saturate
+  brightness: 50 # 0, 50, 75... see https://tailwindcss.com/docs/backdrop-brightness
+  opacity: 50 # 0-100
 ```
 
 ### Card Background Blur
@@ -109,9 +109,9 @@ Assuming you have a group named `Media` in your `services.yaml` or `bookmarks.ya
 
 ```yaml
 layout:
-    Media:
-        style: row
-        columns: 4
+  Media:
+    style: row
+    columns: 4
 ```
 
 As an example, this would produce the following layout:
@@ -128,13 +128,13 @@ Groups will sort based on the order in the layout block. You can also mix in gro
 
 ```yaml
 layout:
-    - Auto-Discovered1:
-    - Configured1:
-    - Configured2:
-    - Auto-Discovered2:
-    - Configured3:
-          style: row
-          columns: 3
+  - Auto-Discovered1:
+  - Configured1:
+  - Configured2:
+  - Auto-Discovered2:
+  - Configured3:
+      style: row
+      columns: 3
 ```
 
 ### Headers
@@ -143,12 +143,12 @@ You can hide headers for each section in the layout as well by passing `header` 
 
 ```yaml
 layout:
-    Section A:
-        header: false
-    Section B:
-        style: row
-        columns: 3
-        header: false
+  Section A:
+    header: false
+  Section B:
+    style: row
+    columns: 3
+    header: false
 ```
 
 ### Category Icons
@@ -310,21 +310,21 @@ The `providers` section allows you to define shared API provider options and sec
 
 ```yaml
 providers:
-    openweathermap: openweathermapapikey
-    weatherapi: weatherapiapikey
-    longhorn:
-        url: https://longhorn.example.com
-        username: admin
-        password: LonghornPassword
+  openweathermap: openweathermapapikey
+  weatherapi: weatherapiapikey
+  longhorn:
+    url: https://longhorn.example.com
+    username: admin
+    password: LonghornPassword
 ```
 
 You can then pass `provider` instead of `apiKey` in your widget configuration.
 
 ```yaml
 - weather:
-      latitude: 50.449684
-      longitude: 30.525026
-      provider: weatherapi
+    latitude: 50.449684
+    longitude: 30.525026
+    provider: weatherapi
 ```
 
 ## Quick Launch
@@ -335,15 +335,15 @@ You can use the 'Quick Launch' feature to search services, perform a web search 
 
 There are a few optional settings for the Quick Launch feature:
 
--   `searchDescriptions`: which lets you control whether item descriptions are included in searches. This is off by default. When enabled, results that match the item name will be placed above those that only match the description.
--   `hideInternetSearch`: disable automatically including the currently-selected web search (e.g. from the widget) as a Quick Launch option. This is false by default, enabling the feature.
--   `hideVisitURL`: disable detecting and offering an option to open URLs. This is false by default, enabling the feature.
+- `searchDescriptions`: which lets you control whether item descriptions are included in searches. This is off by default. When enabled, results that match the item name will be placed above those that only match the description.
+- `hideInternetSearch`: disable automatically including the currently-selected web search (e.g. from the widget) as a Quick Launch option. This is false by default, enabling the feature.
+- `hideVisitURL`: disable detecting and offering an option to open URLs. This is false by default, enabling the feature.
 
 ```yaml
 quicklaunch:
-    searchDescriptions: true
-    hideInternetSearch: true
-    hideVisitURL: true
+  searchDescriptions: true
+  hideInternetSearch: true
+  hideVisitURL: true
 ```
 
 ## Homepage Version
