@@ -56,7 +56,9 @@ For instance, it can be utilized to roll multiple underlying deployments under o
           )
 ```
 
-**NOTE:** A blank string as a podSelector does not deactivate it, but will actually select all pods in the namespace. This is a useful way to capture the resource usage of a complex application siloed to a single namespace, like Longhorn.
+!!! note
+
+    A blank string as a podSelector does not deactivate it, but will actually select all pods in the namespace. This is a useful way to capture the resource usage of a complex application siloed to a single namespace, like Longhorn.
 
 ## Automatic Service Discovery
 

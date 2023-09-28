@@ -70,7 +70,9 @@ my-docker:
 
 If you'd rather use the socket directly, first make sure that you're passing the local socket into the Docker container.
 
-_Note that in order to use the socket directly homepage must be running as root_
+!!! note
+
+    In order to use the socket directly homepage must be running as root
 
 ```yaml
 homepage:

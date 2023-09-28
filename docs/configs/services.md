@@ -73,7 +73,9 @@ To use a remote icon, use the absolute URL (e.g. `https://...`).
 
 To use a local icon, first create a Docker mount to `/app/public/icons` and then reference your icon as `/icons/myicon.png`. You will need to restart the container when adding new icons.
 
-_Note: Material Design Icons for **brands** were deprecated and may be removed in the future. Using Simple Icons for brand icons will prevent any issues if / when the Material Design Icons are removed._
+!!! warning
+
+      Material Design Icons for **brands** were deprecated and may be removed in the future. Using Simple Icons for brand icons will prevent any issues if / when the Material Design Icons are removed.
 
 ```yaml
 - Group A:
@@ -101,7 +103,9 @@ _Note: Material Design Icons for **brands** were deprecated and may be removed i
 
 Services may have an optional `ping` property that allows you to monitor the availability of an endpoint you chose and have the response time displayed. You do not need to set your ping URL equal to your href URL.
 
-_Note:_ the ping feature works by making an http `HEAD` request to the URL, and falls back to `GET` in case that fails. It will not, for example, login if the URL requires auth or is behind e.g. Authelia. In the case of a reverse proxy and/or auth this usually requires the use of an 'internal' URL to make the ping feature correctly display status.
+!!! note
+
+      he ping feature works by making an http `HEAD` request to the URL, and falls back to `GET` in case that fails. It will not, for example, login if the URL requires auth or is behind e.g. Authelia. In the case of a reverse proxy and/or auth this usually requires the use of an 'internal' URL to make the ping feature correctly display status.
 
 ```yaml
 - Group A:
@@ -143,7 +147,9 @@ Services may be connected to a Docker container, either running on the local mac
 
 **Clicking on the status label of a service with Docker integration enabled will expand the container stats, where you can see CPU, Memory, and Network activity.**
 
-_Note:_ This can also be controlled with `showStats`. See [show docker stats](docker.md#show-docker-stats) for more information
+!!! note
+
+      This can also be controlled with `showStats`. See [show docker stats](docker.md#show-docker-stats) for more information
 
 <img width="1038" alt="Docker Stats Expanded" src="https://github.com/benphelps/homepage/assets/88257202/f95fd595-449e-48ae-af67-fd89618904ec">
 
