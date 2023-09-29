@@ -38,7 +38,9 @@ jobs:
           git checkout main
       - name: Mike Deploy for Tags
         if: github.ref != 'refs/heads/main'
-        run: mike deploy --push ${{github.ref_name}} latest
+        run: |
+          git checkout main
+          mike deploy --push ${{github.ref_name}} latest
       - name: Mike Deploy for Main
         if: github.ref == 'refs/heads/main'
         run: mike deploy --update --push main
