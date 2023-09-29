@@ -11,12 +11,12 @@ Groups are defined as top-level array entries.
 
 ```yaml
 - Group A:
-      - Service A:
-            href: http://localhost/
+    - Service A:
+        href: http://localhost/
 
 - Group B:
-      - Service B:
-            href: http://localhost/
+    - Service B:
+        href: http://localhost/
 ```
 
 <img width="1038" alt="Service Groups" src="https://user-images.githubusercontent.com/82196/187040754-28065242-4534-4409-881c-93d1921c6141.png">
@@ -27,18 +27,18 @@ Services are defined as array entries on groups,
 
 ```yaml
 - Group A:
-      - Service A:
-            href: http://localhost/
+    - Service A:
+        href: http://localhost/
 
-      - Service B:
-            href: http://localhost/
+    - Service B:
+        href: http://localhost/
 
-      - Service C:
-            href: http://localhost/
+    - Service C:
+        href: http://localhost/
 
 - Group B:
-      - Service D:
-            href: http://localhost/
+    - Service D:
+        href: http://localhost/
 ```
 
 <img width="1038" alt="Service Services" src="https://user-images.githubusercontent.com/82196/187040763-038023a2-8bee-4d87-b5cc-13447e7365a4.png">
@@ -49,14 +49,14 @@ Services may have descriptions,
 
 ```yaml
 - Group A:
-      - Service A:
-            href: http://localhost/
-            description: This is my service
+    - Service A:
+        href: http://localhost/
+        description: This is my service
 
 - Group B:
-      - Service B:
-            href: http://localhost/
-            description: This is another service
+    - Service B:
+        href: http://localhost/
+        description: This is another service
 ```
 
 <img width="1038" alt="Service Descriptions" src="https://user-images.githubusercontent.com/82196/187040817-11a3d0eb-c997-4ef9-8f06-2d03a11332b6.png">
@@ -79,22 +79,22 @@ To use a local icon, first create a Docker mount to `/app/public/icons` and then
 
 ```yaml
 - Group A:
-      - Sonarr:
-            icon: sonarr.png
-            href: http://sonarr.host/
-            description: Series management
+    - Sonarr:
+        icon: sonarr.png
+        href: http://sonarr.host/
+        description: Series management
 
 - Group B:
-      - Radarr:
-            icon: radarr.png
-            href: http://radarr.host/
-            description: Movie management
+    - Radarr:
+        icon: radarr.png
+        href: http://radarr.host/
+        description: Movie management
 
 - Group C:
-      - Service:
-            icon: mdi-flask-outline
-            href: http://service.host/
-            description: My cool service
+    - Service:
+        icon: mdi-flask-outline
+        href: http://service.host/
+        description: My cool service
 ```
 
 <img width="1038" alt="Service Icons" src="https://user-images.githubusercontent.com/82196/187040777-da1361d7-f0c4-4531-95db-136cd00a1611.png">
@@ -105,23 +105,27 @@ Services may have an optional `ping` property that allows you to monitor the ava
 
 !!! note
 
-      he ping feature works by making an http `HEAD` request to the URL, and falls back to `GET` in case that fails. It will not, for example, login if the URL requires auth or is behind e.g. Authelia. In the case of a reverse proxy and/or auth this usually requires the use of an 'internal' URL to make the ping feature correctly display status.
+    The ping feature works by making an http `HEAD` request to the URL, and falls back to `GET` in case that fails. It will not, for example, login if the URL requires auth or is behind e.g. Authelia. In the case of a reverse proxy and/or auth this usually requires the use of an 'internal' URL to make the ping feature correctly display status.
 
 ```yaml
 - Group A:
-      - Sonarr:
-            icon: sonarr.png
-            href: http://sonarr.host/
-            ping: http://sonarr.host/
+    - Sonarr:
+        icon: sonarr.png
+        href: http://sonarr.host/
+        ping: http://sonarr.host/
 
 - Group B:
-      - Radarr:
-            icon: radarr.png
-            href: http://radarr.host/
-            ping: http://some.other.host/
+    - Radarr:
+        icon: radarr.png
+        href: http://radarr.host/
+        ping: http://some.other.host/
 ```
 
 <img width="1038" alt="Ping" src="https://github.com/benphelps/homepage/assets/88257202/7bc13bd3-0d0b-44e3-888c-a20e069a3233">
+
+You can also apply different styles to the ping indicator by using the `statusStyle` property. The default is no value, and displays the response time in ms, but you can also use `dot` or `simple`. `dot` showing a green dot for a successful ping, and `simple` showing either ONLINE or OFFLINE to match the status style of Docker containers.
+
+<!-- TODO: Insert images of the new status styles there -->
 
 ## Docker Integration
 
@@ -129,18 +133,18 @@ Services may be connected to a Docker container, either running on the local mac
 
 ```yaml
 - Group A:
-      - Service A:
-            href: http://localhost/
-            description: This is my service
-            server: my-server
-            container: my-container
+    - Service A:
+        href: http://localhost/
+        description: This is my service
+        server: my-server
+        container: my-container
 
 - Group B:
-      - Service B:
-            href: http://localhost/
-            description: This is another service
-            server: other-server
-            container: other-container
+    - Service B:
+        href: http://localhost/
+        description: This is another service
+        server: other-server
+        container: other-container
 ```
 
 <img width="1038" alt="Service Containers" src="https://github.com/benphelps/homepage/assets/88257202/4c685783-52c6-4e55-afb3-affe9baac09b">
@@ -163,24 +167,24 @@ Here is an example of a Radarr & Sonarr service, with their respective integrati
 
 ```yaml
 - Group A:
-      - Sonarr:
-            icon: sonarr.png
-            href: http://sonarr.host/
-            description: Series management
-            widget:
-                type: sonarr
-                url: http://sonarr.host
-                key: apikeyapikeyapikeyapikeyapikey
+    - Sonarr:
+        icon: sonarr.png
+        href: http://sonarr.host/
+        description: Series management
+        widget:
+          type: sonarr
+          url: http://sonarr.host
+          key: apikeyapikeyapikeyapikeyapikey
 
 - Group B:
-      - Radarr:
-            icon: radarr.png
-            href: http://radarr.host/
-            description: Movie management
-            widget:
-                type: radarr
-                url: http://radarr.host
-                key: apikeyapikeyapikeyapikeyapikey
+    - Radarr:
+        icon: radarr.png
+        href: http://radarr.host/
+        description: Movie management
+        widget:
+          type: radarr
+          url: http://radarr.host
+          key: apikeyapikeyapikeyapikeyapikey
 ```
 
 <img width="1038" alt="Service Integrations" src="https://user-images.githubusercontent.com/82196/187040838-6cd518c2-4f08-41ef-8aa6-364df5e2660e.png">
