@@ -44,6 +44,6 @@ jobs:
         run: mike deploy --update --push ${{github.ref_name}}
       - name: Mike Deploy for Tags
         if: github.ref != 'refs/heads/main'
-        run: mike deploy --push ${{github.ref_name}} latest
+        run: mike deploy --update --push ${{github.ref_name}} latest
 env:
   GH_TOKEN: ${{ secrets.GH_TOKEN }} 
