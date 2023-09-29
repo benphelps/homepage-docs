@@ -31,6 +31,6 @@ jobs:
         run: mike deploy --push ${{github.ref_name}} latest
       - name: Mike Deploy for Main
         if: github.ref == 'refs/heads/main'
-        run: mike deploy --push main main
+        run: mike deploy --update --push main main
 env:
   GH_TOKEN: ${{ secrets.GH_TOKEN }} 
