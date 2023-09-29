@@ -42,19 +42,5 @@ jobs:
       - name: Mike Deploy for Main
         if: github.ref == 'refs/heads/main'
         run: mike deploy --update --push main
-      - name: Setup Pages
-        uses: actions/configure-pages@v3
-      - name: Switch to gh-pages
-        run: |
-          git fetch origin gh-pages
-          git checkout gh-pages
-          git pull origin gh-pages
-      - name: Upload artifact
-        uses: actions/upload-pages-artifact@v2
-        with:
-          path: '.'
-      - name: Deploy to GitHub Pages
-        id: deployment
-        uses: actions/deploy-pages@v2
 env:
   GH_TOKEN: ${{ secrets.GH_TOKEN }} 
