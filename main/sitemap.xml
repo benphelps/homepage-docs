@@ -206,6 +206,11 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
+         <loc>https://gethomepage.dev/main/widgets/services/calendar/</loc>
+         <lastmod>2023-09-29</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
          <loc>https://gethomepage.dev/main/widgets/services/calibre-web/</loc>
          <lastmod>2023-09-29</lastmod>
          <changefreq>daily</changefreq>
