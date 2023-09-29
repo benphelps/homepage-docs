@@ -10,16 +10,16 @@ This widget shows monthly calendar, with optional integrations to show events fr
 ```yaml
 widget:
   type: calendar
-  firstDayInWeek: sunday    # optional - defaults to monday
-  integrations:             # optional
-    - type: sonarr          # active widget type that is currently enabled on homepage - possible values: radarr, sonarr, lidarr, readarr
-      service_group: Media  # group name where widget exists
-      service_name: Sonarr  # service name for that widget
-      color: teal           # optional - defaults to pre-defined color for the service (teal for sonarr)
-      params:               # optional - additional params for the service
-        unmonitored: true   # optional - defaults to false, used with *arr stack
+  firstDayInWeek: sunday # optional - defaults to monday
+  integrations: # optional
+    - type: sonarr # active widget type that is currently enabled on homepage - possible values: radarr, sonarr, lidarr, readarr
+      service_group: Media # group name where widget exists
+      service_name: Sonarr # service name for that widget
+      color: teal # optional - defaults to pre-defined color for the service (teal for sonarr)
+      params: # optional - additional params for the service
+        unmonitored: true # optional - defaults to false, used with *arr stack
 ```
 
-Currently integrated widgets are [sonarr](/sonarr.md), [radarr](radarr.md), [lidarr](lidarr.md) and [readarr](readarr.md).
+Currently integrated widgets are [sonarr](sonarr.md), [radarr](radarr.md), [lidarr](lidarr.md) and [readarr](readarr.md).
 
-Supported colors can be found on [color palette](/configs/settings.md#color-palette).
+Supported colors can be found on [color palette](../../configs/settings.md#color-palette).
