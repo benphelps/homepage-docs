@@ -1,8 +1,7 @@
 name: Homepage Docs Build & Deploy
 on:
   push:
-    branches:
-      - main
+    tags: [ 'v*.*.*' ]
 permissions:
   contents: write
 jobs:
@@ -10,6 +9,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+      - name: Set env
+        run: echo "RELEASE_VERSION=${GITHUB_REF#refs/*/}" >> $GITHUB_ENV
       - uses: actions/setup-python@v4
         with:
           python-version: 3.x
@@ -21,7 +22,8 @@ jobs:
           restore-keys: |
             mkdocs-material-
       - run: apt-get install pngquant 
+      - run: pip install mike
       - run: pip install git+https://${GH_TOKEN}@github.com/benphelps/mkdocs-material-insiders.git
-      - run: mkdocs gh-deploy --force
+      - run: mike deploy --push ${{github.ref_name}}
 env:
   GH_TOKEN: ${{ secrets.GH_TOKEN }} 
