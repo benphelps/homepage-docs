@@ -24,6 +24,11 @@ jobs:
       - run: apt-get install pngquant 
       - run: pip install mike
       - run: pip install git+https://${GH_TOKEN}@github.com/benphelps/mkdocs-material-insiders.git
-      - run: mike deploy --push ${{github.ref_name}} main
+      - name: Mike Deploy for Tags
+        if: github.ref != 'refs/heads/main'
+        run: mike deploy --push ${{github.ref_name}} latest
+      - name: Mike Deploy for Main
+        if: github.ref == 'refs/heads/main'
+        run: mike deploy --push main main
 env:
   GH_TOKEN: ${{ secrets.GH_TOKEN }} 
